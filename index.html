@@ -6,18 +6,19 @@
     <title>SMP360 Labs</title>
     <meta
       name="description"
-      content="SMP360 Labs is a public signal from a private home lab where agents, projects, and experiments are organized."
+      content="SMP360 Labs is a public signal from a private home lab where agents, project context, and experiments are organized."
     >
     <style>
       :root {
-        color-scheme: light;
-        --paper: #f4f1e8;
-        --ink: #171713;
-        --soft: #69665f;
-        --line: #d2cabc;
-        --field: #ffffff;
-        --green: #0f766e;
-        --red: #b42318;
+        color-scheme: dark;
+        --void: #080908;
+        --ink: #f2f0df;
+        --muted: #a7a28e;
+        --line: rgba(242, 240, 223, 0.18);
+        --green: #28f0a7;
+        --amber: #f2b84b;
+        --red: #ff4f5e;
+        --panel: rgba(11, 15, 13, 0.78);
       }
 
       * {
@@ -25,30 +26,70 @@
       }
 
       html {
-        background: var(--paper);
+        background: var(--void);
       }
 
       body {
         margin: 0;
         min-height: 100vh;
+        overflow-x: hidden;
         font-family: Arial, Helvetica, sans-serif;
         color: var(--ink);
         background:
-          linear-gradient(90deg, rgba(23, 23, 19, 0.045) 1px, transparent 1px),
-          linear-gradient(180deg, rgba(23, 23, 19, 0.045) 1px, transparent 1px),
-          var(--paper);
-        background-size: 48px 48px;
+          radial-gradient(circle at 78% 16%, rgba(255, 79, 94, 0.18), transparent 32%),
+          radial-gradient(circle at 14% 88%, rgba(40, 240, 167, 0.16), transparent 34%),
+          linear-gradient(180deg, #090b0a 0%, #080908 56%, #111009 100%);
         letter-spacing: 0;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background:
+          linear-gradient(rgba(242, 240, 223, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(242, 240, 223, 0.03) 1px, transparent 1px);
+        background-size: 42px 42px;
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.22));
+      }
+
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background: repeating-linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.03) 0,
+          rgba(255, 255, 255, 0.03) 1px,
+          transparent 1px,
+          transparent 5px
+        );
+        opacity: 0.22;
       }
 
       a {
         color: inherit;
+        text-decoration-color: rgba(40, 240, 167, 0.7);
         text-decoration-thickness: 1px;
         text-underline-offset: 4px;
       }
 
+      #signal-field {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.68;
+      }
+
       .wrap {
-        width: min(1120px, 100%);
+        position: relative;
+        z-index: 1;
+        width: min(1180px, 100%);
+        min-height: 100vh;
         margin: 0 auto;
         padding: 28px;
       }
@@ -58,8 +99,9 @@
         align-items: center;
         justify-content: space-between;
         gap: 18px;
-        min-height: 48px;
+        min-height: 52px;
         border-bottom: 1px solid var(--line);
+        color: var(--muted);
         font-size: 0.9rem;
       }
 
@@ -67,6 +109,7 @@
         display: inline-flex;
         align-items: center;
         gap: 10px;
+        color: var(--ink);
         font-weight: 700;
       }
 
@@ -74,17 +117,21 @@
         content: "";
         width: 12px;
         height: 12px;
-        border: 2px solid var(--ink);
+        border: 1px solid var(--green);
         background: var(--green);
+        box-shadow: 0 0 18px rgba(40, 240, 167, 0.8);
       }
 
       main {
-        padding: 92px 0 64px;
+        display: grid;
+        min-height: calc(100vh - 104px);
+        align-items: center;
+        padding: 72px 0 46px;
       }
 
       .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+        grid-template-columns: minmax(0, 1fr) minmax(340px, 0.78fr);
         gap: 56px;
         align-items: end;
       }
@@ -92,180 +139,186 @@
       .label {
         margin: 0 0 18px;
         color: var(--green);
-        font-size: 0.82rem;
-        font-weight: 700;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.88rem;
         text-transform: uppercase;
       }
 
       h1 {
         margin: 0;
-        max-width: 760px;
-        font-size: 5rem;
-        line-height: 0.98;
+        max-width: 780px;
+        font-size: 5.8rem;
+        line-height: 0.9;
         font-weight: 700;
       }
 
       .intro {
-        margin: 28px 0 0;
-        max-width: 640px;
-        color: var(--soft);
-        font-size: 1.25rem;
-        line-height: 1.55;
+        margin: 30px 0 0;
+        max-width: 650px;
+        color: var(--muted);
+        font-size: 1.2rem;
+        line-height: 1.6;
       }
 
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 14px;
-        margin-top: 34px;
-      }
-
-      .button {
-        display: inline-flex;
-        align-items: center;
-        min-height: 42px;
-        padding: 0 16px;
-        border: 1px solid var(--ink);
-        background: var(--ink);
-        color: var(--paper);
-        font-size: 0.94rem;
-        text-decoration: none;
-      }
-
-      .button.secondary {
-        background: transparent;
-        color: var(--ink);
-      }
-
-      .panel {
+      .aside {
         border: 1px solid var(--line);
-        background: rgba(255, 255, 255, 0.74);
+        background: var(--panel);
+        box-shadow: 0 22px 80px rgba(0, 0, 0, 0.42);
+        backdrop-filter: blur(10px);
       }
 
-      .panel-head {
+      .aside-head {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 18px;
+        gap: 16px;
         padding: 16px 18px;
         border-bottom: 1px solid var(--line);
+        font-family: "Courier New", Courier, monospace;
         font-size: 0.82rem;
-        font-weight: 700;
         text-transform: uppercase;
       }
 
-      .signal {
+      .live {
         display: inline-flex;
         align-items: center;
         gap: 8px;
         color: var(--green);
       }
 
-      .signal::before {
+      .live::before {
         content: "";
         width: 8px;
         height: 8px;
         background: var(--green);
+        box-shadow: 0 0 14px rgba(40, 240, 167, 0.9);
       }
 
       pre {
         margin: 0;
         padding: 18px;
         overflow: auto;
-        color: #27241f;
+        color: #e9e3c7;
         font-family: "Courier New", Courier, monospace;
-        font-size: 0.9rem;
-        line-height: 1.55;
-        white-space: pre;
+        font-size: 0.86rem;
+        line-height: 1.58;
       }
 
-      .notes {
+      .red {
+        color: var(--red);
+      }
+
+      .green {
+        color: var(--green);
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 36px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 42px;
+        padding: 0 15px;
+        border: 1px solid rgba(40, 240, 167, 0.72);
+        background: rgba(40, 240, 167, 0.12);
+        color: var(--ink);
+        font-size: 0.94rem;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        border-color: var(--line);
+        background: rgba(242, 240, 223, 0.055);
+        color: var(--muted);
+      }
+
+      .footnote {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1px;
-        margin-top: 70px;
+        margin-top: 64px;
         border: 1px solid var(--line);
         background: var(--line);
       }
 
-      .note {
-        min-height: 150px;
-        padding: 22px;
-        background: rgba(255, 255, 255, 0.76);
+      .item {
+        min-height: 128px;
+        padding: 20px;
+        background: rgba(8, 9, 8, 0.76);
       }
 
-      .note span {
+      .item span {
         display: block;
-        margin-bottom: 16px;
-        color: var(--red);
-        font-size: 0.78rem;
-        font-weight: 700;
-        text-transform: uppercase;
+        margin-bottom: 14px;
+        color: var(--amber);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.8rem;
       }
 
-      .note p {
+      .item p {
         margin: 0;
-        color: var(--soft);
-        font-size: 0.98rem;
-        line-height: 1.55;
+        color: var(--muted);
+        font-size: 0.96rem;
+        line-height: 1.5;
       }
 
       footer {
         display: flex;
         justify-content: space-between;
         gap: 18px;
-        padding: 24px 0 0;
+        padding-top: 24px;
         border-top: 1px solid var(--line);
-        color: var(--soft);
+        color: var(--muted);
         font-size: 0.86rem;
       }
 
-      @media (max-width: 860px) {
-        .wrap {
-          padding: 22px;
-        }
-
-        main {
-          padding-top: 58px;
-        }
-
+      @media (max-width: 900px) {
         .hero {
           grid-template-columns: 1fr;
           gap: 42px;
         }
 
         h1 {
-          font-size: 3.5rem;
+          font-size: 4rem;
         }
 
-        .notes {
+        .footnote {
           grid-template-columns: 1fr;
-          margin-top: 48px;
         }
       }
 
-      @media (max-width: 520px) {
+      @media (max-width: 560px) {
+        .wrap {
+          padding: 22px;
+        }
+
         header,
         footer {
           align-items: flex-start;
           flex-direction: column;
         }
 
+        main {
+          padding-top: 52px;
+        }
+
         h1 {
-          font-size: 2.7rem;
+          font-size: 3rem;
         }
 
         .intro {
-          font-size: 1.08rem;
-        }
-
-        pre {
-          font-size: 0.78rem;
+          font-size: 1.05rem;
         }
       }
     </style>
   </head>
   <body>
+    <canvas id="signal-field" aria-hidden="true"></canvas>
     <div class="wrap">
       <header>
         <div class="mark">SMP360 Labs</div>
@@ -275,46 +328,50 @@
       <main>
         <section class="hero" aria-labelledby="page-title">
           <div>
-            <p class="label">Public lab signal</p>
-            <h1 id="page-title">What is cooking in the lab.</h1>
+            <p class="label">/ public lab signal /</p>
+            <h1 id="page-title">What is cooking in the lab?</h1>
             <p class="intro">
-              SMP360 Labs is a home-lab workspace for agents, project context,
-              and early product experiments. This page will publish a small,
-              sanitized feed from the lab as the system comes online.
+              Agents, context systems, and product experiments are coming online
+              inside SMP360 Labs. The public feed will stay small, sanitized,
+              and deliberately weird.
             </p>
-            <div class="actions">
-              <a class="button" href="mailto:contact@smp360.com">Contact</a>
-              <a class="button secondary" href="https://github.com/b-1000R4/smp360-web">GitHub</a>
+            <p class="intro">
+              We are not working on a zombie virus. Probably.
+            </p>
+            <div class="links">
+              <a class="button" href="mailto:contact@smp360.com">contact the lab</a>
+              <a class="button secondary" href="https://github.com/b-1000R4/smp360-web">view repo</a>
             </div>
           </div>
 
-          <aside class="panel" aria-label="SMP360 Labs activity preview">
-            <div class="panel-head">
-              <span>agent feed</span>
-              <span class="signal">pending</span>
+          <aside class="aside" aria-label="SMP360 Labs public feed preview">
+            <div class="aside-head">
+              <span>agent-feed.json</span>
+              <span class="live">armed</span>
             </div>
             <pre>{
-  "source": "smp360-labs",
-  "feed": "agents",
-  "limit": 25,
-  "status": "pending",
-  "items": []
+  "<span class="green">source</span>": "smp360-labs",
+  "<span class="green">limit</span>": 25,
+  "<span class="green">mode</span>": "allowlist-only",
+  "<span class="green">status</span>": "pending",
+  "<span class="red">private_context</span>": false,
+  "<span class="green">items</span>": []
 }</pre>
           </aside>
         </section>
 
-        <section class="notes" aria-label="Phase one notes">
-          <div class="note">
-            <span>01</span>
-            <p>A static public site, deployed through GitHub Pages.</p>
+        <section class="footnote" aria-label="Phase one boundaries">
+          <div class="item">
+            <span>01 / signal</span>
+            <p>A static GitHub Pages site for public lab activity.</p>
           </div>
-          <div class="note">
-            <span>02</span>
-            <p>The future feed publishes only explicit, allowlisted agent data.</p>
+          <div class="item">
+            <span>02 / boundary</span>
+            <p>Only explicit, sanitized agent data leaves the lab.</p>
           </div>
-          <div class="note">
-            <span>03</span>
-            <p>Private context, credentials, and workspace files stay private.</p>
+          <div class="item">
+            <span>03 / containment</span>
+            <p>Context files, credentials, and infrastructure stay private.</p>
           </div>
         </section>
       </main>
@@ -324,5 +381,79 @@
         <span>Public page. Private lab.</span>
       </footer>
     </div>
+
+    <script>
+      const canvas = document.getElementById("signal-field");
+      const ctx = canvas.getContext("2d");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      let points = [];
+      let width = 0;
+      let height = 0;
+      let frame = 0;
+
+      function resize() {
+        const scale = Math.min(window.devicePixelRatio || 1, 2);
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = Math.floor(width * scale);
+        canvas.height = Math.floor(height * scale);
+        canvas.style.width = `${width}px`;
+        canvas.style.height = `${height}px`;
+        ctx.setTransform(scale, 0, 0, scale, 0, 0);
+        points = Array.from({ length: Math.max(24, Math.floor(width / 38)) }, () => ({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.22,
+          vy: (Math.random() - 0.5) * 0.22
+        }));
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, width, height);
+        ctx.lineWidth = 1;
+
+        for (const point of points) {
+          point.x += point.vx;
+          point.y += point.vy;
+
+          if (point.x < 0 || point.x > width) point.vx *= -1;
+          if (point.y < 0 || point.y > height) point.vy *= -1;
+        }
+
+        for (let i = 0; i < points.length; i += 1) {
+          for (let j = i + 1; j < points.length; j += 1) {
+            const a = points[i];
+            const b = points[j];
+            const dx = a.x - b.x;
+            const dy = a.y - b.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 150) {
+              const alpha = (1 - distance / 150) * 0.24;
+              ctx.strokeStyle = `rgba(40, 240, 167, ${alpha})`;
+              ctx.beginPath();
+              ctx.moveTo(a.x, a.y);
+              ctx.lineTo(b.x, b.y);
+              ctx.stroke();
+            }
+          }
+        }
+
+        for (const point of points) {
+          const pulse = 0.5 + Math.sin(frame / 36 + point.x) * 0.5;
+          ctx.fillStyle = `rgba(242, 184, 75, ${0.18 + pulse * 0.26})`;
+          ctx.fillRect(point.x - 1, point.y - 1, 3, 3);
+        }
+
+        frame += 1;
+        if (!reduceMotion.matches) {
+          requestAnimationFrame(draw);
+        }
+      }
+
+      resize();
+      draw();
+      window.addEventListener("resize", resize);
+    </script>
   </body>
 </html>
