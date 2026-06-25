@@ -6,14 +6,14 @@
     <title>SMP360 Labs</title>
     <meta
       name="description"
-      content="SMP360 Labs is a public signal from a private home lab where agents, project context, and experiments are organized."
+      content="SMP360 Labs is an AI agent laboratory for context systems, automation, and controlled public experiments."
     >
     <style>
       :root {
         color-scheme: dark;
         --void: #080908;
         --ink: #f2f0df;
-        --muted: #a7a28e;
+        --muted: #aaa48f;
         --line: rgba(242, 240, 223, 0.18);
         --green: #28f0a7;
         --amber: #f2b84b;
@@ -36,9 +36,9 @@
         font-family: Arial, Helvetica, sans-serif;
         color: var(--ink);
         background:
-          radial-gradient(circle at 78% 16%, rgba(255, 79, 94, 0.18), transparent 32%),
-          radial-gradient(circle at 14% 88%, rgba(40, 240, 167, 0.16), transparent 34%),
-          linear-gradient(180deg, #090b0a 0%, #080908 56%, #111009 100%);
+          radial-gradient(circle at 74% 14%, rgba(255, 79, 94, 0.2), transparent 34%),
+          radial-gradient(circle at 12% 86%, rgba(40, 240, 167, 0.17), transparent 36%),
+          linear-gradient(180deg, #090b0a 0%, #080908 58%, #111009 100%);
         letter-spacing: 0;
       }
 
@@ -51,7 +51,7 @@
           linear-gradient(rgba(242, 240, 223, 0.035) 1px, transparent 1px),
           linear-gradient(90deg, rgba(242, 240, 223, 0.03) 1px, transparent 1px);
         background-size: 42px 42px;
-        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.22));
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.25));
       }
 
       body::after {
@@ -88,10 +88,10 @@
       .wrap {
         position: relative;
         z-index: 1;
-        width: min(1180px, 100%);
+        width: min(2320px, 100%);
         min-height: 100vh;
         margin: 0 auto;
-        padding: 28px;
+        padding: 32px 40px;
       }
 
       header {
@@ -124,69 +124,95 @@
 
       main {
         display: grid;
-        min-height: calc(100vh - 104px);
-        align-items: center;
-        padding: 72px 0 46px;
+        min-height: calc(100vh - 116px);
+        align-content: center;
+        gap: 28px;
+        padding: 70px 0 46px;
       }
 
       .hero {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(340px, 0.78fr);
-        gap: 56px;
-        align-items: center;
+        width: 100%;
+        padding: 0 0 22px;
       }
 
       .label {
         margin: 0 0 18px;
         color: var(--green);
         font-family: "Courier New", Courier, monospace;
-        font-size: 0.88rem;
+        font-size: 0.9rem;
         text-transform: uppercase;
       }
 
       h1 {
         margin: 0;
-        max-width: 780px;
-        font-size: 5.8rem;
+        max-width: 1760px;
+        font-size: 7.4rem;
         line-height: 0.9;
         font-weight: 700;
       }
 
       .intro {
-        margin: 30px 0 0;
-        max-width: 650px;
+        margin: 34px 0 0;
+        max-width: 1120px;
         color: var(--muted);
-        font-size: 1.2rem;
-        line-height: 1.6;
+        font-size: 1.28rem;
+        line-height: 1.58;
       }
 
-      .callout {
+      .intro strong {
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .panel {
+        width: 100%;
         border: 1px solid var(--line);
         background: var(--panel);
-        box-shadow: 0 22px 80px rgba(0, 0, 0, 0.42);
+        box-shadow: 0 22px 80px rgba(0, 0, 0, 0.34);
         backdrop-filter: blur(10px);
       }
 
-      .callout-head {
-        display: flex;
+      .panel-inner {
+        display: grid;
+        grid-template-columns: minmax(150px, 0.22fr) minmax(0, 1fr) auto;
+        gap: 28px;
         align-items: center;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 16px 18px;
-        border-bottom: 1px solid var(--line);
+        min-height: 168px;
+        padding: 28px;
+      }
+
+      .panel-label {
+        color: var(--amber);
         font-family: "Courier New", Courier, monospace;
-        font-size: 0.82rem;
+        font-size: 0.9rem;
         text-transform: uppercase;
       }
 
-      .status {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--green);
+      .panel h2 {
+        margin: 0;
+        font-size: 2.6rem;
+        line-height: 1;
       }
 
-      .status::before {
+      .panel p {
+        margin: 14px 0 0;
+        max-width: 980px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.55;
+      }
+
+      .coming-soon {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--green);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.92rem;
+        text-transform: uppercase;
+      }
+
+      .coming-soon::before {
         content: "";
         width: 8px;
         height: 8px;
@@ -194,114 +220,10 @@
         box-shadow: 0 0 14px rgba(40, 240, 167, 0.9);
       }
 
-      .callout-body {
-        padding: 26px;
-      }
-
-      .callout h2 {
-        margin: 0;
-        font-size: 2rem;
-        line-height: 1.08;
-      }
-
-      .callout p {
-        margin: 18px 0 0;
-        color: var(--muted);
-        font-size: 1rem;
-        line-height: 1.6;
-      }
-
-      .mini-list {
-        display: grid;
-        gap: 14px;
-        margin: 26px 0 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .mini-list li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 18px;
-        padding: 12px 0;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-family: "Courier New", Courier, monospace;
-        font-size: 0.86rem;
-      }
-
-      .mini-list strong {
-        color: var(--ink);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.96rem;
-      }
-
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 14px;
-        margin-top: 36px;
-      }
-
-      .button {
-        display: inline-flex;
-        align-items: center;
-        min-height: 42px;
-        padding: 0 15px;
-        border: 1px solid rgba(40, 240, 167, 0.72);
-        background: rgba(40, 240, 167, 0.12);
-        color: var(--ink);
-        font-size: 0.94rem;
-        text-decoration: none;
-      }
-
-      .button.secondary {
-        border-color: var(--line);
-        background: rgba(242, 240, 223, 0.055);
-        color: var(--muted);
-      }
-
-      .sections {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1px;
-        margin-top: 64px;
-        border: 1px solid var(--line);
-        background: var(--line);
-      }
-
-      .section-card {
-        min-height: 128px;
-        padding: 20px;
-        background: rgba(8, 9, 8, 0.76);
-      }
-
-      .section-card span {
-        display: block;
-        margin-bottom: 14px;
-        color: var(--amber);
-        font-family: "Courier New", Courier, monospace;
-        font-size: 0.8rem;
-      }
-
-      .section-card h2 {
-        margin: 0 0 14px;
-        font-size: 1.2rem;
-        line-height: 1.2;
-      }
-
-      .section-card p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 0.96rem;
-        line-height: 1.5;
-      }
-
       footer {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
         align-items: center;
-        justify-content: space-between;
         gap: 18px;
         padding-top: 24px;
         border-top: 1px solid var(--line);
@@ -309,21 +231,39 @@
         font-size: 0.86rem;
       }
 
+      .copyright {
+        grid-column: 2;
+        text-align: center;
+      }
+
       .repo-link {
+        display: inline-flex;
+        grid-column: 3;
+        align-items: center;
+        justify-self: end;
+        gap: 10px;
+        min-height: 40px;
+        color: var(--ink);
+        font-size: 0.9rem;
+        text-decoration: none;
+      }
+
+      .repo-icon {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         width: 40px;
         height: 40px;
         border: 1px solid var(--line);
-        color: var(--ink);
-        text-decoration: none;
       }
 
-      .repo-link:hover,
-      .repo-link:focus-visible {
+      .repo-link:hover .repo-icon,
+      .repo-link:focus-visible .repo-icon {
         border-color: rgba(40, 240, 167, 0.8);
         box-shadow: 0 0 18px rgba(40, 240, 167, 0.22);
+      }
+
+      .repo-link:focus-visible {
         outline: none;
       }
 
@@ -333,34 +273,49 @@
         fill: currentColor;
       }
 
-      @media (max-width: 900px) {
-        .hero {
-          grid-template-columns: 1fr;
-          gap: 42px;
+      @media (min-width: 1800px) {
+        .wrap {
+          padding: 42px 72px;
         }
 
         h1 {
-          font-size: 4rem;
+          font-size: 9rem;
         }
 
-        .sections {
-          grid-template-columns: 1fr;
+        .intro {
+          font-size: 1.42rem;
         }
       }
 
-      @media (max-width: 560px) {
+      @media (max-width: 980px) {
+        .wrap {
+          padding: 26px;
+        }
+
+        main {
+          align-content: start;
+          padding-top: 58px;
+        }
+
+        h1 {
+          font-size: 4.2rem;
+        }
+
+        .panel-inner {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+      }
+
+      @media (max-width: 620px) {
         .wrap {
           padding: 22px;
         }
 
-        header,
-        footer {
+        header {
           align-items: flex-start;
           flex-direction: column;
-        }
-
-        main {
-          padding-top: 52px;
+          padding-bottom: 16px;
         }
 
         h1 {
@@ -368,7 +323,27 @@
         }
 
         .intro {
-          font-size: 1.05rem;
+          font-size: 1.04rem;
+        }
+
+        .panel-inner {
+          padding: 22px;
+        }
+
+        .panel h2 {
+          font-size: 2rem;
+        }
+
+        footer {
+          grid-template-columns: 1fr;
+          justify-items: center;
+          text-align: center;
+        }
+
+        .copyright,
+        .repo-link {
+          grid-column: auto;
+          justify-self: center;
         }
       }
     </style>
@@ -383,70 +358,56 @@
 
       <main>
         <section class="hero" aria-labelledby="page-title">
-          <div>
-            <p class="label">/ public lab signal /</p>
-            <h1 id="page-title">A home lab for agent systems.</h1>
-            <p class="intro">
-              SMP360 Labs is where context, automation, and product experiments
-              get organized before they become public projects.
-            </p>
-            <p class="intro">
-              We are not working on a zombie virus. Probably.
-            </p>
-            <div class="links">
-              <a class="button" href="mailto:contact@smp360.com">contact the lab</a>
-            </div>
-          </div>
-
-          <aside class="callout" aria-label="SMP360 Labs summary">
-            <div class="callout-head">
-              <span>lab status</span>
-              <span class="status">online</span>
-            </div>
-            <div class="callout-body">
-              <h2>Small systems. Sharp boundaries.</h2>
-              <p>
-                The lab is focused on practical agent workflows, clean project
-                context, and disciplined public release paths.
-              </p>
-              <ul class="mini-list">
-                <li><strong>context</strong><span>organized</span></li>
-                <li><strong>agents</strong><span>in training</span></li>
-                <li><strong>public work</strong><span>selective</span></li>
-              </ul>
-            </div>
-          </aside>
+          <p class="label">/ private systems / public signal /</p>
+          <h1 id="page-title">SMP360 Labs, an AI agent laboratory.</h1>
+          <p class="intro">
+            At <strong>SMP360 Labs</strong>, our agents are trained against a
+            dystopian vision of software work: scattered context, brittle
+            memory, and automation without judgment.
+          </p>
+          <p class="intro">
+            That is why <strong>B-1000</strong> is revolutionary in the same
+            dystopian vision: an organizing system for agent identity, project
+            context, and controlled release paths.
+          </p>
         </section>
 
-        <section class="sections" aria-label="SMP360 Labs focus areas">
-          <div class="section-card">
-            <span>01 / systems</span>
-            <h2>Agent context</h2>
-            <p>Building durable ways for agents to understand projects, roles, and current work.</p>
+        <section class="panel" aria-labelledby="lab-feed-title">
+          <div class="panel-inner">
+            <div class="panel-label">lab feed</div>
+            <div>
+              <h2 id="lab-feed-title">Coming soon</h2>
+              <p>Public lab activity will appear here only after it is intentionally prepared for release.</p>
+            </div>
+            <div class="coming-soon" aria-hidden="true">pending</div>
           </div>
-          <div class="section-card">
-            <span>02 / products</span>
-            <h2>Early builds</h2>
-            <p>Turning useful lab experiments into focused public projects when they are ready.</p>
-          </div>
-          <div class="section-card">
-            <span>03 / rules</span>
-            <h2>Containment</h2>
-            <p>Private context, credentials, and infrastructure stay out of the public surface.</p>
+        </section>
+
+        <section class="panel" aria-labelledby="lab-funding-title">
+          <div class="panel-inner">
+            <div class="panel-label">lab funding</div>
+            <div>
+              <h2 id="lab-funding-title">Coming soon</h2>
+              <p>Funding notes, support paths, or project sponsorship details will be posted when ready.</p>
+            </div>
+            <div class="coming-soon" aria-hidden="true">pending</div>
           </div>
         </section>
       </main>
 
       <footer>
-        <span>Copyright 2026 SMP360 Labs. All rights reserved.</span>
+        <span class="copyright">Copyright 2026 SMP360 Labs. All rights reserved.</span>
         <a
           class="repo-link"
           href="https://github.com/b-1000R4/smp360-web"
           aria-label="SMP360 Web GitHub repository"
         >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.41 7.86 10.94.58.11.79-.25.79-.56v-2.13c-3.2.7-3.87-1.36-3.87-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.17 1.18A10.96 10.96 0 0 1 12 6.06c.98 0 1.96.13 2.88.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.27 5.68.42.36.78 1.07.78 2.16v3.13c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-          </svg>
+          <span>GitHub repo</span>
+          <span class="repo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.41 7.86 10.94.58.11.79-.25.79-.56v-2.13c-3.2.7-3.87-1.36-3.87-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.17 1.18A10.96 10.96 0 0 1 12 6.06c.98 0 1.96.13 2.88.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.27 5.68.42.36.78 1.07.78 2.16v3.13c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+            </svg>
+          </span>
         </a>
       </footer>
     </div>
