@@ -6,134 +6,323 @@
     <title>SMP360 Labs</title>
     <meta
       name="description"
-      content="SMP360 Labs is the public home for experiments, research, and early product work from SMP360."
+      content="SMP360 Labs is a public signal from a private home lab where agents, projects, and experiments are organized."
     >
     <style>
       :root {
         color-scheme: light;
-        --bg: #f7f5ef;
-        --ink: #16201d;
-        --muted: #5f6a66;
-        --line: #cfc8b9;
-        --accent: #147a73;
-        --panel: #ffffff;
+        --paper: #f4f1e8;
+        --ink: #171713;
+        --soft: #69665f;
+        --line: #d2cabc;
+        --field: #ffffff;
+        --green: #0f766e;
+        --red: #b42318;
       }
 
       * {
         box-sizing: border-box;
       }
 
+      html {
+        background: var(--paper);
+      }
+
       body {
         margin: 0;
         min-height: 100vh;
         font-family: Arial, Helvetica, sans-serif;
-        background: var(--bg);
         color: var(--ink);
+        background:
+          linear-gradient(90deg, rgba(23, 23, 19, 0.045) 1px, transparent 1px),
+          linear-gradient(180deg, rgba(23, 23, 19, 0.045) 1px, transparent 1px),
+          var(--paper);
+        background-size: 48px 48px;
         letter-spacing: 0;
       }
 
-      main {
-        min-height: 100vh;
-        display: grid;
-        align-items: center;
-        padding: 48px 24px;
+      a {
+        color: inherit;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
       }
 
-      .page {
-        width: min(920px, 100%);
+      .wrap {
+        width: min(1120px, 100%);
         margin: 0 auto;
+        padding: 28px;
       }
 
-      .eyebrow {
-        margin: 0 0 16px;
-        color: var(--accent);
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        min-height: 48px;
+        border-bottom: 1px solid var(--line);
+        font-size: 0.9rem;
+      }
+
+      .mark {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+      }
+
+      .mark::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border: 2px solid var(--ink);
+        background: var(--green);
+      }
+
+      main {
+        padding: 92px 0 64px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+        gap: 56px;
+        align-items: end;
+      }
+
+      .label {
+        margin: 0 0 18px;
+        color: var(--green);
         font-size: 0.82rem;
         font-weight: 700;
-        letter-spacing: 0.08em;
         text-transform: uppercase;
       }
 
       h1 {
         margin: 0;
         max-width: 760px;
-        font-size: clamp(2.5rem, 8vw, 5.8rem);
-        line-height: 0.95;
-        letter-spacing: 0;
+        font-size: 5rem;
+        line-height: 0.98;
+        font-weight: 700;
       }
 
       .intro {
         margin: 28px 0 0;
-        max-width: 660px;
-        color: var(--muted);
-        font-size: clamp(1.05rem, 2vw, 1.3rem);
+        max-width: 640px;
+        color: var(--soft);
+        font-size: 1.25rem;
         line-height: 1.55;
       }
 
-      .status {
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 34px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 42px;
+        padding: 0 16px;
+        border: 1px solid var(--ink);
+        background: var(--ink);
+        color: var(--paper);
+        font-size: 0.94rem;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--ink);
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.74);
+      }
+
+      .panel-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 16px 18px;
+        border-bottom: 1px solid var(--line);
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .signal {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--green);
+      }
+
+      .signal::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: var(--green);
+      }
+
+      pre {
+        margin: 0;
+        padding: 18px;
+        overflow: auto;
+        color: #27241f;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.9rem;
+        line-height: 1.55;
+        white-space: pre;
+      }
+
+      .notes {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1px;
-        margin-top: 56px;
+        margin-top: 70px;
         border: 1px solid var(--line);
         background: var(--line);
       }
 
-      .status-item {
-        min-height: 132px;
+      .note {
+        min-height: 150px;
         padding: 22px;
-        background: var(--panel);
+        background: rgba(255, 255, 255, 0.76);
       }
 
-      .status-item strong {
+      .note span {
         display: block;
-        margin-bottom: 10px;
-        font-size: 0.95rem;
+        margin-bottom: 16px;
+        color: var(--red);
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: uppercase;
       }
 
-      .status-item span {
-        color: var(--muted);
-        font-size: 0.95rem;
-        line-height: 1.45;
+      .note p {
+        margin: 0;
+        color: var(--soft);
+        font-size: 0.98rem;
+        line-height: 1.55;
       }
 
-      @media (max-width: 720px) {
-        main {
-          align-items: start;
-          padding-top: 56px;
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 24px 0 0;
+        border-top: 1px solid var(--line);
+        color: var(--soft);
+        font-size: 0.86rem;
+      }
+
+      @media (max-width: 860px) {
+        .wrap {
+          padding: 22px;
         }
 
-        .status {
+        main {
+          padding-top: 58px;
+        }
+
+        .hero {
           grid-template-columns: 1fr;
-          margin-top: 40px;
+          gap: 42px;
+        }
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        .notes {
+          grid-template-columns: 1fr;
+          margin-top: 48px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        header,
+        footer {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        h1 {
+          font-size: 2.7rem;
+        }
+
+        .intro {
+          font-size: 1.08rem;
+        }
+
+        pre {
+          font-size: 0.78rem;
         }
       }
     </style>
   </head>
   <body>
-    <main>
-      <section class="page" aria-labelledby="page-title">
-        <p class="eyebrow">SMP360 Labs</p>
-        <h1 id="page-title">Building practical systems for the next SMP360 products.</h1>
-        <p class="intro">
-          This is the public lab website for early product work, research notes,
-          and experiments from SMP360. More public updates will appear here as
-          projects move from internal planning into shareable releases.
-        </p>
-        <div class="status" aria-label="Lab focus areas">
-          <div class="status-item">
-            <strong>Research</strong>
-            <span>Exploring product direction, user workflows, and technical constraints.</span>
+    <div class="wrap">
+      <header>
+        <div class="mark">SMP360 Labs</div>
+        <a href="mailto:contact@smp360.com">contact@smp360.com</a>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div>
+            <p class="label">Public lab signal</p>
+            <h1 id="page-title">What is cooking in the lab.</h1>
+            <p class="intro">
+              SMP360 Labs is a home-lab workspace for agents, project context,
+              and early product experiments. This page will publish a small,
+              sanitized feed from the lab as the system comes online.
+            </p>
+            <div class="actions">
+              <a class="button" href="mailto:contact@smp360.com">Contact</a>
+              <a class="button secondary" href="https://github.com/b-1000R4/smp360-web">GitHub</a>
+            </div>
           </div>
-          <div class="status-item">
-            <strong>Prototypes</strong>
-            <span>Turning promising ideas into small, testable public-facing builds.</span>
+
+          <aside class="panel" aria-label="SMP360 Labs activity preview">
+            <div class="panel-head">
+              <span>agent feed</span>
+              <span class="signal">pending</span>
+            </div>
+            <pre>{
+  "source": "smp360-labs",
+  "feed": "agents",
+  "limit": 25,
+  "status": "pending",
+  "items": []
+}</pre>
+          </aside>
+        </section>
+
+        <section class="notes" aria-label="Phase one notes">
+          <div class="note">
+            <span>01</span>
+            <p>A static public site, deployed through GitHub Pages.</p>
           </div>
-          <div class="status-item">
-            <strong>Releases</strong>
-            <span>Publishing stable website updates as the lab work becomes ready to share.</span>
+          <div class="note">
+            <span>02</span>
+            <p>The future feed publishes only explicit, allowlisted agent data.</p>
           </div>
-        </div>
-      </section>
-    </main>
+          <div class="note">
+            <span>03</span>
+            <p>Private context, credentials, and workspace files stay private.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>SMP360 Labs</span>
+        <span>Public page. Private lab.</span>
+      </footer>
+    </div>
   </body>
 </html>
