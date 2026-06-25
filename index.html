@@ -133,7 +133,7 @@
         display: grid;
         grid-template-columns: minmax(0, 1fr) minmax(340px, 0.78fr);
         gap: 56px;
-        align-items: end;
+        align-items: center;
       }
 
       .label {
@@ -160,14 +160,14 @@
         line-height: 1.6;
       }
 
-      .aside {
+      .callout {
         border: 1px solid var(--line);
         background: var(--panel);
         box-shadow: 0 22px 80px rgba(0, 0, 0, 0.42);
         backdrop-filter: blur(10px);
       }
 
-      .aside-head {
+      .callout-head {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -179,14 +179,14 @@
         text-transform: uppercase;
       }
 
-      .live {
+      .status {
         display: inline-flex;
         align-items: center;
         gap: 8px;
         color: var(--green);
       }
 
-      .live::before {
+      .status::before {
         content: "";
         width: 8px;
         height: 8px;
@@ -194,22 +194,47 @@
         box-shadow: 0 0 14px rgba(40, 240, 167, 0.9);
       }
 
-      pre {
+      .callout-body {
+        padding: 26px;
+      }
+
+      .callout h2 {
         margin: 0;
-        padding: 18px;
-        overflow: auto;
-        color: #e9e3c7;
+        font-size: 2rem;
+        line-height: 1.08;
+      }
+
+      .callout p {
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .mini-list {
+        display: grid;
+        gap: 14px;
+        margin: 26px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .mini-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 12px 0;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
         font-family: "Courier New", Courier, monospace;
         font-size: 0.86rem;
-        line-height: 1.58;
       }
 
-      .red {
-        color: var(--red);
-      }
-
-      .green {
-        color: var(--green);
+      .mini-list strong {
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.96rem;
       }
 
       .links {
@@ -237,7 +262,7 @@
         color: var(--muted);
       }
 
-      .footnote {
+      .sections {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1px;
@@ -246,13 +271,13 @@
         background: var(--line);
       }
 
-      .item {
+      .section-card {
         min-height: 128px;
         padding: 20px;
         background: rgba(8, 9, 8, 0.76);
       }
 
-      .item span {
+      .section-card span {
         display: block;
         margin-bottom: 14px;
         color: var(--amber);
@@ -260,7 +285,13 @@
         font-size: 0.8rem;
       }
 
-      .item p {
+      .section-card h2 {
+        margin: 0 0 14px;
+        font-size: 1.2rem;
+        line-height: 1.2;
+      }
+
+      .section-card p {
         margin: 0;
         color: var(--muted);
         font-size: 0.96rem;
@@ -269,12 +300,37 @@
 
       footer {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         gap: 18px;
         padding-top: 24px;
         border-top: 1px solid var(--line);
         color: var(--muted);
         font-size: 0.86rem;
+      }
+
+      .repo-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .repo-link:hover,
+      .repo-link:focus-visible {
+        border-color: rgba(40, 240, 167, 0.8);
+        box-shadow: 0 0 18px rgba(40, 240, 167, 0.22);
+        outline: none;
+      }
+
+      .repo-link svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
       }
 
       @media (max-width: 900px) {
@@ -287,7 +343,7 @@
           font-size: 4rem;
         }
 
-        .footnote {
+        .sections {
           grid-template-columns: 1fr;
         }
       }
@@ -329,56 +385,69 @@
         <section class="hero" aria-labelledby="page-title">
           <div>
             <p class="label">/ public lab signal /</p>
-            <h1 id="page-title">What is cooking in the lab?</h1>
+            <h1 id="page-title">A home lab for agent systems.</h1>
             <p class="intro">
-              Agents, context systems, and product experiments are coming online
-              inside SMP360 Labs. The public feed will stay small, sanitized,
-              and deliberately weird.
+              SMP360 Labs is where context, automation, and product experiments
+              get organized before they become public projects.
             </p>
             <p class="intro">
               We are not working on a zombie virus. Probably.
             </p>
             <div class="links">
               <a class="button" href="mailto:contact@smp360.com">contact the lab</a>
-              <a class="button secondary" href="https://github.com/b-1000R4/smp360-web">view repo</a>
             </div>
           </div>
 
-          <aside class="aside" aria-label="SMP360 Labs public feed preview">
-            <div class="aside-head">
-              <span>agent-feed.json</span>
-              <span class="live">armed</span>
+          <aside class="callout" aria-label="SMP360 Labs summary">
+            <div class="callout-head">
+              <span>lab status</span>
+              <span class="status">online</span>
             </div>
-            <pre>{
-  "<span class="green">source</span>": "smp360-labs",
-  "<span class="green">limit</span>": 25,
-  "<span class="green">mode</span>": "allowlist-only",
-  "<span class="green">status</span>": "pending",
-  "<span class="red">private_context</span>": false,
-  "<span class="green">items</span>": []
-}</pre>
+            <div class="callout-body">
+              <h2>Small systems. Sharp boundaries.</h2>
+              <p>
+                The lab is focused on practical agent workflows, clean project
+                context, and disciplined public release paths.
+              </p>
+              <ul class="mini-list">
+                <li><strong>context</strong><span>organized</span></li>
+                <li><strong>agents</strong><span>in training</span></li>
+                <li><strong>public work</strong><span>selective</span></li>
+              </ul>
+            </div>
           </aside>
         </section>
 
-        <section class="footnote" aria-label="Phase one boundaries">
-          <div class="item">
-            <span>01 / signal</span>
-            <p>A static GitHub Pages site for public lab activity.</p>
+        <section class="sections" aria-label="SMP360 Labs focus areas">
+          <div class="section-card">
+            <span>01 / systems</span>
+            <h2>Agent context</h2>
+            <p>Building durable ways for agents to understand projects, roles, and current work.</p>
           </div>
-          <div class="item">
-            <span>02 / boundary</span>
-            <p>Only explicit, sanitized agent data leaves the lab.</p>
+          <div class="section-card">
+            <span>02 / products</span>
+            <h2>Early builds</h2>
+            <p>Turning useful lab experiments into focused public projects when they are ready.</p>
           </div>
-          <div class="item">
-            <span>03 / containment</span>
-            <p>Context files, credentials, and infrastructure stay private.</p>
+          <div class="section-card">
+            <span>03 / rules</span>
+            <h2>Containment</h2>
+            <p>Private context, credentials, and infrastructure stay out of the public surface.</p>
           </div>
         </section>
       </main>
 
       <footer>
-        <span>SMP360 Labs</span>
-        <span>Public page. Private lab.</span>
+        <span>Copyright 2026 SMP360 Labs. All rights reserved.</span>
+        <a
+          class="repo-link"
+          href="https://github.com/b-1000R4/smp360-web"
+          aria-label="SMP360 Web GitHub repository"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.41 7.86 10.94.58.11.79-.25.79-.56v-2.13c-3.2.7-3.87-1.36-3.87-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.17 1.18A10.96 10.96 0 0 1 12 6.06c.98 0 1.96.13 2.88.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.27 5.68.42.36.78 1.07.78 2.16v3.13c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+          </svg>
+        </a>
       </footer>
     </div>
 
