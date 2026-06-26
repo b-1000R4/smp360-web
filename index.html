@@ -736,7 +736,8 @@
                   >
                     <img
                       class="funding-logo"
-                      src="https://api.starch.one/img/team/F7931A_icon"
+                      src="assets/starch/team-F7931A.png"
+                      data-company-icon
                       alt="quiet root co. company icon"
                     >
                   </button>
@@ -763,7 +764,8 @@
                     >
                       <img
                         class="miner-icon"
-                        src="https://api.starch.one/img/miner/ELONSPUD_icon"
+                        src="assets/starch/miner-ELONSPUD.gif"
+                        data-miner-id="ELONSPUD"
                         alt="elonspud miner icon"
                       >
                     </button>
@@ -788,7 +790,8 @@
                     >
                       <img
                         class="miner-icon"
-                        src="https://api.starch.one/img/miner/ELONSPUD_icon"
+                        src="assets/starch/miner-ELONSPUD.gif"
+                        data-miner-id="ELONSPUD"
                         alt="elonspud miner icon"
                       >
                     </button>
@@ -813,7 +816,8 @@
                     >
                       <img
                         class="miner-icon"
-                        src="https://api.starch.one/img/miner/FNX1ADSU_icon"
+                        src="assets/starch/miner-FNX1ADSU.gif"
+                        data-miner-id="FNX1ADSU"
                         alt="fnx1adsu miner icon"
                       >
                     </button>
@@ -836,7 +840,8 @@
             <div class="dashboard-hero">
               <img
                 class="dashboard-logo"
-                src="https://api.starch.one/img/team/F7931A_icon"
+                src="assets/starch/team-F7931A.png"
+                data-company-icon
                 alt="quiet root co. company icon"
               >
               <div>
@@ -880,7 +885,7 @@
 
             <div class="member-grid" id="quiet-root-members" aria-label="quiet root board member stats">
               <div class="member-card">
-                <img src="https://api.starch.one/img/miner/ELONSPUD_icon" alt="elonspud miner icon">
+                <img src="assets/starch/miner-ELONSPUD.gif" data-miner-id="ELONSPUD" alt="elonspud miner icon">
                 <div>
                   <h3>elonspud</h3>
                   <dl>
@@ -896,7 +901,7 @@
                 </div>
               </div>
               <div class="member-card">
-                <img src="https://api.starch.one/img/miner/FNX1ADSU_icon" alt="fnx1adsu miner icon">
+                <img src="assets/starch/miner-FNX1ADSU.gif" data-miner-id="FNX1ADSU" alt="fnx1adsu miner icon">
                 <div>
                   <h3>fnx1adsu</h3>
                   <dl>
@@ -951,6 +956,12 @@
       const quietRootMembers = document.getElementById("quiet-root-members");
       const starchApi = "https://api.starch.one";
       const companyId = "F7931A";
+      const assetManifestPromise = fetch("assets/starch/manifest.json", { cache: "no-store" })
+        .then((response) => {
+          if (!response.ok) return null;
+          return response.json();
+        })
+        .catch(() => null);
       let points = [];
       let width = 0;
       let height = 0;
@@ -987,6 +998,27 @@
         });
       }
 
+      function getMinerIcon(id, manifest) {
+        return manifest?.miners?.[id]?.icon || `${starchApi}/img/miner/${encodeURIComponent(id)}_icon`;
+      }
+
+      async function applyCachedAssets() {
+        const manifest = await assetManifestPromise;
+        if (!manifest) return;
+
+        if (manifest.company?.icon) {
+          document.querySelectorAll("[data-company-icon]").forEach((image) => {
+            image.src = manifest.company.icon;
+          });
+        }
+
+        document.querySelectorAll("[data-miner-id]").forEach((image) => {
+          const minerId = image.getAttribute("data-miner-id");
+          const icon = manifest.miners?.[minerId]?.icon;
+          if (icon) image.src = icon;
+        });
+      }
+
       function getLatestBlock(blocks) {
         const blockList = Array.isArray(blocks) ? blocks : blocks?.blocks;
         if (!Array.isArray(blockList) || blockList.length === 0) return "pending";
@@ -1006,7 +1038,7 @@
         list.append(term, description);
       }
 
-      function renderMemberCards(members) {
+      function renderMemberCards(members, manifest) {
         if (!members.length) return;
 
         quietRootMembers.replaceChildren(...members.map((member) => {
@@ -1018,7 +1050,8 @@
           const stats = document.createElement("dl");
 
           card.className = "member-card";
-          image.src = `${starchApi}/img/miner/${encodeURIComponent(member.id)}_icon`;
+          image.src = getMinerIcon(member.id, manifest);
+          image.setAttribute("data-miner-id", member.id);
           image.alt = `${name} miner icon`;
           title.textContent = name;
           addStat(stats, "weekly", blockLabel(member.weekly));
@@ -1033,7 +1066,8 @@
 
       async function loadQuietRootData() {
         try {
-          const [account, config, roster] = await Promise.all([
+          const [assetManifest, account, config, roster] = await Promise.all([
+            assetManifestPromise,
             getJson(`/teams/${companyId}/account`),
             getJson(`/teams/${companyId}/config`),
             getJson(`/teams/${companyId}/members`)
@@ -1066,7 +1100,7 @@
             };
           }));
 
-          renderMemberCards(members);
+          renderMemberCards(members, assetManifest);
         } catch (error) {
           console.warn("quiet root live data unavailable", error);
         }
@@ -1134,6 +1168,7 @@
 
       resize();
       draw();
+      applyCachedAssets();
       loadQuietRootData();
       window.addEventListener("resize", resize);
     </script>

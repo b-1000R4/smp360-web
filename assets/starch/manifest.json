@@ -1,0 +1,31 @@
+{
+  "company": {
+    "id": "F7931A",
+    "name": "Quiet Root Co.",
+    "description": "Dig potato. Find block. Touch grass. | Pi + Docker + Ubuntu + one good dog. | Mining, learning, tinkering, looking for colors. | If it survives a reboot, it is infrastructure. | Still rooting.",
+    "balance": 2037516455,
+    "signatureId": "1e28d486438a90014e42e1fc16cefd9f4f47f44ad097e7e1215d9b7a9a80f91f",
+    "icon": "assets/starch/team-F7931A.png",
+    "contentType": "image/png",
+    "bytes": 1173
+  },
+  "members": [
+    "FNX1ADSU",
+    "ELONSPUD"
+  ],
+  "miners": {
+    "FNX1ADSU": {
+      "id": "FNX1ADSU",
+      "icon": "assets/starch/miner-FNX1ADSU.gif",
+      "contentType": "image/gif",
+      "bytes": 12958
+    },
+    "ELONSPUD": {
+      "id": "ELONSPUD",
+      "icon": "assets/starch/miner-ELONSPUD.gif",
+      "contentType": "image/gif",
+      "bytes": 11499
+    }
+  },
+  "updatedAt": "2026-06-26T01:44:05.486Z"
+}
