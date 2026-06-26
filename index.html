@@ -472,7 +472,7 @@
 
       .member-grid {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: 1px;
         margin-top: 28px;
         border: 1px solid var(--line);
@@ -842,7 +842,7 @@
               <div>
                 <p class="label">/ quiet root dashboard /</p>
                 <h2 id="quiet-root-title">quiet root co.</h2>
-                <p>
+                <p id="quiet-root-summary">
                   a mysterious starch mining concern underwriting smp360 labs
                   research. company profile F7931A. current board seats held by
                   elonspud and fnx1adsu.
@@ -862,17 +862,17 @@
               </div>
               <div class="dashboard-card">
                 <span>current balance</span>
-                <strong>2,037,516,455</strong>
+                <strong id="quiet-root-balance">2,037,516,455</strong>
                 <p>reported by the public starch company account endpoint</p>
               </div>
               <div class="dashboard-card">
                 <span>configuration</span>
                 <strong>signed</strong>
-                <p>signature id 1e28d486...9a80f91f</p>
+                <p id="quiet-root-config">signature id 1e28d486...9a80f91f</p>
               </div>
             </div>
 
-            <div class="member-grid" aria-label="quiet root board member stats">
+            <div class="member-grid" id="quiet-root-members" aria-label="quiet root board member stats">
               <div class="member-card">
                 <img src="https://api.starch.one/img/miner/ELONSPUD_icon" alt="elonspud miner icon">
                 <div>
@@ -939,6 +939,12 @@
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
       const fundingDashboard = document.getElementById("quiet-root-dashboard");
       const fundingTriggers = document.querySelectorAll("[data-open-funding]");
+      const quietRootSummary = document.getElementById("quiet-root-summary");
+      const quietRootBalance = document.getElementById("quiet-root-balance");
+      const quietRootConfig = document.getElementById("quiet-root-config");
+      const quietRootMembers = document.getElementById("quiet-root-members");
+      const starchApi = "https://api.starch.one";
+      const companyId = "F7931A";
       let points = [];
       let width = 0;
       let height = 0;
@@ -956,6 +962,109 @@
           });
         });
       });
+
+      function formatNumber(value) {
+        return Number(value || 0).toLocaleString("en-US");
+      }
+
+      function shortHash(value) {
+        if (!value || value.length < 18) return value || "pending";
+        return `${value.slice(0, 8)}...${value.slice(-8)}`;
+      }
+
+      function getJson(path) {
+        return fetch(`${starchApi}${path}`, { cache: "no-store" }).then((response) => {
+          if (!response.ok) {
+            throw new Error(`starch api ${response.status}`);
+          }
+          return response.json();
+        });
+      }
+
+      function getLatestBlock(blocks) {
+        const blockList = Array.isArray(blocks) ? blocks : blocks?.blocks;
+        if (!Array.isArray(blockList) || blockList.length === 0) return "pending";
+        const block = blockList.find((item) => item && item.block_id) || blockList[0];
+        return block.block_id || block.id || "pending";
+      }
+
+      function blockLabel(value) {
+        return `${formatNumber(value)} ${Number(value) === 1 ? "block" : "blocks"}`;
+      }
+
+      function addStat(list, label, value) {
+        const term = document.createElement("dt");
+        const description = document.createElement("dd");
+        term.textContent = label;
+        description.textContent = value;
+        list.append(term, description);
+      }
+
+      function renderMemberCards(members) {
+        if (!members.length) return;
+
+        quietRootMembers.replaceChildren(...members.map((member) => {
+          const card = document.createElement("div");
+          const name = member.id.toLowerCase();
+          const image = document.createElement("img");
+          const body = document.createElement("div");
+          const title = document.createElement("h3");
+          const stats = document.createElement("dl");
+
+          card.className = "member-card";
+          image.src = `${starchApi}/img/miner/${encodeURIComponent(member.id)}_icon`;
+          image.alt = `${name} miner icon`;
+          title.textContent = name;
+          addStat(stats, "weekly", blockLabel(member.weekly));
+          addStat(stats, "total", blockLabel(member.total));
+          addStat(stats, "last", String(member.lastBlock));
+          addStat(stats, "pool", member.pool);
+          body.append(title, stats);
+          card.append(image, body);
+          return card;
+        }));
+      }
+
+      async function loadQuietRootData() {
+        try {
+          const [account, config, roster] = await Promise.all([
+            getJson(`/teams/${companyId}/account`),
+            getJson(`/teams/${companyId}/config`),
+            getJson(`/teams/${companyId}/members`)
+          ]);
+          const memberIds = Array.isArray(roster.members) ? roster.members : [];
+          const names = memberIds.map((id) => id.toLowerCase());
+
+          quietRootBalance.textContent = formatNumber(account.balance);
+          quietRootConfig.textContent = `signature id ${shortHash(config.signature_id)}`;
+          quietRootSummary.textContent = [
+            "a mysterious starch mining concern underwriting smp360 labs research.",
+            `company profile ${companyId}.`,
+            names.length ? `current board seats held by ${names.join(", ")}.` : "board seats are currently quiet."
+          ].join(" ");
+
+          const members = await Promise.all(memberIds.map(async (id) => {
+            const safeId = encodeURIComponent(id);
+            const [minerResult, blocksResult] = await Promise.allSettled([
+              getJson(`/miners/${safeId}`),
+              getJson(`/miners/${safeId}/blocks`)
+            ]);
+            const miner = minerResult.status === "fulfilled" ? minerResult.value : {};
+            const blocks = blocksResult.status === "fulfilled" ? blocksResult.value : [];
+            return {
+              id,
+              weekly: miner.leaderboard?.week?.blocks ?? 0,
+              total: miner.blocks ?? 0,
+              lastBlock: getLatestBlock(blocks),
+              pool: miner.pool || "unknown"
+            };
+          }));
+
+          renderMemberCards(members);
+        } catch (error) {
+          console.warn("quiet root live data unavailable", error);
+        }
+      }
 
       function resize() {
         const scale = Math.min(window.devicePixelRatio || 1, 2);
@@ -1019,6 +1128,7 @@
 
       resize();
       draw();
+      loadQuietRootData();
       window.addEventListener("resize", resize);
     </script>
   </body>
