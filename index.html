@@ -1019,6 +1019,26 @@
         });
       }
 
+      function applyExternalLinkTargets() {
+        document.querySelectorAll("a[href]").forEach((link) => {
+          const href = link.getAttribute("href") || "";
+          if (!href || href.startsWith("mailto:") || href.startsWith("#")) return;
+
+          try {
+            const url = new URL(href, window.location.href);
+            if (
+              (url.protocol === "http:" || url.protocol === "https:") &&
+              url.origin !== window.location.origin
+            ) {
+              link.target = "_blank";
+              link.rel = "noopener noreferrer";
+            }
+          } catch {
+            // ignore malformed links
+          }
+        });
+      }
+
       function getLatestBlock(blocks) {
         const blockList = Array.isArray(blocks) ? blocks : blocks?.blocks;
         if (!Array.isArray(blockList) || blockList.length === 0) return "pending";
@@ -1169,6 +1189,7 @@
       resize();
       draw();
       applyCachedAssets();
+      applyExternalLinkTargets();
       loadQuietRootData();
       window.addEventListener("resize", resize);
     </script>
