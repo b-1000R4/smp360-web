@@ -96,7 +96,7 @@ for (const id of memberIds) {
 const manifest = {
   company: {
     id: companyId,
-    name: profile.name || "quiet root co.",
+    name: profile.name || "company",
     description: profile.description || "",
     balance: account.balance ?? 0,
     signatureId: config.signature_id || "",

@@ -738,20 +738,19 @@
                       class="funding-logo"
                       src="assets/starch/team-F7931A.png"
                       data-company-icon
-                      alt="quiet root co. company icon"
+                      alt="company icon"
                     >
                   </button>
                   <div>
-                    <h2 id="lab-funding-title">funded by quiet root co.</h2>
+                    <h2 id="lab-funding-title">funded by <span id="funding-company-name">company</span></h2>
                     <p>
                       all smp360 labs research is funded by our beneficiary,
-                      the mysterious quiet root co., operating under company
-                      profile F7931A.
+                      the mysterious company profile <span id="funding-company-id">F7931A</span>.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="funding-grid" aria-label="quiet root co. starch mining activity">
+              <div class="funding-grid" aria-label="company starch mining activity">
                 <div class="funding-cell">
                   <span>latest confirmed block</span>
                   <div class="miner-head">
@@ -842,11 +841,11 @@
                 class="dashboard-logo"
                 src="assets/starch/team-F7931A.png"
                 data-company-icon
-                alt="quiet root co. company icon"
+                alt="company icon"
               >
               <div>
                 <p class="label">/ quiet root dashboard /</p>
-                <h2 id="quiet-root-title">quiet root co.</h2>
+                <h2 id="quiet-root-title">company</h2>
                 <p id="quiet-root-summary">
                   a mysterious starch mining concern underwriting smp360 labs
                   research. company profile F7931A. current board seats held by
@@ -864,7 +863,7 @@
               <div class="dashboard-card">
                 <span>company</span>
                 <strong>F7931A</strong>
-                <p>quiet root co. / active starch mining company</p>
+                <p id="quiet-root-company-name">company / active starch mining company</p>
               </div>
               <div class="dashboard-card">
                 <span>current balance</span>
@@ -951,9 +950,12 @@
       const fundingDashboard = document.getElementById("quiet-root-dashboard");
       const fundingTriggers = document.querySelectorAll("[data-open-funding]");
       const quietRootSummary = document.getElementById("quiet-root-summary");
+      const quietRootCompanyName = document.getElementById("quiet-root-company-name");
       const quietRootBalance = document.getElementById("quiet-root-balance");
       const quietRootConfig = document.getElementById("quiet-root-config");
       const quietRootMembers = document.getElementById("quiet-root-members");
+      const fundingCompanyName = document.getElementById("funding-company-name");
+      const fundingCompanyId = document.getElementById("funding-company-id");
       const starchApi = "https://api.starch.one";
       const companyId = "F7931A";
       const assetManifestPromise = fetch("assets/starch/manifest.json", { cache: "no-store" })
@@ -1086,22 +1088,27 @@
 
       async function loadQuietRootData() {
         try {
-          const [assetManifest, account, config, roster] = await Promise.all([
+          const [assetManifest, profile, account, config, roster] = await Promise.all([
             assetManifestPromise,
+            getJson(`/teams/${companyId}/profile`),
             getJson(`/teams/${companyId}/account`),
             getJson(`/teams/${companyId}/config`),
             getJson(`/teams/${companyId}/members`)
           ]);
           const memberIds = Array.isArray(roster.members) ? roster.members : [];
           const names = memberIds.map((id) => id.toLowerCase());
+          const companyName = (assetManifest?.company?.name || profile.name || "company").toLowerCase();
+          const companyDescription = assetManifest?.company?.description || profile.description || "";
+
+          fundingCompanyName.textContent = companyName;
+          fundingCompanyId.textContent = companyId;
+          quietRootCompanyName.textContent = `${companyName} / active starch mining company`;
+          quietRootSummary.textContent = companyDescription
+            ? `${companyDescription} company profile ${companyId}. ${names.length ? `current board seats held by ${names.join(", ")}.` : "board seats are currently quiet."}`
+            : `a mysterious starch mining concern underwriting smp360 labs research. company profile ${companyId}. ${names.length ? `current board seats held by ${names.join(", ")}.` : "board seats are currently quiet."}`;
 
           quietRootBalance.textContent = `${formatNumber(account.balance)} STRCH`;
           quietRootConfig.textContent = `signature id ${shortHash(config.signature_id)}`;
-          quietRootSummary.textContent = [
-            "a mysterious starch mining concern underwriting smp360 labs research.",
-            `company profile ${companyId}.`,
-            names.length ? `current board seats held by ${names.join(", ")}.` : "board seats are currently quiet."
-          ].join(" ");
 
           const members = await Promise.all(memberIds.map(async (id) => {
             const safeId = encodeURIComponent(id);
