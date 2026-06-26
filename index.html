@@ -232,6 +232,27 @@
         gap: 26px;
       }
 
+      .funding-head {
+        display: grid;
+        grid-template-columns: 92px minmax(0, 1fr);
+        gap: 22px;
+        align-items: center;
+      }
+
+      .funding-logo,
+      .miner-icon {
+        image-rendering: pixelated;
+        background: rgba(242, 240, 223, 0.06);
+        border: 1px solid var(--line);
+      }
+
+      .funding-logo {
+        width: 92px;
+        height: 92px;
+        padding: 10px;
+        object-fit: contain;
+      }
+
       .funding-copy h2 {
         margin: 0;
         max-width: 980px;
@@ -275,6 +296,19 @@
         color: var(--ink);
         font-size: 1.6rem;
         line-height: 1.05;
+      }
+
+      .miner-head {
+        display: grid;
+        grid-template-columns: 58px minmax(0, 1fr);
+        gap: 14px;
+        align-items: center;
+      }
+
+      .miner-icon {
+        width: 58px;
+        height: 58px;
+        object-fit: cover;
       }
 
       .funding-cell p,
@@ -394,6 +428,15 @@
         .funding-grid {
           grid-template-columns: 1fr;
         }
+
+        .funding-head {
+          grid-template-columns: 72px minmax(0, 1fr);
+        }
+
+        .funding-logo {
+          width: 72px;
+          height: 72px;
+        }
       }
 
       @media (max-width: 620px) {
@@ -482,17 +525,33 @@
             <div class="panel-label">lab funding</div>
             <div class="funding-copy">
               <div>
-                <h2 id="lab-funding-title">funded by quiet root co.</h2>
-                <p>
-                  all smp360 labs research is funded by our beneficiary, the
-                  mysterious quiet root co., operating under company profile
-                  f7931a.
-                </p>
+                <div class="funding-head">
+                  <img
+                    class="funding-logo"
+                    src="https://api.starch.one/img/team/F7931A_icon"
+                    alt="quiet root co. company icon"
+                  >
+                  <div>
+                    <h2 id="lab-funding-title">funded by quiet root co.</h2>
+                    <p>
+                      all smp360 labs research is funded by our beneficiary,
+                      the mysterious quiet root co., operating under company
+                      profile F7931A.
+                    </p>
+                  </div>
+                </div>
               </div>
               <div class="funding-grid" aria-label="quiet root co. starch mining activity">
                 <div class="funding-cell">
                   <span>latest confirmed block</span>
-                  <strong>elonspud</strong>
+                  <div class="miner-head">
+                    <img
+                      class="miner-icon"
+                      src="https://api.starch.one/img/miner/ELONSPUD_icon"
+                      alt="elonspud miner icon"
+                    >
+                    <strong>elonspud</strong>
+                  </div>
                   <dl>
                     <dt>block</dt>
                     <dd>691276</dd>
@@ -502,7 +561,14 @@
                 </div>
                 <div class="funding-cell">
                   <span>board member</span>
-                  <strong>elonspud</strong>
+                  <div class="miner-head">
+                    <img
+                      class="miner-icon"
+                      src="https://api.starch.one/img/miner/ELONSPUD_icon"
+                      alt="elonspud miner icon"
+                    >
+                    <strong>elonspud</strong>
+                  </div>
                   <dl>
                     <dt>weekly</dt>
                     <dd>1 block</dd>
@@ -512,7 +578,14 @@
                 </div>
                 <div class="funding-cell">
                   <span>board member</span>
-                  <strong>fnx1adsu</strong>
+                  <div class="miner-head">
+                    <img
+                      class="miner-icon"
+                      src="https://api.starch.one/img/miner/FNX1ADSU_icon"
+                      alt="fnx1adsu miner icon"
+                    >
+                    <strong>fnx1adsu</strong>
+                  </div>
                   <dl>
                     <dt>weekly</dt>
                     <dd>0 blocks</dd>
