@@ -246,6 +246,28 @@
         border: 1px solid var(--line);
       }
 
+      .image-trigger {
+        display: inline-flex;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+      }
+
+      .image-trigger:hover .funding-logo,
+      .image-trigger:focus-visible .funding-logo,
+      .image-trigger:hover .miner-icon,
+      .image-trigger:focus-visible .miner-icon {
+        border-color: rgba(40, 240, 167, 0.8);
+        box-shadow: 0 0 22px rgba(40, 240, 167, 0.26);
+      }
+
+      .image-trigger:focus-visible {
+        outline: 1px solid rgba(40, 240, 167, 0.8);
+        outline-offset: 4px;
+      }
+
       .funding-logo {
         width: 92px;
         height: 92px;
@@ -333,6 +355,175 @@
       .funding-cell dd {
         margin: 0;
         color: var(--ink);
+      }
+
+      .quiet-dashboard {
+        display: none;
+        width: 100%;
+        border: 1px solid var(--line);
+        background: rgba(8, 9, 8, 0.84);
+        box-shadow: 0 28px 100px rgba(0, 0, 0, 0.42);
+        backdrop-filter: blur(12px);
+      }
+
+      .quiet-dashboard.is-open {
+        display: block;
+      }
+
+      .dashboard-inner {
+        padding: 34px;
+      }
+
+      .dashboard-hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 24px;
+        text-align: center;
+      }
+
+      .dashboard-logo {
+        width: 210px;
+        height: 210px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        background: rgba(242, 240, 223, 0.06);
+        image-rendering: pixelated;
+        object-fit: contain;
+      }
+
+      .dashboard-hero h2 {
+        margin: 0;
+        font-size: 3rem;
+        line-height: 0.95;
+      }
+
+      .dashboard-hero p {
+        margin: 16px 0 0;
+        max-width: 980px;
+        color: var(--muted);
+        font-size: 1.06rem;
+        line-height: 1.55;
+      }
+
+      .dashboard-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 24px;
+      }
+
+      .dashboard-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border: 1px solid rgba(40, 240, 167, 0.68);
+        background: rgba(40, 240, 167, 0.1);
+        color: var(--ink);
+        font-size: 0.92rem;
+        text-decoration: none;
+      }
+
+      .dashboard-link.secondary {
+        border-color: var(--line);
+        background: rgba(242, 240, 223, 0.055);
+        color: var(--muted);
+      }
+
+      .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        margin-top: 28px;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .dashboard-card {
+        min-height: 150px;
+        padding: 20px;
+        background: rgba(8, 9, 8, 0.8);
+      }
+
+      .dashboard-card span {
+        display: block;
+        margin-bottom: 14px;
+        color: var(--amber);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+      }
+
+      .dashboard-card strong {
+        display: block;
+        color: var(--ink);
+        font-size: 1.7rem;
+        line-height: 1.05;
+      }
+
+      .dashboard-card p {
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 0.94rem;
+        line-height: 1.45;
+      }
+
+      .member-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1px;
+        margin-top: 28px;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .member-card {
+        display: grid;
+        grid-template-columns: 82px minmax(0, 1fr);
+        gap: 18px;
+        padding: 20px;
+        background: rgba(8, 9, 8, 0.8);
+      }
+
+      .member-card img {
+        width: 82px;
+        height: 82px;
+        border: 1px solid var(--line);
+        image-rendering: pixelated;
+        object-fit: cover;
+      }
+
+      .member-card h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+
+      .member-card dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px 16px;
+        margin: 16px 0 0;
+        font-size: 0.94rem;
+      }
+
+      .member-card dt {
+        color: var(--muted);
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .member-card dd {
+        margin: 0;
+        color: var(--ink);
+      }
+
+      .dashboard-disclaimer {
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: 0.84rem;
+        line-height: 1.5;
       }
 
       footer {
@@ -426,6 +617,16 @@
         }
 
         .funding-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .dashboard-hero,
+        .member-card {
+          grid-template-columns: 1fr;
+        }
+
+        .dashboard-grid,
+        .member-grid {
           grid-template-columns: 1fr;
         }
 
@@ -526,11 +727,19 @@
             <div class="funding-copy">
               <div>
                 <div class="funding-head">
-                  <img
-                    class="funding-logo"
-                    src="https://api.starch.one/img/team/F7931A_icon"
-                    alt="quiet root co. company icon"
+                  <button
+                    class="image-trigger"
+                    type="button"
+                    data-open-funding
+                    aria-controls="quiet-root-dashboard"
+                    aria-expanded="false"
                   >
+                    <img
+                      class="funding-logo"
+                      src="https://api.starch.one/img/team/F7931A_icon"
+                      alt="quiet root co. company icon"
+                    >
+                  </button>
                   <div>
                     <h2 id="lab-funding-title">funded by quiet root co.</h2>
                     <p>
@@ -545,11 +754,19 @@
                 <div class="funding-cell">
                   <span>latest confirmed block</span>
                   <div class="miner-head">
-                    <img
-                      class="miner-icon"
-                      src="https://api.starch.one/img/miner/ELONSPUD_icon"
-                      alt="elonspud miner icon"
+                    <button
+                      class="image-trigger"
+                      type="button"
+                      data-open-funding
+                      aria-controls="quiet-root-dashboard"
+                      aria-expanded="false"
                     >
+                      <img
+                        class="miner-icon"
+                        src="https://api.starch.one/img/miner/ELONSPUD_icon"
+                        alt="elonspud miner icon"
+                      >
+                    </button>
                     <strong>elonspud</strong>
                   </div>
                   <dl>
@@ -562,39 +779,139 @@
                 <div class="funding-cell">
                   <span>board member</span>
                   <div class="miner-head">
-                    <img
-                      class="miner-icon"
-                      src="https://api.starch.one/img/miner/ELONSPUD_icon"
-                      alt="elonspud miner icon"
+                    <button
+                      class="image-trigger"
+                      type="button"
+                      data-open-funding
+                      aria-controls="quiet-root-dashboard"
+                      aria-expanded="false"
                     >
+                      <img
+                        class="miner-icon"
+                        src="https://api.starch.one/img/miner/ELONSPUD_icon"
+                        alt="elonspud miner icon"
+                      >
+                    </button>
                     <strong>elonspud</strong>
                   </div>
                   <dl>
                     <dt>weekly</dt>
                     <dd>1 block</dd>
                     <dt>total</dt>
-                    <dd>tracking</dd>
+                    <dd>131 blocks</dd>
                   </dl>
                 </div>
                 <div class="funding-cell">
                   <span>board member</span>
                   <div class="miner-head">
-                    <img
-                      class="miner-icon"
-                      src="https://api.starch.one/img/miner/FNX1ADSU_icon"
-                      alt="fnx1adsu miner icon"
+                    <button
+                      class="image-trigger"
+                      type="button"
+                      data-open-funding
+                      aria-controls="quiet-root-dashboard"
+                      aria-expanded="false"
                     >
+                      <img
+                        class="miner-icon"
+                        src="https://api.starch.one/img/miner/FNX1ADSU_icon"
+                        alt="fnx1adsu miner icon"
+                      >
+                    </button>
                     <strong>fnx1adsu</strong>
                   </div>
                   <dl>
                     <dt>weekly</dt>
-                    <dd>0 blocks</dd>
+                    <dd>7 blocks</dd>
                     <dt>total</dt>
-                    <dd>tracking</dd>
+                    <dd>179 blocks</dd>
                   </dl>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="quiet-dashboard" id="quiet-root-dashboard" aria-labelledby="quiet-root-title">
+          <div class="dashboard-inner">
+            <div class="dashboard-hero">
+              <img
+                class="dashboard-logo"
+                src="https://api.starch.one/img/team/F7931A_icon"
+                alt="quiet root co. company icon"
+              >
+              <div>
+                <p class="label">/ quiet root dashboard /</p>
+                <h2 id="quiet-root-title">quiet root co.</h2>
+                <p>
+                  a mysterious starch mining concern underwriting smp360 labs
+                  research. company profile F7931A. current board seats held by
+                  elonspud and fnx1adsu.
+                </p>
+                <div class="dashboard-actions">
+                  <a class="dashboard-link" href="https://starch.one/company/F7931A">view on starch</a>
+                  <a class="dashboard-link secondary" href="https://starch.one/mint">get your miner</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-grid" aria-label="quiet root company stats">
+              <div class="dashboard-card">
+                <span>company</span>
+                <strong>F7931A</strong>
+                <p>quiet root co. / active starch mining company</p>
+              </div>
+              <div class="dashboard-card">
+                <span>current balance</span>
+                <strong>2,037,516,455</strong>
+                <p>reported by the public starch company account endpoint</p>
+              </div>
+              <div class="dashboard-card">
+                <span>configuration</span>
+                <strong>signed</strong>
+                <p>signature id 1e28d486...9a80f91f</p>
+              </div>
+            </div>
+
+            <div class="member-grid" aria-label="quiet root board member stats">
+              <div class="member-card">
+                <img src="https://api.starch.one/img/miner/ELONSPUD_icon" alt="elonspud miner icon">
+                <div>
+                  <h3>elonspud</h3>
+                  <dl>
+                    <dt>weekly</dt>
+                    <dd>1 block</dd>
+                    <dt>total</dt>
+                    <dd>131 blocks</dd>
+                    <dt>last</dt>
+                    <dd>691276</dd>
+                    <dt>pool</dt>
+                    <dd>weed</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="member-card">
+                <img src="https://api.starch.one/img/miner/FNX1ADSU_icon" alt="fnx1adsu miner icon">
+                <div>
+                  <h3>fnx1adsu</h3>
+                  <dl>
+                    <dt>weekly</dt>
+                    <dd>7 blocks</dd>
+                    <dt>total</dt>
+                    <dd>179 blocks</dd>
+                    <dt>last</dt>
+                    <dd>690790</dd>
+                    <dt>pool</dt>
+                    <dd>weed</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+            <p class="dashboard-disclaimer">
+              smp360 labs is not affiliated with starchone, starch industries,
+              or tubertive software. this page displays public starch mining
+              information for our own lab funding signal.
+            </p>
           </div>
         </section>
       </main>
@@ -620,10 +937,25 @@
       const canvas = document.getElementById("signal-field");
       const ctx = canvas.getContext("2d");
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const fundingDashboard = document.getElementById("quiet-root-dashboard");
+      const fundingTriggers = document.querySelectorAll("[data-open-funding]");
       let points = [];
       let width = 0;
       let height = 0;
       let frame = 0;
+
+      fundingTriggers.forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          fundingDashboard.classList.add("is-open");
+          fundingTriggers.forEach((item) => {
+            item.setAttribute("aria-expanded", "true");
+          });
+          fundingDashboard.scrollIntoView({
+            behavior: reduceMotion.matches ? "auto" : "smooth",
+            block: "start"
+          });
+        });
+      });
 
       function resize() {
         const scale = Math.min(window.devicePixelRatio || 1, 2);
