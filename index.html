@@ -434,7 +434,7 @@
 
       .dashboard-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 1px;
         margin-top: 28px;
         border: 1px solid var(--line);
@@ -850,6 +850,7 @@
                 <div class="dashboard-actions">
                   <a class="dashboard-link" href="https://starch.one/company/F7931A">view on starch</a>
                   <a class="dashboard-link secondary" href="https://starch.one/mint">get your miner</a>
+                  <a class="dashboard-link secondary" href="https://cardano.fetchswap.io/swap?sellcoin=lovelace&amp;buycoin=3d77d63dfa6033be98021417e08e3368cc80e67f8d7afa196aaa0b3953746172636820546f6b656e&amp;pro=true">STRCH chart</a>
                 </div>
               </div>
             </div>
@@ -862,8 +863,13 @@
               </div>
               <div class="dashboard-card">
                 <span>current balance</span>
-                <strong id="quiet-root-balance">2,037,516,455</strong>
-                <p>reported by the public starch company account endpoint</p>
+                <strong id="quiet-root-balance">2,037,516,455 STRCH</strong>
+                <p>$STRCH reported by the public starch company account endpoint</p>
+              </div>
+              <div class="dashboard-card">
+                <span>market</span>
+                <strong>$STRCH</strong>
+                <p><a href="https://cardano.fetchswap.io/swap?sellcoin=lovelace&amp;buycoin=3d77d63dfa6033be98021417e08e3368cc80e67f8d7afa196aaa0b3953746172636820546f6b656e&amp;pro=true">open fetchswap pro chart</a></p>
               </div>
               <div class="dashboard-card">
                 <span>configuration</span>
@@ -1035,7 +1041,7 @@
           const memberIds = Array.isArray(roster.members) ? roster.members : [];
           const names = memberIds.map((id) => id.toLowerCase());
 
-          quietRootBalance.textContent = formatNumber(account.balance);
+          quietRootBalance.textContent = `${formatNumber(account.balance)} STRCH`;
           quietRootConfig.textContent = `signature id ${shortHash(config.signature_id)}`;
           quietRootSummary.textContent = [
             "a mysterious starch mining concern underwriting smp360 labs research.",
