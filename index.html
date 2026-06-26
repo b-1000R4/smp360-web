@@ -220,6 +220,87 @@
         box-shadow: 0 0 14px rgba(40, 240, 167, 0.9);
       }
 
+      .funding-inner {
+        display: grid;
+        grid-template-columns: minmax(150px, 0.22fr) minmax(0, 1fr);
+        gap: 28px;
+        padding: 28px;
+      }
+
+      .funding-copy {
+        display: grid;
+        gap: 26px;
+      }
+
+      .funding-copy h2 {
+        margin: 0;
+        max-width: 980px;
+        font-size: 2.6rem;
+        line-height: 1;
+      }
+
+      .funding-copy p {
+        margin: 14px 0 0;
+        max-width: 980px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.55;
+      }
+
+      .funding-grid {
+        display: grid;
+        grid-template-columns: minmax(220px, 0.9fr) repeat(2, minmax(180px, 0.55fr));
+        gap: 1px;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .funding-cell {
+        min-height: 150px;
+        padding: 20px;
+        background: rgba(8, 9, 8, 0.78);
+      }
+
+      .funding-cell span {
+        display: block;
+        margin-bottom: 14px;
+        color: var(--amber);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+      }
+
+      .funding-cell strong {
+        display: block;
+        color: var(--ink);
+        font-size: 1.6rem;
+        line-height: 1.05;
+      }
+
+      .funding-cell p,
+      .funding-cell dl {
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: 0.94rem;
+        line-height: 1.45;
+      }
+
+      .funding-cell dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px 16px;
+      }
+
+      .funding-cell dt {
+        color: var(--muted);
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .funding-cell dd {
+        margin: 0;
+        color: var(--ink);
+      }
+
       footer {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
@@ -305,6 +386,14 @@
           grid-template-columns: 1fr;
           min-height: auto;
         }
+
+        .funding-inner {
+          grid-template-columns: 1fr;
+        }
+
+        .funding-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
       @media (max-width: 620px) {
@@ -331,6 +420,10 @@
         }
 
         .panel h2 {
+          font-size: 2rem;
+        }
+
+        .funding-copy h2 {
           font-size: 2rem;
         }
 
@@ -385,13 +478,50 @@
         </section>
 
         <section class="panel" aria-labelledby="lab-funding-title">
-          <div class="panel-inner">
+          <div class="funding-inner">
             <div class="panel-label">lab funding</div>
-            <div>
-              <h2 id="lab-funding-title">coming soon</h2>
-              <p>funding notes, support paths, and project sponsorship details will surface after the lab stabilizes.</p>
+            <div class="funding-copy">
+              <div>
+                <h2 id="lab-funding-title">funded by quiet root co.</h2>
+                <p>
+                  all smp360 labs research is funded by our beneficiary, the
+                  mysterious quiet root co., operating under company profile
+                  f7931a.
+                </p>
+              </div>
+              <div class="funding-grid" aria-label="quiet root co. starch mining activity">
+                <div class="funding-cell">
+                  <span>latest confirmed block</span>
+                  <strong>elonspud</strong>
+                  <dl>
+                    <dt>block</dt>
+                    <dd>691276</dd>
+                    <dt>color</dt>
+                    <dd>#f7931a</dd>
+                  </dl>
+                </div>
+                <div class="funding-cell">
+                  <span>board member</span>
+                  <strong>elonspud</strong>
+                  <dl>
+                    <dt>weekly</dt>
+                    <dd>1 block</dd>
+                    <dt>total</dt>
+                    <dd>tracking</dd>
+                  </dl>
+                </div>
+                <div class="funding-cell">
+                  <span>board member</span>
+                  <strong>fnx1adsu</strong>
+                  <dl>
+                    <dt>weekly</dt>
+                    <dd>0 blocks</dd>
+                    <dt>total</dt>
+                    <dd>tracking</dd>
+                  </dl>
+                </div>
+              </div>
             </div>
-            <div class="coming-soon" aria-hidden="true">pending</div>
           </div>
         </section>
       </main>
