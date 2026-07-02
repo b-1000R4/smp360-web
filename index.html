@@ -220,6 +220,68 @@
         box-shadow: 0 0 14px rgba(40, 240, 167, 0.9);
       }
 
+      .feed-panel {
+        align-items: start;
+      }
+
+      .feed-content {
+        min-width: 0;
+      }
+
+      .feed-content h2 {
+        margin-bottom: 18px;
+      }
+
+      .agent-json,
+      .recent-agent-json {
+        width: 100%;
+        margin: 0;
+        overflow: auto;
+        border: 1px solid rgba(242, 240, 223, 0.16);
+        background: rgba(8, 9, 8, 0.72);
+        color: var(--ink);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.92rem;
+        line-height: 1.48;
+        white-space: pre;
+      }
+
+      .agent-json {
+        max-height: 360px;
+        padding: 18px;
+      }
+
+      .recent-agents {
+        margin-top: 18px;
+      }
+
+      .recent-agents summary {
+        cursor: pointer;
+        color: var(--green);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+      }
+
+      .recent-agents summary:focus-visible {
+        outline: 1px solid rgba(40, 240, 167, 0.8);
+        outline-offset: 4px;
+      }
+
+      .recent-agent-json {
+        max-height: 420px;
+        margin-top: 14px;
+        padding: 16px;
+      }
+
+      .feed-status {
+        align-self: start;
+        color: var(--green);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.92rem;
+        text-transform: uppercase;
+      }
+
       .funding-inner {
         display: grid;
         grid-template-columns: minmax(150px, 0.22fr) minmax(0, 1fr);
@@ -711,13 +773,17 @@
         </section>
 
         <section class="panel" aria-labelledby="lab-feed-title">
-          <div class="panel-inner">
+          <div class="panel-inner feed-panel">
             <div class="panel-label">lab feed</div>
-            <div>
-              <h2 id="lab-feed-title">coming soon</h2>
-              <p>public lab activity will appear here when it is cleaned, contained, and ready to leave the bunker.</p>
+            <div class="feed-content">
+              <h2 id="lab-feed-title">current ready agent</h2>
+              <pre class="agent-json" id="current-agent-json" aria-live="polite">loading agent feed...</pre>
+              <details class="recent-agents" id="recent-agents">
+                <summary>last 25 spawned agents</summary>
+                <pre class="recent-agent-json" id="recent-agents-json"></pre>
+              </details>
             </div>
-            <div class="coming-soon" aria-hidden="true">pending</div>
+            <div class="feed-status" id="agent-feed-status" aria-hidden="true">loading</div>
           </div>
         </section>
 
@@ -956,6 +1022,9 @@
       const quietRootMembers = document.getElementById("quiet-root-members");
       const fundingCompanyName = document.getElementById("funding-company-name");
       const fundingCompanyId = document.getElementById("funding-company-id");
+      const currentAgentJson = document.getElementById("current-agent-json");
+      const recentAgentsJson = document.getElementById("recent-agents-json");
+      const agentFeedStatus = document.getElementById("agent-feed-status");
       const starchApi = "https://api.starch.one";
       const companyId = "F7931A";
       const assetManifestPromise = fetch("assets/starch/manifest.json", { cache: "no-store" })
@@ -1039,6 +1108,29 @@
             // ignore malformed links
           }
         });
+      }
+
+      function renderJson(target, value) {
+        target.textContent = `${JSON.stringify(value, null, 2)}\n`;
+      }
+
+      async function loadAgentFeed() {
+        try {
+          const response = await fetch("data/b1000-agent-spawns.json", { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error(`agent feed ${response.status}`);
+          }
+
+          const feed = await response.json();
+          renderJson(currentAgentJson, feed.currentReadyAgent);
+          renderJson(recentAgentsJson, feed.recentSpawnedAgents);
+          agentFeedStatus.textContent = "live";
+        } catch (error) {
+          console.warn("agent feed unavailable", error);
+          renderJson(currentAgentJson, null);
+          renderJson(recentAgentsJson, []);
+          agentFeedStatus.textContent = "offline";
+        }
       }
 
       function getLatestBlock(blocks) {
@@ -1197,6 +1289,7 @@
       draw();
       applyCachedAssets();
       applyExternalLinkTargets();
+      loadAgentFeed();
       loadQuietRootData();
       window.addEventListener("resize", resize);
     </script>

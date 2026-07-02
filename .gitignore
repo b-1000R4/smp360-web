@@ -1,0 +1,12 @@
+context/
+planning/
+archive/
+.env
+*.log
+AGENTS.md
+captains-log.json
+good-morning.json
+projects.json
+registry.json
+roles.json
+validation-log.json
