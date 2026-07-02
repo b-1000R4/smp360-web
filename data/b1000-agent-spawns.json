@@ -1,16 +1,24 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-02T02:27:59Z",
+  "generatedAt": "2026-07-02T03:35:19Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-cedar-agent-4286",
-    "createdAt": "2026-07-02T02:22:39Z",
+    "agentName": "b1000-ability-agent-7392",
+    "createdAt": "2026-07-02T03:29:35Z",
     "project": "smp360-web",
-    "role": "building-agent",
+    "role": "planning-agent",
     "status": "ready",
-    "statusAt": "2026-07-02T02:23:30Z"
+    "statusAt": "2026-07-02T03:29:51Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-ability-agent-7392",
+      "createdAt": "2026-07-02T03:29:35Z",
+      "project": "smp360-web",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-02T03:29:51Z"
+    },
     {
       "agentName": "b1000-cedar-agent-4286",
       "createdAt": "2026-07-02T02:22:39Z",
