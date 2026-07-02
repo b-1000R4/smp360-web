@@ -301,8 +301,7 @@
         align-items: center;
       }
 
-      .funding-logo,
-      .miner-icon {
+      .funding-logo {
         image-rendering: pixelated;
         background: rgba(242, 240, 223, 0.06);
         border: 1px solid var(--line);
@@ -318,9 +317,7 @@
       }
 
       .image-trigger:hover .funding-logo,
-      .image-trigger:focus-visible .funding-logo,
-      .image-trigger:hover .miner-icon,
-      .image-trigger:focus-visible .miner-icon {
+      .image-trigger:focus-visible .funding-logo {
         border-color: rgba(40, 240, 167, 0.8);
         box-shadow: 0 0 22px rgba(40, 240, 167, 0.26);
       }
@@ -352,73 +349,6 @@
         line-height: 1.55;
       }
 
-      .funding-grid {
-        display: grid;
-        grid-template-columns: minmax(220px, 0.9fr) repeat(2, minmax(180px, 0.55fr));
-        gap: 1px;
-        border: 1px solid var(--line);
-        background: var(--line);
-      }
-
-      .funding-cell {
-        min-height: 150px;
-        padding: 20px;
-        background: rgba(8, 9, 8, 0.78);
-      }
-
-      .funding-cell span {
-        display: block;
-        margin-bottom: 14px;
-        color: var(--amber);
-        font-family: "Courier New", Courier, monospace;
-        font-size: 0.78rem;
-        text-transform: uppercase;
-      }
-
-      .funding-cell strong {
-        display: block;
-        color: var(--ink);
-        font-size: 1.6rem;
-        line-height: 1.05;
-      }
-
-      .miner-head {
-        display: grid;
-        grid-template-columns: 58px minmax(0, 1fr);
-        gap: 14px;
-        align-items: center;
-      }
-
-      .miner-icon {
-        width: 58px;
-        height: 58px;
-        object-fit: cover;
-      }
-
-      .funding-cell p,
-      .funding-cell dl {
-        margin: 16px 0 0;
-        color: var(--muted);
-        font-size: 0.94rem;
-        line-height: 1.45;
-      }
-
-      .funding-cell dl {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 8px 16px;
-      }
-
-      .funding-cell dt {
-        color: var(--muted);
-        font-family: "Courier New", Courier, monospace;
-      }
-
-      .funding-cell dd {
-        margin: 0;
-        color: var(--ink);
-      }
-
       .quiet-dashboard {
         display: none;
         width: 100%;
@@ -442,16 +372,6 @@
         justify-items: center;
         gap: 24px;
         text-align: center;
-      }
-
-      .dashboard-logo {
-        width: 210px;
-        height: 210px;
-        padding: 18px;
-        border: 1px solid var(--line);
-        background: rgba(242, 240, 223, 0.06);
-        image-rendering: pixelated;
-        object-fit: contain;
       }
 
       .dashboard-hero h2 {
@@ -530,55 +450,6 @@
         color: var(--muted);
         font-size: 0.94rem;
         line-height: 1.45;
-      }
-
-      .member-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1px;
-        margin-top: 28px;
-        border: 1px solid var(--line);
-        background: var(--line);
-      }
-
-      .member-card {
-        display: grid;
-        grid-template-columns: 82px minmax(0, 1fr);
-        gap: 18px;
-        padding: 20px;
-        background: rgba(8, 9, 8, 0.8);
-      }
-
-      .member-card img {
-        width: 82px;
-        height: 82px;
-        border: 1px solid var(--line);
-        image-rendering: pixelated;
-        object-fit: cover;
-      }
-
-      .member-card h3 {
-        margin: 0;
-        font-size: 1.5rem;
-        line-height: 1;
-      }
-
-      .member-card dl {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 8px 16px;
-        margin: 16px 0 0;
-        font-size: 0.94rem;
-      }
-
-      .member-card dt {
-        color: var(--muted);
-        font-family: "Courier New", Courier, monospace;
-      }
-
-      .member-card dd {
-        margin: 0;
-        color: var(--ink);
       }
 
       .dashboard-disclaimer {
@@ -678,17 +549,11 @@
           grid-template-columns: 1fr;
         }
 
-        .funding-grid {
+        .dashboard-hero {
           grid-template-columns: 1fr;
         }
 
-        .dashboard-hero,
-        .member-card {
-          grid-template-columns: 1fr;
-        }
-
-        .dashboard-grid,
-        .member-grid {
+        .dashboard-grid {
           grid-template-columns: 1fr;
         }
 
@@ -816,86 +681,6 @@
                   </div>
                 </div>
               </div>
-              <div class="funding-grid" aria-label="company starch mining activity">
-                <div class="funding-cell">
-                  <span>latest confirmed block</span>
-                  <div class="miner-head">
-                    <button
-                      class="image-trigger"
-                      type="button"
-                      data-open-funding
-                      aria-controls="quiet-root-dashboard"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="miner-icon"
-                        src="assets/starch/miner-ELONSPUD.gif"
-                        data-miner-id="ELONSPUD"
-                        alt="elonspud miner icon"
-                      >
-                    </button>
-                    <strong>elonspud</strong>
-                  </div>
-                  <dl>
-                    <dt>block</dt>
-                    <dd>691276</dd>
-                    <dt>color</dt>
-                    <dd>#f7931a</dd>
-                  </dl>
-                </div>
-                <div class="funding-cell">
-                  <span>board member</span>
-                  <div class="miner-head">
-                    <button
-                      class="image-trigger"
-                      type="button"
-                      data-open-funding
-                      aria-controls="quiet-root-dashboard"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="miner-icon"
-                        src="assets/starch/miner-ELONSPUD.gif"
-                        data-miner-id="ELONSPUD"
-                        alt="elonspud miner icon"
-                      >
-                    </button>
-                    <strong>elonspud</strong>
-                  </div>
-                  <dl>
-                    <dt>weekly</dt>
-                    <dd>1 block</dd>
-                    <dt>total</dt>
-                    <dd>131 blocks</dd>
-                  </dl>
-                </div>
-                <div class="funding-cell">
-                  <span>board member</span>
-                  <div class="miner-head">
-                    <button
-                      class="image-trigger"
-                      type="button"
-                      data-open-funding
-                      aria-controls="quiet-root-dashboard"
-                      aria-expanded="false"
-                    >
-                      <img
-                        class="miner-icon"
-                        src="assets/starch/miner-FNX1ADSU.gif"
-                        data-miner-id="FNX1ADSU"
-                        alt="fnx1adsu miner icon"
-                      >
-                    </button>
-                    <strong>fnx1adsu</strong>
-                  </div>
-                  <dl>
-                    <dt>weekly</dt>
-                    <dd>7 blocks</dd>
-                    <dt>total</dt>
-                    <dd>179 blocks</dd>
-                  </dl>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -903,19 +688,12 @@
         <section class="quiet-dashboard" id="quiet-root-dashboard" aria-labelledby="quiet-root-title">
           <div class="dashboard-inner">
             <div class="dashboard-hero">
-              <img
-                class="dashboard-logo"
-                src="assets/starch/team-F7931A.png"
-                data-company-icon
-                alt="quiet root co. company icon"
-              >
               <div>
                 <p class="label">/ quiet root dashboard /</p>
                 <h2 id="quiet-root-title">quiet root co.</h2>
                 <p id="quiet-root-summary">
                   a mysterious starch mining concern underwriting smp360 labs
-                  research. company profile F7931A. current board seats held by
-                  elonspud and fnx1adsu.
+                  research. company profile F7931A.
                 </p>
                 <div class="dashboard-actions">
                   <a class="dashboard-link" href="https://starch.one/company/F7931A">view on starch</a>
@@ -945,41 +723,6 @@
                 <span>configuration</span>
                 <strong>signed</strong>
                 <p id="quiet-root-config">signature id 1e28d486...9a80f91f</p>
-              </div>
-            </div>
-
-            <div class="member-grid" id="quiet-root-members" aria-label="quiet root board member stats">
-              <div class="member-card">
-                <img src="assets/starch/miner-ELONSPUD.gif" data-miner-id="ELONSPUD" alt="elonspud miner icon">
-                <div>
-                  <h3>elonspud</h3>
-                  <dl>
-                    <dt>weekly</dt>
-                    <dd>1 block</dd>
-                    <dt>total</dt>
-                    <dd>131 blocks</dd>
-                    <dt>last</dt>
-                    <dd>691276</dd>
-                    <dt>pool</dt>
-                    <dd>weed</dd>
-                  </dl>
-                </div>
-              </div>
-              <div class="member-card">
-                <img src="assets/starch/miner-FNX1ADSU.gif" data-miner-id="FNX1ADSU" alt="fnx1adsu miner icon">
-                <div>
-                  <h3>fnx1adsu</h3>
-                  <dl>
-                    <dt>weekly</dt>
-                    <dd>7 blocks</dd>
-                    <dt>total</dt>
-                    <dd>179 blocks</dd>
-                    <dt>last</dt>
-                    <dd>690790</dd>
-                    <dt>pool</dt>
-                    <dd>weed</dd>
-                  </dl>
-                </div>
               </div>
             </div>
 
@@ -1019,7 +762,6 @@
       const quietRootCompanyName = document.getElementById("quiet-root-company-name");
       const quietRootBalance = document.getElementById("quiet-root-balance");
       const quietRootConfig = document.getElementById("quiet-root-config");
-      const quietRootMembers = document.getElementById("quiet-root-members");
       const fundingCompanyName = document.getElementById("funding-company-name");
       const fundingCompanyId = document.getElementById("funding-company-id");
       const currentAgentJson = document.getElementById("current-agent-json");
@@ -1069,10 +811,6 @@
         });
       }
 
-      function getMinerIcon(id, manifest) {
-        return manifest?.miners?.[id]?.icon || `${starchApi}/img/miner/${encodeURIComponent(id)}_icon`;
-      }
-
       async function applyCachedAssets() {
         const manifest = await assetManifestPromise;
         if (!manifest) return;
@@ -1082,12 +820,6 @@
             image.src = manifest.company.icon;
           });
         }
-
-        document.querySelectorAll("[data-miner-id]").forEach((image) => {
-          const minerId = image.getAttribute("data-miner-id");
-          const icon = manifest.miners?.[minerId]?.icon;
-          if (icon) image.src = icon;
-        });
       }
 
       function applyExternalLinkTargets() {
@@ -1133,62 +865,14 @@
         }
       }
 
-      function getLatestBlock(blocks) {
-        const blockList = Array.isArray(blocks) ? blocks : blocks?.blocks;
-        if (!Array.isArray(blockList) || blockList.length === 0) return "pending";
-        const block = blockList.find((item) => item && item.block_id) || blockList[0];
-        return block.block_id || block.id || "pending";
-      }
-
-      function blockLabel(value) {
-        return `${formatNumber(value)} ${Number(value) === 1 ? "block" : "blocks"}`;
-      }
-
-      function addStat(list, label, value) {
-        const term = document.createElement("dt");
-        const description = document.createElement("dd");
-        term.textContent = label;
-        description.textContent = value;
-        list.append(term, description);
-      }
-
-      function renderMemberCards(members, manifest) {
-        if (!members.length) return;
-
-        quietRootMembers.replaceChildren(...members.map((member) => {
-          const card = document.createElement("div");
-          const name = member.id.toLowerCase();
-          const image = document.createElement("img");
-          const body = document.createElement("div");
-          const title = document.createElement("h3");
-          const stats = document.createElement("dl");
-
-          card.className = "member-card";
-          image.src = getMinerIcon(member.id, manifest);
-          image.setAttribute("data-miner-id", member.id);
-          image.alt = `${name} miner icon`;
-          title.textContent = name;
-          addStat(stats, "weekly", blockLabel(member.weekly));
-          addStat(stats, "total", blockLabel(member.total));
-          addStat(stats, "last", String(member.lastBlock));
-          addStat(stats, "pool", member.pool);
-          body.append(title, stats);
-          card.append(image, body);
-          return card;
-        }));
-      }
-
       async function loadQuietRootData() {
         try {
-          const [assetManifest, profile, account, config, roster] = await Promise.all([
+          const [assetManifest, profile, account, config] = await Promise.all([
             assetManifestPromise,
             getJson(`/teams/${companyId}/profile`),
             getJson(`/teams/${companyId}/account`),
-            getJson(`/teams/${companyId}/config`),
-            getJson(`/teams/${companyId}/members`)
+            getJson(`/teams/${companyId}/config`)
           ]);
-          const memberIds = Array.isArray(roster.members) ? roster.members : [];
-          const names = memberIds.map((id) => id.toLowerCase());
           const companyName = (assetManifest?.company?.name || profile.name || "company").toLowerCase();
           const companyDescription = assetManifest?.company?.description || profile.description || "";
 
@@ -1196,30 +880,11 @@
           fundingCompanyId.textContent = companyId;
           quietRootCompanyName.textContent = `${companyName} / active starch mining company`;
           quietRootSummary.textContent = companyDescription
-            ? `${companyDescription} company profile ${companyId}. ${names.length ? `current board seats held by ${names.join(", ")}.` : "board seats are currently quiet."}`
-            : `a mysterious starch mining concern underwriting smp360 labs research. company profile ${companyId}. ${names.length ? `current board seats held by ${names.join(", ")}.` : "board seats are currently quiet."}`;
+            ? `${companyDescription} company profile ${companyId}.`
+            : `a mysterious starch mining concern underwriting smp360 labs research. company profile ${companyId}.`;
 
           quietRootBalance.textContent = `${formatNumber(account.balance)} STRCH`;
           quietRootConfig.textContent = `signature id ${shortHash(config.signature_id)}`;
-
-          const members = await Promise.all(memberIds.map(async (id) => {
-            const safeId = encodeURIComponent(id);
-            const [minerResult, blocksResult] = await Promise.allSettled([
-              getJson(`/miners/${safeId}`),
-              getJson(`/miners/${safeId}/blocks`)
-            ]);
-            const miner = minerResult.status === "fulfilled" ? minerResult.value : {};
-            const blocks = blocksResult.status === "fulfilled" ? blocksResult.value : [];
-            return {
-              id,
-              weekly: miner.leaderboard?.week?.blocks ?? 0,
-              total: miner.blocks ?? 0,
-              lastBlock: getLatestBlock(blocks),
-              pool: miner.pool || "unknown"
-            };
-          }));
-
-          renderMemberCards(members, assetManifest);
         } catch (error) {
           console.warn("quiet root live data unavailable", error);
         }
