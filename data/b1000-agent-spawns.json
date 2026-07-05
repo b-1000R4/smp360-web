@@ -1,16 +1,48 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-03T00:41:26Z",
+  "generatedAt": "2026-07-05T01:59:16Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-horizon-agent-6294",
-    "createdAt": "2026-07-02T22:26:04Z",
+    "agentName": "b1000-citadel-agent-6084",
+    "createdAt": "2026-07-05T01:56:52Z",
     "project": "agent-lab",
     "role": "building-agent",
     "status": "ready",
-    "statusAt": "2026-07-02T22:26:04Z"
+    "statusAt": "2026-07-05T01:56:52Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-citadel-agent-6084",
+      "createdAt": "2026-07-05T01:56:52Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-05T01:56:52Z"
+    },
+    {
+      "agentName": "b1000-summit-agent-4938",
+      "createdAt": "2026-07-04T20:47:27Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-04T20:47:27Z"
+    },
+    {
+      "agentName": "b1000-vector-agent-2176",
+      "createdAt": "2026-07-04T18:34:03Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-04T18:34:03Z"
+    },
+    {
+      "agentName": "b1000-lantern-agent-3847",
+      "createdAt": "2026-07-04T18:16:19Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-04T18:16:19Z"
+    },
     {
       "agentName": "b1000-horizon-agent-6294",
       "createdAt": "2026-07-02T22:26:04Z",
@@ -178,30 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-06-22T19:40:06Z"
-    },
-    {
-      "agentName": "b1000-harbor-agent-3814",
-      "createdAt": "2026-06-22T19:13:59Z",
-      "project": "project-beta",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T19:14:39Z"
-    },
-    {
-      "agentName": "b1000-cactus-agent-4208",
-      "createdAt": "2026-06-22T18:31:27Z",
-      "project": "project-alpha",
-      "role": "network-agent",
-      "status": "failed",
-      "statusAt": "2026-06-22T18:31:37Z"
-    },
-    {
-      "agentName": "b1000-bamboo-agent-6657",
-      "createdAt": "2026-06-22T18:29:09Z",
-      "project": "project-beta",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T18:29:21Z"
     }
   ]
 }
