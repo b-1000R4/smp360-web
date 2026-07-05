@@ -1,16 +1,32 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-05T01:59:16Z",
+  "generatedAt": "2026-07-05T23:17:22Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-citadel-agent-6084",
-    "createdAt": "2026-07-05T01:56:52Z",
+    "agentName": "b1000-orchard-agent-5192",
+    "createdAt": "2026-07-05T22:11:19Z",
     "project": "agent-lab",
     "role": "building-agent",
     "status": "ready",
-    "statusAt": "2026-07-05T01:56:52Z"
+    "statusAt": "2026-07-05T22:11:19Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-orchard-agent-5192",
+      "createdAt": "2026-07-05T22:11:19Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-05T22:11:19Z"
+    },
+    {
+      "agentName": "b1000-verdict-agent-7316",
+      "createdAt": "2026-07-05T02:07:44Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-05T02:07:44Z"
+    },
     {
       "agentName": "b1000-citadel-agent-6084",
       "createdAt": "2026-07-05T01:56:52Z",
@@ -194,22 +210,6 @@
       "role": "context-agent",
       "status": "ready",
       "statusAt": "2026-06-22T20:26:14Z"
-    },
-    {
-      "agentName": "b1000-planet-agent-1893",
-      "createdAt": "2026-06-22T20:20:32Z",
-      "project": "project-beta",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T20:21:21Z"
-    },
-    {
-      "agentName": "b1000-velvet-agent-2746",
-      "createdAt": "2026-06-22T19:39:32Z",
-      "project": "project-beta",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T19:40:06Z"
     }
   ]
 }
