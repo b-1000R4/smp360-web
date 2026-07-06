@@ -1,16 +1,80 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-06T18:07:43Z",
+  "generatedAt": "2026-07-06T21:25:17Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-orbit-agent-0007",
-    "createdAt": "2026-07-06T18:05:39Z",
+    "agentName": "b1000-gitreview-agent-0018",
+    "createdAt": "2026-07-06T21:15:26Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-06T18:05:39Z"
+    "statusAt": "2026-07-06T21:15:26Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-gitreview-agent-0018",
+      "createdAt": "2026-07-06T21:15:26Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T21:15:26Z"
+    },
+    {
+      "agentName": "b1000-gitpolicy-agent-0017",
+      "createdAt": "2026-07-06T21:04:17Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T21:04:17Z"
+    },
+    {
+      "agentName": "b1000-review-agent-0016",
+      "createdAt": "2026-07-06T20:42:43Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T20:42:43Z"
+    },
+    {
+      "agentName": "b1000-playbook-agent-0015",
+      "createdAt": "2026-07-06T20:33:49Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T20:33:49Z"
+    },
+    {
+      "agentName": "b1000-reconcile-agent-0014",
+      "createdAt": "2026-07-06T20:13:09Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T20:13:09Z"
+    },
+    {
+      "agentName": "b1000-topology-agent-0013",
+      "createdAt": "2026-07-06T20:04:37Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T20:04:37Z"
+    },
+    {
+      "agentName": "b1000-verifier-agent-0012",
+      "createdAt": "2026-07-06T19:48:56Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T19:48:56Z"
+    },
+    {
+      "agentName": "b1000-foundry-agent-0011",
+      "createdAt": "2026-07-06T19:43:02Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T19:43:02Z"
+    },
     {
       "agentName": "b1000-orbit-agent-0007",
       "createdAt": "2026-07-06T18:05:39Z",
@@ -146,70 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-02T04:03:18Z"
-    },
-    {
-      "agentName": "b1000-ability-agent-7392",
-      "createdAt": "2026-07-02T03:29:35Z",
-      "project": "smp360-web",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-02T03:29:51Z"
-    },
-    {
-      "agentName": "b1000-cedar-agent-4286",
-      "createdAt": "2026-07-02T02:22:39Z",
-      "project": "smp360-web",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-02T02:23:30Z"
-    },
-    {
-      "agentName": "b1000-copper-agent-8194",
-      "createdAt": "2026-07-02T01:37:54Z",
-      "project": "smp360-web",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-02T01:38:24Z"
-    },
-    {
-      "agentName": "b1000-ember-agent-5361",
-      "createdAt": "2026-06-22T23:35:59Z",
-      "project": "smp360-web",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T23:37:03Z"
-    },
-    {
-      "agentName": "b1000-quantum-agent-8745",
-      "createdAt": "2026-06-22T23:02:02Z",
-      "project": "smp360-web",
-      "role": "context-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T23:03:04Z"
-    },
-    {
-      "agentName": "b1000-signal-agent-4725",
-      "createdAt": "2026-06-22T22:30:32Z",
-      "project": "smp360-web",
-      "role": "bootstrap-agent",
-      "status": "not-needed",
-      "statusAt": "2026-06-22T22:33:19Z"
-    },
-    {
-      "agentName": "b1000-garden-agent-1526",
-      "createdAt": "2026-06-22T22:23:34Z",
-      "project": "smp360-web",
-      "role": "bootstrap-agent",
-      "status": "registered",
-      "statusAt": "2026-06-22T22:23:34Z"
-    },
-    {
-      "agentName": "b1000-lantern-agent-6047",
-      "createdAt": "2026-06-22T22:16:21Z",
-      "project": "smp360-web",
-      "role": "bootstrap-agent",
-      "status": "registered",
-      "statusAt": "2026-06-22T22:16:21Z"
     }
   ]
 }
