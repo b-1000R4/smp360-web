@@ -1,16 +1,32 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-06T21:25:17Z",
+  "generatedAt": "2026-07-06T21:52:05Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-gitreview-agent-0018",
-    "createdAt": "2026-07-06T21:15:26Z",
+    "agentName": "b1000-cipher-agent-6392",
+    "createdAt": "2026-07-06T21:46:20Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-06T21:15:26Z"
+    "statusAt": "2026-07-06T21:46:20Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cipher-agent-6392",
+      "createdAt": "2026-07-06T21:46:20Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T21:46:20Z"
+    },
+    {
+      "agentName": "b1000-silver-agent-4829",
+      "createdAt": "2026-07-06T21:30:31Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T21:30:31Z"
+    },
     {
       "agentName": "b1000-gitreview-agent-0018",
       "createdAt": "2026-07-06T21:15:26Z",
@@ -194,22 +210,6 @@
       "role": "building-agent",
       "status": "ready",
       "statusAt": "2026-07-04T18:16:19Z"
-    },
-    {
-      "agentName": "b1000-horizon-agent-6294",
-      "createdAt": "2026-07-02T22:26:04Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-02T22:26:04Z"
-    },
-    {
-      "agentName": "b1000-matrix-agent-5824",
-      "createdAt": "2026-07-02T04:03:18Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-02T04:03:18Z"
     }
   ]
 }
