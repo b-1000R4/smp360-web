@@ -1,16 +1,32 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-06T01:30:19Z",
+  "generatedAt": "2026-07-06T03:27:45Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "quantumed-voyager-agent-4168",
-    "createdAt": "2026-07-06T01:23:49Z",
-    "project": "infrastructure",
-    "role": "operator-agent",
+    "agentName": "b1000-beacon-agent-7421",
+    "createdAt": "2026-07-06T02:41:57Z",
+    "project": "smp360-web",
+    "role": "building-agent",
     "status": "ready",
-    "statusAt": "2026-07-06T01:23:49Z"
+    "statusAt": "2026-07-06T02:44:04Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-beacon-agent-7421",
+      "createdAt": "2026-07-06T02:41:57Z",
+      "project": "smp360-web",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T02:44:04Z"
+    },
+    {
+      "agentName": "b1000-compass-agent-9134",
+      "createdAt": "2026-07-06T02:19:13Z",
+      "project": "smp360-web",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T02:19:13Z"
+    },
     {
       "agentName": "quantumed-voyager-agent-4168",
       "createdAt": "2026-07-06T01:23:49Z",
@@ -194,22 +210,6 @@
       "role": "bootstrap-agent",
       "status": "registered",
       "statusAt": "2026-06-22T21:50:52Z"
-    },
-    {
-      "agentName": "b1000-ocean-agent-3186",
-      "createdAt": "2026-06-22T21:38:19Z",
-      "project": "smp360-web",
-      "role": "bootstrap-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T21:38:41Z"
-    },
-    {
-      "agentName": "b1000-bridge-agent-4944",
-      "createdAt": "2026-06-22T21:30:02Z",
-      "project": "smp360-web",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T21:31:20Z"
     }
   ]
 }
