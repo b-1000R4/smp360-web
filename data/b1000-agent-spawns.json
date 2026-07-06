@@ -1,16 +1,32 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-05T23:37:14Z",
+  "generatedAt": "2026-07-06T00:23:58Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-orchard-agent-5192",
-    "createdAt": "2026-07-05T22:11:19Z",
+    "agentName": "b1000-keystone-agent-4829",
+    "createdAt": "2026-07-06T00:24:00Z",
     "project": "agent-lab",
-    "role": "building-agent",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-05T22:11:19Z"
+    "statusAt": "2026-07-06T00:24:00Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-keystone-agent-4829",
+      "createdAt": "2026-07-06T00:24:00Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T00:24:00Z"
+    },
+    {
+      "agentName": "b1000-forge-agent-2607",
+      "createdAt": "2026-07-06T00:11:15Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T00:11:15Z"
+    },
     {
       "agentName": "b1000-orchard-agent-5192",
       "createdAt": "2026-07-05T22:11:19Z",
@@ -194,22 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-06-22T21:29:18Z"
-    },
-    {
-      "agentName": "b1000-meadow-agent-7341",
-      "createdAt": "2026-06-22T20:52:29Z",
-      "project": "project-beta",
-      "role": "context-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T20:53:34Z"
-    },
-    {
-      "agentName": "b1000-anchor-agent-6240",
-      "createdAt": "2026-06-22T20:25:20Z",
-      "project": "project-beta",
-      "role": "context-agent",
-      "status": "ready",
-      "statusAt": "2026-06-22T20:26:14Z"
     }
   ]
 }
