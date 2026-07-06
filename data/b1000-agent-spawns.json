@@ -1,16 +1,48 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-06T03:27:45Z",
+  "generatedAt": "2026-07-06T18:07:43Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-beacon-agent-7421",
-    "createdAt": "2026-07-06T02:41:57Z",
-    "project": "smp360-web",
-    "role": "building-agent",
+    "agentName": "b1000-orbit-agent-0007",
+    "createdAt": "2026-07-06T18:05:39Z",
+    "project": "agent-lab",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-06T02:44:04Z"
+    "statusAt": "2026-07-06T18:05:39Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-orbit-agent-0007",
+      "createdAt": "2026-07-06T18:05:39Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T18:05:39Z"
+    },
+    {
+      "agentName": "b1000-atlas-agent-1000",
+      "createdAt": "2026-07-06T17:54:55Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T17:54:55Z"
+    },
+    {
+      "agentName": "b1000-handoff-agent-0706",
+      "createdAt": "2026-07-06T17:07:03Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T17:07:03Z"
+    },
+    {
+      "agentName": "b1000-atlas-agent-0706",
+      "createdAt": "2026-07-06T03:26:40Z",
+      "project": "agent-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T03:26:40Z"
+    },
     {
       "agentName": "b1000-beacon-agent-7421",
       "createdAt": "2026-07-06T02:41:57Z",
@@ -178,38 +210,6 @@
       "role": "bootstrap-agent",
       "status": "registered",
       "statusAt": "2026-06-22T22:16:21Z"
-    },
-    {
-      "agentName": "b1000-forest-agent-8432",
-      "createdAt": "2026-06-22T22:08:33Z",
-      "project": "smp360-web",
-      "role": "bootstrap-agent",
-      "status": "registered",
-      "statusAt": "2026-06-22T22:08:33Z"
-    },
-    {
-      "agentName": "b1000-walnut-agent-7319",
-      "createdAt": "2026-06-22T22:04:04Z",
-      "project": "smp360-web",
-      "role": "bootstrap-agent",
-      "status": "registered",
-      "statusAt": "2026-06-22T22:04:04Z"
-    },
-    {
-      "agentName": "b1000-river-agent-2468",
-      "createdAt": "2026-06-22T21:56:21Z",
-      "project": "smp360-web",
-      "role": "bootstrap-agent",
-      "status": "registered",
-      "statusAt": "2026-06-22T21:56:21Z"
-    },
-    {
-      "agentName": "b1000-maple-agent-5831",
-      "createdAt": "2026-06-22T21:50:52Z",
-      "project": "smp360-web",
-      "role": "bootstrap-agent",
-      "status": "registered",
-      "statusAt": "2026-06-22T21:50:52Z"
     }
   ]
 }
