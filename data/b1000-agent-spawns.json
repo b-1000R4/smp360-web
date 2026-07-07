@@ -1,16 +1,24 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-06T22:47:58Z",
+  "generatedAt": "2026-07-07T00:49:51Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-cipher-agent-6392",
-    "createdAt": "2026-07-06T21:46:20Z",
-    "project": "agent-lab",
-    "role": "review-agent",
+    "agentName": "b1000-copper-agent-7351",
+    "createdAt": "2026-07-06T23:05:06Z",
+    "project": "infrastructure",
+    "role": "planning-agent",
     "status": "ready",
-    "statusAt": "2026-07-06T21:46:20Z"
+    "statusAt": "2026-07-06T23:05:06Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-copper-agent-7351",
+      "createdAt": "2026-07-06T23:05:06Z",
+      "project": "infrastructure",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-06T23:05:06Z"
+    },
     {
       "agentName": "b1000-cipher-agent-6392",
       "createdAt": "2026-07-06T21:46:20Z",
@@ -202,14 +210,6 @@
       "role": "building-agent",
       "status": "ready",
       "statusAt": "2026-07-04T18:34:03Z"
-    },
-    {
-      "agentName": "b1000-lantern-agent-3847",
-      "createdAt": "2026-07-04T18:16:19Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-04T18:16:19Z"
     }
   ]
 }
