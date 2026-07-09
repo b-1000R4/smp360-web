@@ -1,16 +1,32 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-09T01:12:14Z",
+  "generatedAt": "2026-07-09T11:35:52Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-lucid-agent-8426",
-    "createdAt": "2026-07-09T01:01:58Z",
+    "agentName": "b1000-granite-agent-2684",
+    "createdAt": "2026-07-09T11:31:14Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-09T01:01:58Z"
+    "statusAt": "2026-07-09T11:31:14Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-granite-agent-2684",
+      "createdAt": "2026-07-09T11:31:14Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-09T11:31:14Z"
+    },
+    {
+      "agentName": "b1000-tundra-agent-4721",
+      "createdAt": "2026-07-09T11:25:34Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-09T11:25:34Z"
+    },
     {
       "agentName": "b1000-lucid-agent-8426",
       "createdAt": "2026-07-09T01:01:58Z",
@@ -194,22 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-06T00:24:00Z"
-    },
-    {
-      "agentName": "b1000-forge-agent-2607",
-      "createdAt": "2026-07-06T00:11:15Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T00:11:15Z"
-    },
-    {
-      "agentName": "b1000-orchard-agent-5192",
-      "createdAt": "2026-07-05T22:11:19Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-05T22:11:19Z"
     }
   ]
 }
