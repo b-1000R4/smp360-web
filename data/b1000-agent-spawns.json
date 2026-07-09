@@ -1,16 +1,48 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-07T00:49:51Z",
+  "generatedAt": "2026-07-09T01:12:14Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-copper-agent-7351",
-    "createdAt": "2026-07-06T23:05:06Z",
-    "project": "infrastructure",
-    "role": "planning-agent",
+    "agentName": "b1000-lucid-agent-8426",
+    "createdAt": "2026-07-09T01:01:58Z",
+    "project": "agent-lab",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-06T23:05:06Z"
+    "statusAt": "2026-07-09T01:01:58Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-lucid-agent-8426",
+      "createdAt": "2026-07-09T01:01:58Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-09T01:01:58Z"
+    },
+    {
+      "agentName": "quantumed-keystone-agent-8642",
+      "createdAt": "2026-07-09T00:51:24Z",
+      "project": "infrastructure",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-09T00:51:24Z"
+    },
+    {
+      "agentName": "b1000-quartz-agent-3147",
+      "createdAt": "2026-07-07T01:04:46Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-07T01:04:46Z"
+    },
+    {
+      "agentName": "b1000-harvest-agent-2846",
+      "createdAt": "2026-07-07T00:59:08Z",
+      "project": "infrastructure",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-07T00:59:08Z"
+    },
     {
       "agentName": "b1000-copper-agent-7351",
       "createdAt": "2026-07-06T23:05:06Z",
@@ -178,38 +210,6 @@
       "role": "building-agent",
       "status": "ready",
       "statusAt": "2026-07-05T22:11:19Z"
-    },
-    {
-      "agentName": "b1000-verdict-agent-7316",
-      "createdAt": "2026-07-05T02:07:44Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-05T02:07:44Z"
-    },
-    {
-      "agentName": "b1000-citadel-agent-6084",
-      "createdAt": "2026-07-05T01:56:52Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-05T01:56:52Z"
-    },
-    {
-      "agentName": "b1000-summit-agent-4938",
-      "createdAt": "2026-07-04T20:47:27Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-04T20:47:27Z"
-    },
-    {
-      "agentName": "b1000-vector-agent-2176",
-      "createdAt": "2026-07-04T18:34:03Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-04T18:34:03Z"
     }
   ]
 }
