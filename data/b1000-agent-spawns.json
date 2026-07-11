@@ -1,16 +1,40 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-09T11:35:52Z",
+  "generatedAt": "2026-07-11T21:45:59Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-granite-agent-2684",
-    "createdAt": "2026-07-09T11:31:14Z",
-    "project": "agent-lab",
-    "role": "review-agent",
+    "agentName": "b1000-saddle-agent-1735",
+    "createdAt": "2026-07-11T21:10:51Z",
+    "project": "compose-lab",
+    "role": "context-agent",
     "status": "ready",
-    "statusAt": "2026-07-09T11:31:14Z"
+    "statusAt": "2026-07-11T21:10:51Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-saddle-agent-1735",
+      "createdAt": "2026-07-11T21:10:51Z",
+      "project": "compose-lab",
+      "role": "context-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T21:10:51Z"
+    },
+    {
+      "agentName": "b1000-quarter-agent-8341",
+      "createdAt": "2026-07-10T00:55:20Z",
+      "project": "compose-lab",
+      "role": "context-agent",
+      "status": "ready",
+      "statusAt": "2026-07-10T00:55:20Z"
+    },
+    {
+      "agentName": "b1000-mosaic-agent-5738",
+      "createdAt": "2026-07-10T00:10:47Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-10T00:10:47Z"
+    },
     {
       "agentName": "b1000-granite-agent-2684",
       "createdAt": "2026-07-09T11:31:14Z",
@@ -186,30 +210,6 @@
       "role": "building-agent",
       "status": "ready",
       "statusAt": "2026-07-06T02:44:04Z"
-    },
-    {
-      "agentName": "b1000-compass-agent-9134",
-      "createdAt": "2026-07-06T02:19:13Z",
-      "project": "smp360-web",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T02:19:13Z"
-    },
-    {
-      "agentName": "quantumed-voyager-agent-4168",
-      "createdAt": "2026-07-06T01:23:49Z",
-      "project": "infrastructure",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T01:23:49Z"
-    },
-    {
-      "agentName": "b1000-keystone-agent-4829",
-      "createdAt": "2026-07-06T00:24:00Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T00:24:00Z"
     }
   ]
 }
