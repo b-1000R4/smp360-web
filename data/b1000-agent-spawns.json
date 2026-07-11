@@ -1,16 +1,40 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-11T21:45:59Z",
+  "generatedAt": "2026-07-11T22:32:47Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-saddle-agent-1735",
-    "createdAt": "2026-07-11T21:10:51Z",
-    "project": "compose-lab",
-    "role": "context-agent",
+    "agentName": "b1000-saffron-agent-2841",
+    "createdAt": "2026-07-11T22:28:58Z",
+    "project": "agent-lab",
+    "role": "operator-agent",
     "status": "ready",
-    "statusAt": "2026-07-11T21:10:51Z"
+    "statusAt": "2026-07-11T22:30:08Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-saffron-agent-2841",
+      "createdAt": "2026-07-11T22:28:58Z",
+      "project": "agent-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T22:30:08Z"
+    },
+    {
+      "agentName": "b1000-ember-agent-9137",
+      "createdAt": "2026-07-11T22:18:23Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T22:18:23Z"
+    },
+    {
+      "agentName": "b1000-lantern-agent-4826",
+      "createdAt": "2026-07-11T22:13:06Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T22:13:06Z"
+    },
     {
       "agentName": "b1000-saddle-agent-1735",
       "createdAt": "2026-07-11T21:10:51Z",
@@ -186,30 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-06T17:54:55Z"
-    },
-    {
-      "agentName": "b1000-handoff-agent-0706",
-      "createdAt": "2026-07-06T17:07:03Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T17:07:03Z"
-    },
-    {
-      "agentName": "b1000-atlas-agent-0706",
-      "createdAt": "2026-07-06T03:26:40Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T03:26:40Z"
-    },
-    {
-      "agentName": "b1000-beacon-agent-7421",
-      "createdAt": "2026-07-06T02:41:57Z",
-      "project": "smp360-web",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T02:44:04Z"
     }
   ]
 }
