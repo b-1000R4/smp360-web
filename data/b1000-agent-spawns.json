@@ -1,16 +1,32 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-11T22:47:20Z",
+  "generatedAt": "2026-07-11T23:20:39Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-canyon-agent-6403",
-    "createdAt": "2026-07-11T22:38:29Z",
+    "agentName": "b1000-compass-agent-3184",
+    "createdAt": "2026-07-11T22:57:13Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-11T22:38:29Z"
+    "statusAt": "2026-07-11T22:57:13Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-compass-agent-3184",
+      "createdAt": "2026-07-11T22:57:13Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T22:57:13Z"
+    },
+    {
+      "agentName": "b1000-pioneer-agent-5726",
+      "createdAt": "2026-07-11T22:46:50Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T22:47:43Z"
+    },
     {
       "agentName": "b1000-canyon-agent-6403",
       "createdAt": "2026-07-11T22:38:29Z",
@@ -194,22 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-06T19:48:56Z"
-    },
-    {
-      "agentName": "b1000-foundry-agent-0011",
-      "createdAt": "2026-07-06T19:43:02Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T19:43:02Z"
-    },
-    {
-      "agentName": "b1000-orbit-agent-0007",
-      "createdAt": "2026-07-06T18:05:39Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T18:05:39Z"
     }
   ]
 }
