@@ -1,16 +1,24 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-11T22:32:47Z",
+  "generatedAt": "2026-07-11T22:47:20Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-saffron-agent-2841",
-    "createdAt": "2026-07-11T22:28:58Z",
+    "agentName": "b1000-canyon-agent-6403",
+    "createdAt": "2026-07-11T22:38:29Z",
     "project": "agent-lab",
-    "role": "operator-agent",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-11T22:30:08Z"
+    "statusAt": "2026-07-11T22:38:29Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-canyon-agent-6403",
+      "createdAt": "2026-07-11T22:38:29Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T22:38:29Z"
+    },
     {
       "agentName": "b1000-saffron-agent-2841",
       "createdAt": "2026-07-11T22:28:58Z",
@@ -202,14 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-06T18:05:39Z"
-    },
-    {
-      "agentName": "b1000-atlas-agent-1000",
-      "createdAt": "2026-07-06T17:54:55Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T17:54:55Z"
     }
   ]
 }
