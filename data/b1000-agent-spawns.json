@@ -1,16 +1,32 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-12T23:14:59Z",
+  "generatedAt": "2026-07-12T23:38:58Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-harbor-agent-5834",
-    "createdAt": "2026-07-12T23:13:28Z",
+    "agentName": "b1000-puzzle-agent-3662",
+    "createdAt": "2026-07-12T23:29:14Z",
     "project": "compose-lab",
     "role": "building-agent",
     "status": "ready",
-    "statusAt": "2026-07-12T23:13:28Z"
+    "statusAt": "2026-07-12T23:31:02Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-puzzle-agent-3662",
+      "createdAt": "2026-07-12T23:29:14Z",
+      "project": "compose-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T23:31:02Z"
+    },
+    {
+      "agentName": "b1000-museum-agent-6402",
+      "createdAt": "2026-07-12T23:23:34Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T23:23:34Z"
+    },
     {
       "agentName": "b1000-harbor-agent-5834",
       "createdAt": "2026-07-12T23:13:28Z",
@@ -194,22 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-11T22:38:29Z"
-    },
-    {
-      "agentName": "b1000-saffron-agent-2841",
-      "createdAt": "2026-07-11T22:28:58Z",
-      "project": "agent-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-11T22:30:08Z"
-    },
-    {
-      "agentName": "b1000-ember-agent-9137",
-      "createdAt": "2026-07-11T22:18:23Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-11T22:18:23Z"
     }
   ]
 }
