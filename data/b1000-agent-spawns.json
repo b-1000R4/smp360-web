@@ -1,16 +1,72 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-12T00:30:03Z",
+  "generatedAt": "2026-07-12T01:37:41Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-voyage-agent-4821",
-    "createdAt": "2026-07-12T00:25:13Z",
+    "agentName": "b1000-legend-agent-6259",
+    "createdAt": "2026-07-12T01:25:31Z",
     "project": "compose-lab",
-    "role": "operator-agent",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-12T00:26:07Z"
+    "statusAt": "2026-07-12T01:26:21Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-legend-agent-6259",
+      "createdAt": "2026-07-12T01:25:31Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T01:26:21Z"
+    },
+    {
+      "agentName": "b1000-merit-agent-7314",
+      "createdAt": "2026-07-12T01:18:17Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T01:18:17Z"
+    },
+    {
+      "agentName": "b1000-album-agent-5182",
+      "createdAt": "2026-07-12T01:09:45Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T01:10:30Z"
+    },
+    {
+      "agentName": "b1000-paddle-agent-8473",
+      "createdAt": "2026-07-12T01:04:57Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T01:04:57Z"
+    },
+    {
+      "agentName": "b1000-absorb-agent-2941",
+      "createdAt": "2026-07-12T00:53:28Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T00:55:00Z"
+    },
+    {
+      "agentName": "b1000-timber-agent-6038",
+      "createdAt": "2026-07-12T00:42:47Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T00:42:47Z"
+    },
+    {
+      "agentName": "b1000-ripple-agent-5274",
+      "createdAt": "2026-07-12T00:35:41Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T00:37:00Z"
+    },
     {
       "agentName": "b1000-voyage-agent-4821",
       "createdAt": "2026-07-12T00:25:13Z",
@@ -154,62 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-07T01:04:46Z"
-    },
-    {
-      "agentName": "b1000-harvest-agent-2846",
-      "createdAt": "2026-07-07T00:59:08Z",
-      "project": "infrastructure",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-07T00:59:08Z"
-    },
-    {
-      "agentName": "b1000-copper-agent-7351",
-      "createdAt": "2026-07-06T23:05:06Z",
-      "project": "infrastructure",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T23:05:06Z"
-    },
-    {
-      "agentName": "b1000-cipher-agent-6392",
-      "createdAt": "2026-07-06T21:46:20Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T21:46:20Z"
-    },
-    {
-      "agentName": "b1000-silver-agent-4829",
-      "createdAt": "2026-07-06T21:30:31Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T21:30:31Z"
-    },
-    {
-      "agentName": "b1000-gitreview-agent-0018",
-      "createdAt": "2026-07-06T21:15:26Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T21:15:26Z"
-    },
-    {
-      "agentName": "b1000-gitpolicy-agent-0017",
-      "createdAt": "2026-07-06T21:04:17Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T21:04:17Z"
-    },
-    {
-      "agentName": "b1000-review-agent-0016",
-      "createdAt": "2026-07-06T20:42:43Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T20:42:43Z"
     }
   ]
 }
