@@ -1,16 +1,48 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-12T01:37:41Z",
+  "generatedAt": "2026-07-12T22:36:48Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-legend-agent-6259",
-    "createdAt": "2026-07-12T01:25:31Z",
+    "agentName": "b1000-cabin-agent-4072",
+    "createdAt": "2026-07-12T22:29:24Z",
     "project": "compose-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-12T01:26:21Z"
+    "statusAt": "2026-07-12T22:29:24Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cabin-agent-4072",
+      "createdAt": "2026-07-12T22:29:24Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T22:29:24Z"
+    },
+    {
+      "agentName": "b1000-saffron-agent-1936",
+      "createdAt": "2026-07-12T22:23:38Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T22:23:38Z"
+    },
+    {
+      "agentName": "b1000-ivory-agent-5264",
+      "createdAt": "2026-07-12T22:16:28Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T22:16:28Z"
+    },
+    {
+      "agentName": "b1000-canvas-agent-8473",
+      "createdAt": "2026-07-12T21:27:34Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T21:29:02Z"
+    },
     {
       "agentName": "b1000-legend-agent-6259",
       "createdAt": "2026-07-12T01:25:31Z",
@@ -178,38 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-09T11:31:14Z"
-    },
-    {
-      "agentName": "b1000-tundra-agent-4721",
-      "createdAt": "2026-07-09T11:25:34Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-09T11:25:34Z"
-    },
-    {
-      "agentName": "b1000-lucid-agent-8426",
-      "createdAt": "2026-07-09T01:01:58Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-09T01:01:58Z"
-    },
-    {
-      "agentName": "quantumed-keystone-agent-8642",
-      "createdAt": "2026-07-09T00:51:24Z",
-      "project": "infrastructure",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-09T00:51:24Z"
-    },
-    {
-      "agentName": "b1000-quartz-agent-3147",
-      "createdAt": "2026-07-07T01:04:46Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-07T01:04:46Z"
     }
   ]
 }
