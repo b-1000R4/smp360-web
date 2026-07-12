@@ -1,16 +1,48 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-11T23:20:39Z",
+  "generatedAt": "2026-07-12T00:30:03Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-compass-agent-3184",
-    "createdAt": "2026-07-11T22:57:13Z",
-    "project": "agent-lab",
-    "role": "review-agent",
+    "agentName": "b1000-voyage-agent-4821",
+    "createdAt": "2026-07-12T00:25:13Z",
+    "project": "compose-lab",
+    "role": "operator-agent",
     "status": "ready",
-    "statusAt": "2026-07-11T22:57:13Z"
+    "statusAt": "2026-07-12T00:26:07Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-voyage-agent-4821",
+      "createdAt": "2026-07-12T00:25:13Z",
+      "project": "compose-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T00:26:07Z"
+    },
+    {
+      "agentName": "b1000-canyon-agent-8462",
+      "createdAt": "2026-07-11T23:55:59Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T23:55:59Z"
+    },
+    {
+      "agentName": "b1000-kernel-agent-6409",
+      "createdAt": "2026-07-11T23:46:51Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T23:48:15Z"
+    },
+    {
+      "agentName": "b1000-harvest-agent-8462",
+      "createdAt": "2026-07-11T23:34:14Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-11T23:35:04Z"
+    },
     {
       "agentName": "b1000-compass-agent-3184",
       "createdAt": "2026-07-11T22:57:13Z",
@@ -178,38 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-06T20:42:43Z"
-    },
-    {
-      "agentName": "b1000-playbook-agent-0015",
-      "createdAt": "2026-07-06T20:33:49Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T20:33:49Z"
-    },
-    {
-      "agentName": "b1000-reconcile-agent-0014",
-      "createdAt": "2026-07-06T20:13:09Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T20:13:09Z"
-    },
-    {
-      "agentName": "b1000-topology-agent-0013",
-      "createdAt": "2026-07-06T20:04:37Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T20:04:37Z"
-    },
-    {
-      "agentName": "b1000-verifier-agent-0012",
-      "createdAt": "2026-07-06T19:48:56Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-06T19:48:56Z"
     }
   ]
 }
