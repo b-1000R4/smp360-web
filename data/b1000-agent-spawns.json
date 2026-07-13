@@ -1,16 +1,48 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-12T23:38:58Z",
+  "generatedAt": "2026-07-13T00:12:21Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-puzzle-agent-3662",
-    "createdAt": "2026-07-12T23:29:14Z",
+    "agentName": "b1000-compass-agent-8147",
+    "createdAt": "2026-07-13T00:09:25Z",
     "project": "compose-lab",
-    "role": "building-agent",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-12T23:31:02Z"
+    "statusAt": "2026-07-13T00:09:25Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-compass-agent-8147",
+      "createdAt": "2026-07-13T00:09:25Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T00:09:25Z"
+    },
+    {
+      "agentName": "b1000-glacier-agent-4821",
+      "createdAt": "2026-07-13T00:01:15Z",
+      "project": "compose-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T00:01:15Z"
+    },
+    {
+      "agentName": "b1000-nectar-agent-5730",
+      "createdAt": "2026-07-12T23:55:05Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T23:55:05Z"
+    },
+    {
+      "agentName": "b1000-dolphin-agent-9284",
+      "createdAt": "2026-07-12T23:45:44Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-12T23:45:44Z"
+    },
     {
       "agentName": "b1000-puzzle-agent-3662",
       "createdAt": "2026-07-12T23:29:14Z",
@@ -178,38 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-11T23:48:15Z"
-    },
-    {
-      "agentName": "b1000-harvest-agent-8462",
-      "createdAt": "2026-07-11T23:34:14Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-11T23:35:04Z"
-    },
-    {
-      "agentName": "b1000-compass-agent-3184",
-      "createdAt": "2026-07-11T22:57:13Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-11T22:57:13Z"
-    },
-    {
-      "agentName": "b1000-pioneer-agent-5726",
-      "createdAt": "2026-07-11T22:46:50Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-11T22:47:43Z"
-    },
-    {
-      "agentName": "b1000-canyon-agent-6403",
-      "createdAt": "2026-07-11T22:38:29Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-11T22:38:29Z"
     }
   ]
 }
