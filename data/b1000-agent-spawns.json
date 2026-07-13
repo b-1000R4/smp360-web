@@ -1,16 +1,24 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-13T00:12:21Z",
+  "generatedAt": "2026-07-13T00:28:56Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-compass-agent-8147",
-    "createdAt": "2026-07-13T00:09:25Z",
+    "agentName": "b1000-harvest-agent-5930",
+    "createdAt": "2026-07-13T00:20:03Z",
     "project": "compose-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-13T00:09:25Z"
+    "statusAt": "2026-07-13T00:21:21Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-harvest-agent-5930",
+      "createdAt": "2026-07-13T00:20:03Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T00:21:21Z"
+    },
     {
       "agentName": "b1000-compass-agent-8147",
       "createdAt": "2026-07-13T00:09:25Z",
@@ -202,14 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-11T23:55:59Z"
-    },
-    {
-      "agentName": "b1000-kernel-agent-6409",
-      "createdAt": "2026-07-11T23:46:51Z",
-      "project": "compose-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-11T23:48:15Z"
     }
   ]
 }
