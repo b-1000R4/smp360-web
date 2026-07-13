@@ -1,16 +1,40 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-13T01:29:54Z",
+  "generatedAt": "2026-07-13T01:51:06Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-violin-agent-4731",
-    "createdAt": "2026-07-13T01:28:31Z",
+    "agentName": "b1000-marble-agent-6214",
+    "createdAt": "2026-07-13T01:48:34Z",
     "project": "compose-lab",
-    "role": "review-agent",
+    "role": "operator-agent",
     "status": "ready",
-    "statusAt": "2026-07-13T01:30:12Z"
+    "statusAt": "2026-07-13T01:52:00Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-marble-agent-6214",
+      "createdAt": "2026-07-13T01:48:34Z",
+      "project": "compose-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T01:52:00Z"
+    },
+    {
+      "agentName": "b1000-thrive-agent-3174",
+      "createdAt": "2026-07-13T01:48:19Z",
+      "project": "compose-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T01:49:27Z"
+    },
+    {
+      "agentName": "b1000-radiant-agent-5293",
+      "createdAt": "2026-07-13T01:39:31Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T01:40:51Z"
+    },
     {
       "agentName": "b1000-violin-agent-4731",
       "createdAt": "2026-07-13T01:28:31Z",
@@ -186,30 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-12T01:26:21Z"
-    },
-    {
-      "agentName": "b1000-merit-agent-7314",
-      "createdAt": "2026-07-12T01:18:17Z",
-      "project": "compose-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-12T01:18:17Z"
-    },
-    {
-      "agentName": "b1000-album-agent-5182",
-      "createdAt": "2026-07-12T01:09:45Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-12T01:10:30Z"
-    },
-    {
-      "agentName": "b1000-paddle-agent-8473",
-      "createdAt": "2026-07-12T01:04:57Z",
-      "project": "compose-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-12T01:04:57Z"
     }
   ]
 }
