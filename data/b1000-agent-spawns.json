@@ -1,16 +1,56 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-13T00:28:56Z",
+  "generatedAt": "2026-07-13T01:29:54Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-harvest-agent-5930",
-    "createdAt": "2026-07-13T00:20:03Z",
+    "agentName": "b1000-violin-agent-4731",
+    "createdAt": "2026-07-13T01:28:31Z",
     "project": "compose-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-13T00:21:21Z"
+    "statusAt": "2026-07-13T01:30:12Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-violin-agent-4731",
+      "createdAt": "2026-07-13T01:28:31Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T01:30:12Z"
+    },
+    {
+      "agentName": "b1000-saffron-agent-8462",
+      "createdAt": "2026-07-13T01:20:02Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T01:20:47Z"
+    },
+    {
+      "agentName": "b1000-oasis-agent-6381",
+      "createdAt": "2026-07-13T01:14:42Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T01:16:30Z"
+    },
+    {
+      "agentName": "b1000-canyon-agent-2579",
+      "createdAt": "2026-07-13T00:43:59Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T00:43:59Z"
+    },
+    {
+      "agentName": "b1000-tundra-agent-2674",
+      "createdAt": "2026-07-13T00:38:15Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T00:38:54Z"
+    },
     {
       "agentName": "b1000-harvest-agent-5930",
       "createdAt": "2026-07-13T00:20:03Z",
@@ -170,46 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-12T01:04:57Z"
-    },
-    {
-      "agentName": "b1000-absorb-agent-2941",
-      "createdAt": "2026-07-12T00:53:28Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-12T00:55:00Z"
-    },
-    {
-      "agentName": "b1000-timber-agent-6038",
-      "createdAt": "2026-07-12T00:42:47Z",
-      "project": "compose-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-12T00:42:47Z"
-    },
-    {
-      "agentName": "b1000-ripple-agent-5274",
-      "createdAt": "2026-07-12T00:35:41Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-12T00:37:00Z"
-    },
-    {
-      "agentName": "b1000-voyage-agent-4821",
-      "createdAt": "2026-07-12T00:25:13Z",
-      "project": "compose-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-12T00:26:07Z"
-    },
-    {
-      "agentName": "b1000-canyon-agent-8462",
-      "createdAt": "2026-07-11T23:55:59Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-11T23:55:59Z"
     }
   ]
 }
