@@ -1,16 +1,48 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-13T03:49:02Z",
+  "generatedAt": "2026-07-13T04:28:52Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-keystone-agent-8462",
-    "createdAt": "2026-07-13T03:46:13Z",
-    "project": "compose-lab",
-    "role": "building-agent",
+    "agentName": "b1000-slate-agent-4827",
+    "createdAt": "2026-07-13T04:22:35Z",
+    "project": "agent-lab",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-13T03:46:13Z"
+    "statusAt": "2026-07-13T04:22:35Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-slate-agent-4827",
+      "createdAt": "2026-07-13T04:22:35Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T04:22:35Z"
+    },
+    {
+      "agentName": "b1000-access-agent-9142",
+      "createdAt": "2026-07-13T04:14:59Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T04:14:59Z"
+    },
+    {
+      "agentName": "b1000-cobalt-agent-3716",
+      "createdAt": "2026-07-13T04:07:41Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T04:07:41Z"
+    },
+    {
+      "agentName": "b1000-harbor-agent-9064",
+      "createdAt": "2026-07-13T03:59:15Z",
+      "project": "compose-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T03:59:15Z"
+    },
     {
       "agentName": "b1000-keystone-agent-8462",
       "createdAt": "2026-07-13T03:46:13Z",
@@ -178,38 +210,6 @@
       "role": "building-agent",
       "status": "ready",
       "statusAt": "2026-07-13T00:38:54Z"
-    },
-    {
-      "agentName": "b1000-harvest-agent-5930",
-      "createdAt": "2026-07-13T00:20:03Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T00:21:21Z"
-    },
-    {
-      "agentName": "b1000-compass-agent-8147",
-      "createdAt": "2026-07-13T00:09:25Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T00:09:25Z"
-    },
-    {
-      "agentName": "b1000-glacier-agent-4821",
-      "createdAt": "2026-07-13T00:01:15Z",
-      "project": "compose-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T00:01:15Z"
-    },
-    {
-      "agentName": "b1000-nectar-agent-5730",
-      "createdAt": "2026-07-12T23:55:05Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-12T23:55:05Z"
     }
   ]
 }
