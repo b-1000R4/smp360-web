@@ -1,16 +1,64 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-14T20:32:05Z",
+  "generatedAt": "2026-07-14T21:44:31Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-victory-agent-5829",
-    "createdAt": "2026-07-14T20:24:10Z",
+    "agentName": "b1000-cobalt-agent-9061",
+    "createdAt": "2026-07-14T21:39:51Z",
     "project": "compose-lab",
-    "role": "review-agent",
+    "role": "operator-agent",
     "status": "ready",
-    "statusAt": "2026-07-14T20:24:10Z"
+    "statusAt": "2026-07-14T21:39:51Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cobalt-agent-9061",
+      "createdAt": "2026-07-14T21:39:51Z",
+      "project": "compose-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T21:39:51Z"
+    },
+    {
+      "agentName": "b1000-keystone-agent-7142",
+      "createdAt": "2026-07-14T21:24:53Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T21:24:53Z"
+    },
+    {
+      "agentName": "b1000-celery-agent-3197",
+      "createdAt": "2026-07-14T21:16:30Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T21:16:30Z"
+    },
+    {
+      "agentName": "b1000-harpoon-agent-6842",
+      "createdAt": "2026-07-14T20:57:16Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T20:57:16Z"
+    },
+    {
+      "agentName": "b1000-cascade-agent-4073",
+      "createdAt": "2026-07-14T20:50:58Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T20:50:58Z"
+    },
+    {
+      "agentName": "b1000-vertex-agent-8067",
+      "createdAt": "2026-07-14T20:36:51Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T20:36:51Z"
+    },
     {
       "agentName": "b1000-victory-agent-5829",
       "createdAt": "2026-07-14T20:24:10Z",
@@ -162,54 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-13T03:01:03Z"
-    },
-    {
-      "agentName": "b1000-tundra-agent-7312",
-      "createdAt": "2026-07-13T02:52:20Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T02:53:24Z"
-    },
-    {
-      "agentName": "b1000-alpine-agent-2741",
-      "createdAt": "2026-07-13T02:44:27Z",
-      "project": "compose-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T02:46:00Z"
-    },
-    {
-      "agentName": "b1000-museum-agent-6385",
-      "createdAt": "2026-07-13T02:35:10Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T02:38:00Z"
-    },
-    {
-      "agentName": "b1000-quartz-agent-4627",
-      "createdAt": "2026-07-13T02:20:27Z",
-      "project": "compose-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T02:23:00Z"
-    },
-    {
-      "agentName": "b1000-pioneer-agent-8536",
-      "createdAt": "2026-07-13T02:13:41Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T02:15:00Z"
-    },
-    {
-      "agentName": "b1000-slate-agent-7043",
-      "createdAt": "2026-07-13T01:58:00Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T01:59:00Z"
     }
   ]
 }
