@@ -1,16 +1,48 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-14T21:44:31Z",
+  "generatedAt": "2026-07-14T22:36:16Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-cobalt-agent-9061",
-    "createdAt": "2026-07-14T21:39:51Z",
+    "agentName": "b1000-marble-agent-9274",
+    "createdAt": "2026-07-14T22:27:55Z",
     "project": "compose-lab",
-    "role": "operator-agent",
+    "role": "building-agent",
     "status": "ready",
-    "statusAt": "2026-07-14T21:39:51Z"
+    "statusAt": "2026-07-14T22:27:55Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-marble-agent-9274",
+      "createdAt": "2026-07-14T22:27:55Z",
+      "project": "compose-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T22:27:55Z"
+    },
+    {
+      "agentName": "b1000-orchard-agent-7316",
+      "createdAt": "2026-07-14T22:17:37Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T22:17:37Z"
+    },
+    {
+      "agentName": "b1000-slate-agent-7429",
+      "createdAt": "2026-07-14T22:08:12Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T22:08:12Z"
+    },
+    {
+      "agentName": "b1000-granite-agent-4816",
+      "createdAt": "2026-07-14T21:54:02Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T21:54:02Z"
+    },
     {
       "agentName": "b1000-cobalt-agent-9061",
       "createdAt": "2026-07-14T21:39:51Z",
@@ -178,38 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-13T03:38:57Z"
-    },
-    {
-      "agentName": "b1000-harvest-agent-6802",
-      "createdAt": "2026-07-13T03:31:34Z",
-      "project": "compose-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T03:31:34Z"
-    },
-    {
-      "agentName": "b1000-canvas-agent-9186",
-      "createdAt": "2026-07-13T03:21:37Z",
-      "project": "compose-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T03:21:37Z"
-    },
-    {
-      "agentName": "b1000-orbit-agent-5296",
-      "createdAt": "2026-07-13T03:12:48Z",
-      "project": "compose-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T03:12:48Z"
-    },
-    {
-      "agentName": "b1000-magnet-agent-4638",
-      "createdAt": "2026-07-13T02:59:47Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T03:01:03Z"
     }
   ]
 }
