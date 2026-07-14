@@ -1,16 +1,40 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-13T04:28:52Z",
+  "generatedAt": "2026-07-14T19:08:16Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-slate-agent-4827",
-    "createdAt": "2026-07-13T04:22:35Z",
-    "project": "agent-lab",
+    "agentName": "b1000-lattice-agent-5169",
+    "createdAt": "2026-07-14T19:00:41Z",
+    "project": "compose-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-13T04:22:35Z"
+    "statusAt": "2026-07-14T19:00:41Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-lattice-agent-5169",
+      "createdAt": "2026-07-14T19:00:41Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T19:00:41Z"
+    },
+    {
+      "agentName": "b1000-signal-agent-2847",
+      "createdAt": "2026-07-14T18:44:34Z",
+      "project": "compose-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T18:44:34Z"
+    },
+    {
+      "agentName": "b1000-voyage-agent-6173",
+      "createdAt": "2026-07-13T04:31:36Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-13T04:31:36Z"
+    },
     {
       "agentName": "b1000-slate-agent-4827",
       "createdAt": "2026-07-13T04:22:35Z",
@@ -186,30 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-13T01:20:47Z"
-    },
-    {
-      "agentName": "b1000-oasis-agent-6381",
-      "createdAt": "2026-07-13T01:14:42Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T01:16:30Z"
-    },
-    {
-      "agentName": "b1000-canyon-agent-2579",
-      "createdAt": "2026-07-13T00:43:59Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T00:43:59Z"
-    },
-    {
-      "agentName": "b1000-tundra-agent-2674",
-      "createdAt": "2026-07-13T00:38:15Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T00:38:54Z"
     }
   ]
 }
