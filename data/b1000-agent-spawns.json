@@ -1,16 +1,64 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-14T19:08:16Z",
+  "generatedAt": "2026-07-14T20:32:05Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-lattice-agent-5169",
-    "createdAt": "2026-07-14T19:00:41Z",
+    "agentName": "b1000-victory-agent-5829",
+    "createdAt": "2026-07-14T20:24:10Z",
     "project": "compose-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-14T19:00:41Z"
+    "statusAt": "2026-07-14T20:24:10Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-victory-agent-5829",
+      "createdAt": "2026-07-14T20:24:10Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T20:24:10Z"
+    },
+    {
+      "agentName": "b1000-compass-agent-6934",
+      "createdAt": "2026-07-14T20:15:53Z",
+      "project": "compose-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T20:15:53Z"
+    },
+    {
+      "agentName": "b1000-citadel-agent-5629",
+      "createdAt": "2026-07-14T20:02:52Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T20:02:52Z"
+    },
+    {
+      "agentName": "b1000-orbit-agent-7316",
+      "createdAt": "2026-07-14T19:46:03Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T19:46:03Z"
+    },
+    {
+      "agentName": "b1000-galaxy-agent-6284",
+      "createdAt": "2026-07-14T19:30:01Z",
+      "project": "compose-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T19:30:01Z"
+    },
+    {
+      "agentName": "b1000-quartz-agent-7396",
+      "createdAt": "2026-07-14T19:10:13Z",
+      "project": "compose-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-14T19:10:13Z"
+    },
     {
       "agentName": "b1000-lattice-agent-5169",
       "createdAt": "2026-07-14T19:00:41Z",
@@ -162,54 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-13T01:59:00Z"
-    },
-    {
-      "agentName": "b1000-legend-agent-3058",
-      "createdAt": "2026-07-13T01:55:12Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T01:57:00Z"
-    },
-    {
-      "agentName": "b1000-marble-agent-6214",
-      "createdAt": "2026-07-13T01:48:34Z",
-      "project": "compose-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T01:52:00Z"
-    },
-    {
-      "agentName": "b1000-thrive-agent-3174",
-      "createdAt": "2026-07-13T01:48:19Z",
-      "project": "compose-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T01:49:27Z"
-    },
-    {
-      "agentName": "b1000-radiant-agent-5293",
-      "createdAt": "2026-07-13T01:39:31Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T01:40:51Z"
-    },
-    {
-      "agentName": "b1000-violin-agent-4731",
-      "createdAt": "2026-07-13T01:28:31Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T01:30:12Z"
-    },
-    {
-      "agentName": "b1000-saffron-agent-8462",
-      "createdAt": "2026-07-13T01:20:02Z",
-      "project": "compose-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-13T01:20:47Z"
     }
   ]
 }
