@@ -1,16 +1,32 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-16T01:30:47Z",
+  "generatedAt": "2026-07-16T01:46:53Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-cannon-agent-4829",
-    "createdAt": "2026-07-16T01:28:46Z",
-    "project": "agent-lab",
+    "agentName": "b1000-verdant-agent-6194",
+    "createdAt": "2026-07-16T01:41:58Z",
+    "project": "sandbox-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-16T01:28:46Z"
+    "statusAt": "2026-07-16T01:41:58Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-verdant-agent-6194",
+      "createdAt": "2026-07-16T01:41:58Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T01:41:58Z"
+    },
+    {
+      "agentName": "b1000-orbit-agent-3064",
+      "createdAt": "2026-07-16T01:38:09Z",
+      "project": "sandbox-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T01:38:09Z"
+    },
     {
       "agentName": "b1000-cannon-agent-4829",
       "createdAt": "2026-07-16T01:28:46Z",
@@ -194,22 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-15T00:24:20Z"
-    },
-    {
-      "agentName": "b1000-aurora-agent-6195",
-      "createdAt": "2026-07-15T00:15:43Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T00:15:43Z"
-    },
-    {
-      "agentName": "b1000-keystone-agent-5841",
-      "createdAt": "2026-07-15T00:04:48Z",
-      "project": "compose-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T00:04:48Z"
     }
   ]
 }
