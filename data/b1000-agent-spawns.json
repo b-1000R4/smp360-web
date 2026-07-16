@@ -1,16 +1,32 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-16T01:14:59Z",
+  "generatedAt": "2026-07-16T01:30:47Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-voyage-agent-5196",
-    "createdAt": "2026-07-16T01:06:47Z",
+    "agentName": "b1000-cannon-agent-4829",
+    "createdAt": "2026-07-16T01:28:46Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-16T01:06:47Z"
+    "statusAt": "2026-07-16T01:28:46Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cannon-agent-4829",
+      "createdAt": "2026-07-16T01:28:46Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T01:28:46Z"
+    },
+    {
+      "agentName": "b1000-saffron-agent-7318",
+      "createdAt": "2026-07-16T01:23:35Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T01:23:35Z"
+    },
     {
       "agentName": "b1000-voyage-agent-5196",
       "createdAt": "2026-07-16T01:06:47Z",
@@ -194,22 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-15T00:04:48Z"
-    },
-    {
-      "agentName": "b1000-silver-agent-4382",
-      "createdAt": "2026-07-14T22:39:05Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-14T22:39:05Z"
-    },
-    {
-      "agentName": "b1000-marble-agent-9274",
-      "createdAt": "2026-07-14T22:27:55Z",
-      "project": "compose-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-14T22:27:55Z"
     }
   ]
 }
