@@ -1,16 +1,72 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-16T01:46:53Z",
+  "generatedAt": "2026-07-17T00:02:12Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-verdant-agent-6194",
-    "createdAt": "2026-07-16T01:41:58Z",
+    "agentName": "b1000-canyon-agent-4927",
+    "createdAt": "2026-07-17T00:00:14Z",
     "project": "sandbox-lab",
-    "role": "review-agent",
+    "role": "planning-agent",
     "status": "ready",
-    "statusAt": "2026-07-16T01:41:58Z"
+    "statusAt": "2026-07-17T00:00:14Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-canyon-agent-4927",
+      "createdAt": "2026-07-17T00:00:14Z",
+      "project": "sandbox-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-17T00:00:14Z"
+    },
+    {
+      "agentName": "b1000-granite-agent-7316",
+      "createdAt": "2026-07-16T23:42:26Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T23:42:26Z"
+    },
+    {
+      "agentName": "b1000-orbit-agent-3169",
+      "createdAt": "2026-07-16T23:21:24Z",
+      "project": "sandbox-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T23:21:24Z"
+    },
+    {
+      "agentName": "b1000-marble-agent-9074",
+      "createdAt": "2026-07-16T23:11:14Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T23:11:14Z"
+    },
+    {
+      "agentName": "b1000-silver-agent-6841",
+      "createdAt": "2026-07-16T22:57:50Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T22:57:50Z"
+    },
+    {
+      "agentName": "b1000-coral-agent-5902",
+      "createdAt": "2026-07-16T02:10:00Z",
+      "project": "sandbox-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T02:10:00Z"
+    },
+    {
+      "agentName": "b1000-harvest-agent-4729",
+      "createdAt": "2026-07-16T01:50:28Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-16T01:50:28Z"
+    },
     {
       "agentName": "b1000-verdant-agent-6194",
       "createdAt": "2026-07-16T01:41:58Z",
@@ -154,62 +210,6 @@
       "role": "operator-agent",
       "status": "ready",
       "statusAt": "2026-07-15T01:49:38Z"
-    },
-    {
-      "agentName": "b1000-cabin-agent-3819",
-      "createdAt": "2026-07-15T01:38:57Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T01:38:57Z"
-    },
-    {
-      "agentName": "b1000-ridge-agent-4279",
-      "createdAt": "2026-07-15T01:27:43Z",
-      "project": "compose-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T01:27:43Z"
-    },
-    {
-      "agentName": "b1000-vault-agent-2916",
-      "createdAt": "2026-07-15T01:15:21Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T01:15:21Z"
-    },
-    {
-      "agentName": "b1000-harbor-agent-5173",
-      "createdAt": "2026-07-15T00:59:30Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T00:59:30Z"
-    },
-    {
-      "agentName": "b1000-circuit-agent-6843",
-      "createdAt": "2026-07-15T00:46:57Z",
-      "project": "compose-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T00:46:57Z"
-    },
-    {
-      "agentName": "b1000-orbit-agent-5926",
-      "createdAt": "2026-07-15T00:36:20Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T00:36:20Z"
-    },
-    {
-      "agentName": "b1000-clone-agent-7632",
-      "createdAt": "2026-07-15T00:24:20Z",
-      "project": "compose-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T00:24:20Z"
     }
   ]
 }
