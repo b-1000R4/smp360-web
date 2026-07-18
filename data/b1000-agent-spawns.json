@@ -1,16 +1,40 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-17T00:02:12Z",
+  "generatedAt": "2026-07-18T15:38:37Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-canyon-agent-4927",
-    "createdAt": "2026-07-17T00:00:14Z",
+    "agentName": "b1000-plain-agent-6408",
+    "createdAt": "2026-07-18T16:05:00Z",
     "project": "sandbox-lab",
-    "role": "planning-agent",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-17T00:00:14Z"
+    "statusAt": "2026-07-18T16:05:00Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-plain-agent-6408",
+      "createdAt": "2026-07-18T16:05:00Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-18T16:05:00Z"
+    },
+    {
+      "agentName": "b1000-orbit-agent-5732",
+      "createdAt": "2026-07-18T15:31:05Z",
+      "project": "sandbox-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-18T15:31:05Z"
+    },
+    {
+      "agentName": "b1000-beacon-agent-2846",
+      "createdAt": "2026-07-18T15:23:13Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-18T15:23:13Z"
+    },
     {
       "agentName": "b1000-canyon-agent-4927",
       "createdAt": "2026-07-17T00:00:14Z",
@@ -186,30 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-15T02:19:54Z"
-    },
-    {
-      "agentName": "b1000-vault-agent-6398",
-      "createdAt": "2026-07-15T02:11:24Z",
-      "project": "compose-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T02:11:24Z"
-    },
-    {
-      "agentName": "b1000-quartz-agent-8642",
-      "createdAt": "2026-07-15T02:00:39Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T02:00:39Z"
-    },
-    {
-      "agentName": "b1000-archive-agent-7294",
-      "createdAt": "2026-07-15T01:49:38Z",
-      "project": "compose-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T01:49:38Z"
     }
   ]
 }
