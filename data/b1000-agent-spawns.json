@@ -1,16 +1,56 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-18T16:30:16Z",
+  "generatedAt": "2026-07-19T03:44:51Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-valley-agent-6382",
-    "createdAt": "2026-07-18T16:27:44Z",
+    "agentName": "b1000-cobalt-agent-7314",
+    "createdAt": "2026-07-19T03:39:08Z",
     "project": "sandbox-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-18T16:27:44Z"
+    "statusAt": "2026-07-19T03:39:08Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cobalt-agent-7314",
+      "createdAt": "2026-07-19T03:39:08Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-19T03:39:08Z"
+    },
+    {
+      "agentName": "b1000-silver-agent-9076",
+      "createdAt": "2026-07-19T03:12:37Z",
+      "project": "sandbox-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-19T03:12:37Z"
+    },
+    {
+      "agentName": "b1000-lattice-agent-3826",
+      "createdAt": "2026-07-19T01:05:22Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-19T01:05:22Z"
+    },
+    {
+      "agentName": "b1000-ridge-agent-5096",
+      "createdAt": "2026-07-18T17:08:33Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-18T17:08:33Z"
+    },
+    {
+      "agentName": "b1000-prism-agent-8462",
+      "createdAt": "2026-07-18T16:47:13Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-18T16:47:13Z"
+    },
     {
       "agentName": "b1000-valley-agent-6382",
       "createdAt": "2026-07-18T16:27:44Z",
@@ -170,46 +210,6 @@
       "role": "building-agent",
       "status": "ready",
       "statusAt": "2026-07-16T00:57:54Z"
-    },
-    {
-      "agentName": "b1000-lattice-agent-8362",
-      "createdAt": "2026-07-16T00:09:30Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T00:09:30Z"
-    },
-    {
-      "agentName": "b1000-harvest-agent-6395",
-      "createdAt": "2026-07-15T22:56:11Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T22:56:11Z"
-    },
-    {
-      "agentName": "b1000-valley-agent-7264",
-      "createdAt": "2026-07-15T22:40:34Z",
-      "project": "compose-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T22:40:34Z"
-    },
-    {
-      "agentName": "b1000-sunset-agent-4628",
-      "createdAt": "2026-07-15T22:25:34Z",
-      "project": "smp360-web",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T22:25:34Z"
-    },
-    {
-      "agentName": "b1000-silver-agent-5721",
-      "createdAt": "2026-07-15T22:23:57Z",
-      "project": "compose-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-15T22:23:57Z"
     }
   ]
 }
