@@ -1,16 +1,40 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-20T14:24:29Z",
+  "generatedAt": "2026-07-20T14:47:59Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-tunnel-agent-6385",
-    "createdAt": "2026-07-20T14:00:11Z",
+    "agentName": "b1000-spruce-agent-2841",
+    "createdAt": "2026-07-20T14:43:48Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-20T14:01:00Z"
+    "statusAt": "2026-07-20T14:43:48Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-spruce-agent-2841",
+      "createdAt": "2026-07-20T14:43:48Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-20T14:43:48Z"
+    },
+    {
+      "agentName": "b1000-quartz-agent-9401",
+      "createdAt": "2026-07-20T14:30:00Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-20T14:31:00Z"
+    },
+    {
+      "agentName": "b1000-mosaic-agent-5173",
+      "createdAt": "2026-07-20T14:15:00Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-20T14:15:00Z"
+    },
     {
       "agentName": "b1000-tunnel-agent-6385",
       "createdAt": "2026-07-20T14:00:11Z",
@@ -186,30 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-16T22:57:50Z"
-    },
-    {
-      "agentName": "b1000-coral-agent-5902",
-      "createdAt": "2026-07-16T02:10:00Z",
-      "project": "sandbox-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T02:10:00Z"
-    },
-    {
-      "agentName": "b1000-harvest-agent-4729",
-      "createdAt": "2026-07-16T01:50:28Z",
-      "project": "sandbox-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T01:50:28Z"
-    },
-    {
-      "agentName": "b1000-verdant-agent-6194",
-      "createdAt": "2026-07-16T01:41:58Z",
-      "project": "sandbox-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T01:41:58Z"
     }
   ]
 }
