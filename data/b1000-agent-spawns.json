@@ -1,16 +1,56 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-19T03:44:51Z",
+  "generatedAt": "2026-07-20T14:24:29Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-cobalt-agent-7314",
-    "createdAt": "2026-07-19T03:39:08Z",
-    "project": "sandbox-lab",
+    "agentName": "b1000-tunnel-agent-6385",
+    "createdAt": "2026-07-20T14:00:11Z",
+    "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-19T03:39:08Z"
+    "statusAt": "2026-07-20T14:01:00Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-tunnel-agent-6385",
+      "createdAt": "2026-07-20T14:00:11Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-20T14:01:00Z"
+    },
+    {
+      "agentName": "b1000-saffron-agent-2648",
+      "createdAt": "2026-07-20T13:38:29Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-20T13:39:12Z"
+    },
+    {
+      "agentName": "b1000-keystone-agent-7314",
+      "createdAt": "2026-07-19T07:16:19Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-19T07:16:19Z"
+    },
+    {
+      "agentName": "b1000-ladder-agent-7421",
+      "createdAt": "2026-07-19T05:05:16Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-19T05:05:16Z"
+    },
+    {
+      "agentName": "b1000-opal-agent-4182",
+      "createdAt": "2026-07-19T04:04:36Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-19T04:04:36Z"
+    },
     {
       "agentName": "b1000-cobalt-agent-7314",
       "createdAt": "2026-07-19T03:39:08Z",
@@ -170,46 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-16T01:41:58Z"
-    },
-    {
-      "agentName": "b1000-orbit-agent-3064",
-      "createdAt": "2026-07-16T01:38:09Z",
-      "project": "sandbox-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T01:38:09Z"
-    },
-    {
-      "agentName": "b1000-cannon-agent-4829",
-      "createdAt": "2026-07-16T01:28:46Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T01:28:46Z"
-    },
-    {
-      "agentName": "b1000-saffron-agent-7318",
-      "createdAt": "2026-07-16T01:23:35Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T01:23:35Z"
-    },
-    {
-      "agentName": "b1000-voyage-agent-5196",
-      "createdAt": "2026-07-16T01:06:47Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T01:06:47Z"
-    },
-    {
-      "agentName": "b1000-forge-agent-6824",
-      "createdAt": "2026-07-16T00:57:54Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T00:57:54Z"
     }
   ]
 }
