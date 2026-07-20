@@ -1,16 +1,48 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-20T14:50:32Z",
+  "generatedAt": "2026-07-20T15:38:42Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-spruce-agent-2841",
-    "createdAt": "2026-07-20T14:43:48Z",
+    "agentName": "b1000-basil-agent-3187",
+    "createdAt": "2026-07-20T15:40:00Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-20T14:43:48Z"
+    "statusAt": "2026-07-20T15:40:50Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-basil-agent-3187",
+      "createdAt": "2026-07-20T15:40:00Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-20T15:40:50Z"
+    },
+    {
+      "agentName": "b1000-raven-agent-7314",
+      "createdAt": "2026-07-20T15:25:09Z",
+      "project": "sandbox-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-20T15:25:09Z"
+    },
+    {
+      "agentName": "b1000-cedar-agent-7429",
+      "createdAt": "2026-07-20T15:17:16Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-20T15:18:20Z"
+    },
+    {
+      "agentName": "b1000-hazard-agent-5834",
+      "createdAt": "2026-07-20T15:11:55Z",
+      "project": "sandbox-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-20T15:11:55Z"
+    },
     {
       "agentName": "b1000-spruce-agent-2841",
       "createdAt": "2026-07-20T14:43:48Z",
@@ -178,38 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-17T00:00:14Z"
-    },
-    {
-      "agentName": "b1000-granite-agent-7316",
-      "createdAt": "2026-07-16T23:42:26Z",
-      "project": "sandbox-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T23:42:26Z"
-    },
-    {
-      "agentName": "b1000-orbit-agent-3169",
-      "createdAt": "2026-07-16T23:21:24Z",
-      "project": "sandbox-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T23:21:24Z"
-    },
-    {
-      "agentName": "b1000-marble-agent-9074",
-      "createdAt": "2026-07-16T23:11:14Z",
-      "project": "sandbox-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T23:11:14Z"
-    },
-    {
-      "agentName": "b1000-silver-agent-6841",
-      "createdAt": "2026-07-16T22:57:50Z",
-      "project": "sandbox-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-16T22:57:50Z"
     }
   ]
 }
