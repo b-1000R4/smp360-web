@@ -1,16 +1,40 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-22T23:14:46Z",
+  "generatedAt": "2026-07-22T23:29:10Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-quill-agent-7462",
-    "createdAt": "2026-07-22T23:06:42Z",
+    "agentName": "b1000-aurora-agent-7722",
+    "createdAt": "2026-07-22T23:28:54.013Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-22T23:06:42Z"
+    "statusAt": "2026-07-22T23:28:54.013Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-aurora-agent-7722",
+      "createdAt": "2026-07-22T23:28:54.013Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-22T23:28:54.013Z"
+    },
+    {
+      "agentName": "b1000-slate-agent-7316",
+      "createdAt": "2026-07-22T23:22:26Z",
+      "project": "sandbox-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-22T23:22:26Z"
+    },
+    {
+      "agentName": "b1000-ivory-agent-9137",
+      "createdAt": "2026-07-22T23:16:33Z",
+      "project": "agent-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-22T23:17:09Z"
+    },
     {
       "agentName": "b1000-quill-agent-7462",
       "createdAt": "2026-07-22T23:06:42Z",
@@ -186,30 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-20T17:11:25Z"
-    },
-    {
-      "agentName": "b1000-canyon-agent-4726",
-      "createdAt": "2026-07-20T16:52:49Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-20T16:54:00Z"
-    },
-    {
-      "agentName": "b1000-lyric-agent-8064",
-      "createdAt": "2026-07-20T16:25:00Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-20T16:26:00Z"
-    },
-    {
-      "agentName": "b1000-slate-agent-9056",
-      "createdAt": "2026-07-20T16:11:26Z",
-      "project": "sandbox-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-20T16:12:30Z"
     }
   ]
 }
