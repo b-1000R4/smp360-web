@@ -1,16 +1,40 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-22T22:26:21Z",
+  "generatedAt": "2026-07-22T23:14:46Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-canyon-agent-7314",
-    "createdAt": "2026-07-22T22:19:09Z",
+    "agentName": "b1000-quill-agent-7462",
+    "createdAt": "2026-07-22T23:06:42Z",
     "project": "agent-lab",
-    "role": "project-manager-agent",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-22T22:20:12Z"
+    "statusAt": "2026-07-22T23:06:42Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-quill-agent-7462",
+      "createdAt": "2026-07-22T23:06:42Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-22T23:06:42Z"
+    },
+    {
+      "agentName": "b1000-annual-agent-7394",
+      "createdAt": "2026-07-22T22:39:12Z",
+      "project": "agent-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-22T22:39:12Z"
+    },
+    {
+      "agentName": "b1000-fir-agent-5826",
+      "createdAt": "2026-07-22T22:30:00Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-22T22:30:00Z"
+    },
     {
       "agentName": "b1000-canyon-agent-7314",
       "createdAt": "2026-07-22T22:19:09Z",
@@ -186,30 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-20T16:12:30Z"
-    },
-    {
-      "agentName": "b1000-basil-agent-3187",
-      "createdAt": "2026-07-20T15:40:00Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-20T15:40:50Z"
-    },
-    {
-      "agentName": "b1000-raven-agent-7314",
-      "createdAt": "2026-07-20T15:25:09Z",
-      "project": "sandbox-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-20T15:25:09Z"
-    },
-    {
-      "agentName": "b1000-cedar-agent-7429",
-      "createdAt": "2026-07-20T15:17:16Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-20T15:18:20Z"
     }
   ]
 }
