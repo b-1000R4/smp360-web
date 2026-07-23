@@ -1,23 +1,31 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-23T01:56:10Z",
+  "generatedAt": "2026-07-23T02:11:21Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-echo-agent-0001",
-    "createdAt": "2026-07-23T01:42:11Z",
+    "agentName": "b1000-lyric-agent-7427",
+    "createdAt": "2026-07-23T02:05:17Z",
     "project": "agent-lab",
-    "role": "planning-agent",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-23T01:42:11Z"
+    "statusAt": "2026-07-23T02:05:17Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-lyric-agent-7427",
+      "createdAt": "2026-07-23T02:05:17Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T02:05:17Z"
+    },
     {
       "agentName": "b1000-quartz-agent-9076",
       "createdAt": "2026-07-23T01:55:09Z",
       "project": "agent-lab",
       "role": "project-manager-agent",
-      "status": "registered",
-      "statusAt": "2026-07-23T01:55:09Z"
+      "status": "ready",
+      "statusAt": "2026-07-23T01:56:10Z"
     },
     {
       "agentName": "b1000-echo-agent-0001",
@@ -202,14 +210,6 @@
       "role": "project-manager-agent",
       "status": "ready",
       "statusAt": "2026-07-21T03:31:00Z"
-    },
-    {
-      "agentName": "b1000-abandon-agent-0117",
-      "createdAt": "2026-07-21T03:29:35Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-21T03:30:10Z"
     }
   ]
 }
