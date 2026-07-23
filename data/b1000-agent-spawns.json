@@ -1,23 +1,47 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-22T23:29:10Z",
+  "generatedAt": "2026-07-23T00:41:39Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-aurora-agent-7722",
-    "createdAt": "2026-07-22T23:28:54.013Z",
+    "agentName": "b1000-cascade-agent-7428",
+    "createdAt": "2026-07-23T00:34:48.476Z",
     "project": "agent-lab",
-    "role": "review-agent",
+    "role": "planning-agent",
     "status": "ready",
-    "statusAt": "2026-07-22T23:28:54.013Z"
+    "statusAt": "2026-07-23T00:34:48.516Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cascade-agent-7428",
+      "createdAt": "2026-07-23T00:34:48.476Z",
+      "project": "agent-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T00:34:48.516Z"
+    },
+    {
+      "agentName": "b1000-opal-agent-4187",
+      "createdAt": "2026-07-23T00:14:18.265Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T00:14:18.283Z"
+    },
+    {
+      "agentName": "b1000-lumen-agent-6041",
+      "createdAt": "2026-07-22T23:55:00Z",
+      "project": "agent-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-22T23:55:04Z"
+    },
     {
       "agentName": "b1000-aurora-agent-7722",
       "createdAt": "2026-07-22T23:28:54.013Z",
       "project": "agent-lab",
       "role": "review-agent",
       "status": "ready",
-      "statusAt": "2026-07-22T23:28:54.013Z"
+      "statusAt": "2026-07-22T23:32:30.035Z"
     },
     {
       "agentName": "b1000-slate-agent-7316",
@@ -186,30 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-20T22:28:33Z"
-    },
-    {
-      "agentName": "b1000-thunder-agent-7427",
-      "createdAt": "2026-07-20T17:55:32Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-20T17:55:32Z"
-    },
-    {
-      "agentName": "b1000-quartz-agent-4821",
-      "createdAt": "2026-07-20T17:20:00Z",
-      "project": "agent-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-20T17:21:00Z"
-    },
-    {
-      "agentName": "b1000-echo-agent-7420",
-      "createdAt": "2026-07-20T17:10:57Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-20T17:11:25Z"
     }
   ]
 }
