@@ -1,16 +1,40 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T07:15:48Z",
+  "generatedAt": "2026-07-24T07:43:16Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-pine-agent-7438",
-    "createdAt": "2026-07-23T04:58:42Z",
+    "agentName": "b1000-radar-agent-0137",
+    "createdAt": "2026-07-24T07:50:00Z",
     "project": "agent-lab",
-    "role": "review-agent",
+    "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-07-23T04:59:10Z"
+    "statusAt": "2026-07-24T07:50:00Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-radar-agent-0137",
+      "createdAt": "2026-07-24T07:50:00Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-24T07:50:00Z"
+    },
+    {
+      "agentName": "b1000-cobalt-agent-4726",
+      "createdAt": "2026-07-24T07:30:00Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-24T07:32:00Z"
+    },
+    {
+      "agentName": "b1000-canyon-agent-6387",
+      "createdAt": "2026-07-24T07:17:34Z",
+      "project": "smp360-web",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-24T07:17:35Z"
+    },
     {
       "agentName": "b1000-pine-agent-7438",
       "createdAt": "2026-07-23T04:58:42Z",
@@ -186,30 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-23T01:05:07Z"
-    },
-    {
-      "agentName": "b1000-palm-agent-8430",
-      "createdAt": "2026-07-23T00:59:46Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T00:59:46Z"
-    },
-    {
-      "agentName": "b1000-signal-agent-8428",
-      "createdAt": "2026-07-23T00:44:21Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T00:44:21Z"
-    },
-    {
-      "agentName": "b1000-cascade-agent-7428",
-      "createdAt": "2026-07-23T00:34:48.476Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T00:34:48.516Z"
     }
   ]
 }
