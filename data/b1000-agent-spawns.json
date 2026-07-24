@@ -1,16 +1,64 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-24T08:48:59Z",
+  "generatedAt": "2026-07-24T09:28:13Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-citrine-agent-5937",
-    "createdAt": "2026-07-24T08:41:00Z",
+    "agentName": "b1000-cobalt-agent-5729",
+    "createdAt": "2026-07-24T09:23:07.985Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-24T08:42:10Z"
+    "statusAt": "2026-07-24T09:23:08.025Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cobalt-agent-5729",
+      "createdAt": "2026-07-24T09:23:07.985Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-24T09:23:08.025Z"
+    },
+    {
+      "agentName": "b1000-rivet-agent-6381",
+      "createdAt": "2026-07-24T09:16:20.225Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-24T09:16:20.262Z"
+    },
+    {
+      "agentName": "b1000-canyon-agent-9044",
+      "createdAt": "2026-07-24T09:11:25Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-24T09:11:25Z"
+    },
+    {
+      "agentName": "b1000-summit-agent-7314",
+      "createdAt": "2026-07-24T09:06:19Z",
+      "project": "agent-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-24T09:06:19Z"
+    },
+    {
+      "agentName": "b1000-annual-agent-1842",
+      "createdAt": "2026-07-24T09:00:00Z",
+      "project": "agent-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-24T09:00:00Z"
+    },
+    {
+      "agentName": "b1000-saffron-agent-1842",
+      "createdAt": "2026-07-24T08:56:34Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "review_ready",
+      "statusAt": "2026-07-24T09:04:00Z"
+    },
     {
       "agentName": "b1000-citrine-agent-5937",
       "createdAt": "2026-07-24T08:41:00Z",
@@ -162,54 +210,6 @@
       "role": "project-manager-agent",
       "status": "ready",
       "statusAt": "2026-07-23T03:53:10Z"
-    },
-    {
-      "agentName": "b1000-orchid-agent-3147",
-      "createdAt": "2026-07-23T03:32:40.627Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T03:33:56.830Z"
-    },
-    {
-      "agentName": "b1000-cedar-agent-2714",
-      "createdAt": "2026-07-23T03:21:09Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T03:22:10Z"
-    },
-    {
-      "agentName": "b1000-saffron-agent-9064",
-      "createdAt": "2026-07-23T03:09:15Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T03:11:30Z"
-    },
-    {
-      "agentName": "b1000-marble-agent-6842",
-      "createdAt": "2026-07-23T02:52:14.320Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T02:52:14.358Z"
-    },
-    {
-      "agentName": "b1000-cobalt-agent-3745",
-      "createdAt": "2026-07-23T02:38:30Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T02:39:30Z"
-    },
-    {
-      "agentName": "b1000-walnut-agent-9021",
-      "createdAt": "2026-07-23T02:31:38Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T02:32:20Z"
     }
   ]
 }
