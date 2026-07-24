@@ -1,16 +1,144 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-23T02:11:21Z",
+  "generatedAt": "2026-07-24T07:15:48Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-lyric-agent-7427",
-    "createdAt": "2026-07-23T02:05:17Z",
+    "agentName": "b1000-pine-agent-7438",
+    "createdAt": "2026-07-23T04:58:42Z",
     "project": "agent-lab",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-07-23T02:05:17Z"
+    "statusAt": "2026-07-23T04:59:10Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-pine-agent-7438",
+      "createdAt": "2026-07-23T04:58:42Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T04:59:10Z"
+    },
+    {
+      "agentName": "b1000-iris-agent-6410",
+      "createdAt": "2026-07-23T04:43:58Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T04:44:30Z"
+    },
+    {
+      "agentName": "b1000-fjord-agent-5624",
+      "createdAt": "2026-07-23T04:40:48Z",
+      "project": "agent-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T04:40:48Z"
+    },
+    {
+      "agentName": "b1000-cedar-agent-9138",
+      "createdAt": "2026-07-23T04:31:06Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T04:35:20Z"
+    },
+    {
+      "agentName": "b1000-harvest-agent-0132",
+      "createdAt": "2026-07-23T04:22:34.326Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T04:22:34.396Z"
+    },
+    {
+      "agentName": "b1000-lilac-agent-8821",
+      "createdAt": "2026-07-23T04:16:01.221Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T04:16:01.287Z"
+    },
+    {
+      "agentName": "b1000-canyon-agent-4827",
+      "createdAt": "2026-07-23T04:00:00Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "retired",
+      "statusAt": "2026-07-23T04:06:00Z"
+    },
+    {
+      "agentName": "b1000-mica-agent-7284",
+      "createdAt": "2026-07-23T03:52:31Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T03:53:10Z"
+    },
+    {
+      "agentName": "b1000-orchid-agent-3147",
+      "createdAt": "2026-07-23T03:32:40.627Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T03:33:56.830Z"
+    },
+    {
+      "agentName": "b1000-cedar-agent-2714",
+      "createdAt": "2026-07-23T03:21:09Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T03:22:10Z"
+    },
+    {
+      "agentName": "b1000-saffron-agent-9064",
+      "createdAt": "2026-07-23T03:09:15Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T03:11:30Z"
+    },
+    {
+      "agentName": "b1000-marble-agent-6842",
+      "createdAt": "2026-07-23T02:52:14.320Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T02:52:14.358Z"
+    },
+    {
+      "agentName": "b1000-cobalt-agent-3745",
+      "createdAt": "2026-07-23T02:38:30Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T02:39:30Z"
+    },
+    {
+      "agentName": "b1000-walnut-agent-9021",
+      "createdAt": "2026-07-23T02:31:38Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T02:32:20Z"
+    },
+    {
+      "agentName": "b1000-slate-agent-5832",
+      "createdAt": "2026-07-23T02:18:57Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T02:19:40Z"
+    },
+    {
+      "agentName": "b1000-yellow-agent-2916",
+      "createdAt": "2026-07-23T02:11:09Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-07-23T02:12:00Z"
+    },
     {
       "agentName": "b1000-lyric-agent-7427",
       "createdAt": "2026-07-23T02:05:17Z",
@@ -82,134 +210,6 @@
       "role": "planning-agent",
       "status": "ready",
       "statusAt": "2026-07-23T00:34:48.516Z"
-    },
-    {
-      "agentName": "b1000-opal-agent-4187",
-      "createdAt": "2026-07-23T00:14:18.265Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-23T00:14:18.283Z"
-    },
-    {
-      "agentName": "b1000-lumen-agent-6041",
-      "createdAt": "2026-07-22T23:55:00Z",
-      "project": "agent-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-22T23:55:04Z"
-    },
-    {
-      "agentName": "b1000-aurora-agent-7722",
-      "createdAt": "2026-07-22T23:28:54.013Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-22T23:32:30.035Z"
-    },
-    {
-      "agentName": "b1000-slate-agent-7316",
-      "createdAt": "2026-07-22T23:22:26Z",
-      "project": "sandbox-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-22T23:22:26Z"
-    },
-    {
-      "agentName": "b1000-ivory-agent-9137",
-      "createdAt": "2026-07-22T23:16:33Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-22T23:17:09Z"
-    },
-    {
-      "agentName": "b1000-quill-agent-7462",
-      "createdAt": "2026-07-22T23:06:42Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-22T23:06:42Z"
-    },
-    {
-      "agentName": "b1000-annual-agent-7394",
-      "createdAt": "2026-07-22T22:39:12Z",
-      "project": "agent-lab",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-07-22T22:39:12Z"
-    },
-    {
-      "agentName": "b1000-fir-agent-5826",
-      "createdAt": "2026-07-22T22:30:00Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-22T22:30:00Z"
-    },
-    {
-      "agentName": "b1000-canyon-agent-7314",
-      "createdAt": "2026-07-22T22:19:09Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-07-22T22:20:12Z"
-    },
-    {
-      "agentName": "b1000-olive-agent-4822",
-      "createdAt": "2026-07-21T04:06:25Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-21T04:06:25Z"
-    },
-    {
-      "agentName": "b1000-thimble-agent-9416",
-      "createdAt": "2026-07-21T04:03:03Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-21T04:03:25Z"
-    },
-    {
-      "agentName": "b1000-pine-agent-4821",
-      "createdAt": "2026-07-21T04:02:25Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-07-21T04:02:25Z"
-    },
-    {
-      "agentName": "b1000-signal-agent-4820",
-      "createdAt": "2026-07-21T03:52:53Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-07-21T03:53:30Z"
-    },
-    {
-      "agentName": "b1000-zenith-agent-5176",
-      "createdAt": "2026-07-21T03:50:00Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-21T03:51:00Z"
-    },
-    {
-      "agentName": "b1000-echo-agent-9374",
-      "createdAt": "2026-07-21T03:45:00Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-21T03:46:00Z"
-    },
-    {
-      "agentName": "b1000-river-agent-7428",
-      "createdAt": "2026-07-21T03:30:00Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-07-21T03:31:00Z"
     }
   ]
 }
