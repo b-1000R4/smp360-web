@@ -365,11 +365,24 @@
 
       .dashboard-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(4, minmax(220px, 1fr));
         gap: 1px;
-        margin-top: 28px;
+        min-width: 883px;
         border: 1px solid var(--line);
         background: var(--line);
+      }
+
+      .dashboard-scroll {
+        grid-column: 2;
+        min-width: 0;
+        margin-top: 28px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+      }
+
+      .dashboard-scroll:focus-visible {
+        outline: 2px solid var(--amber);
+        outline-offset: 4px;
       }
 
       .dashboard-card {
@@ -402,6 +415,7 @@
       }
 
       .dashboard-disclaimer {
+        grid-column: 2;
         margin: 24px 0 0;
         color: var(--muted);
         font-size: 0.84rem;
@@ -500,6 +514,16 @@
 
         .dashboard-grid {
           grid-template-columns: 1fr;
+          min-width: 0;
+        }
+
+        .dashboard-scroll,
+        .dashboard-disclaimer {
+          grid-column: 1;
+        }
+
+        .dashboard-scroll {
+          overflow-x: visible;
         }
 
         .funding-head {
@@ -627,26 +651,28 @@
               </div>
             </div>
 
-            <div class="dashboard-grid" aria-label="quiet root company stats">
-              <div class="dashboard-card">
+            <div class="dashboard-scroll" tabindex="0" role="region" aria-label="quiet root company stats">
+              <div class="dashboard-grid">
+                <div class="dashboard-card">
                 <span>company</span>
                 <strong>F7931A</strong>
                 <p>company profile identifier for the funding account</p>
-              </div>
-              <div class="dashboard-card">
+                </div>
+                <div class="dashboard-card">
                 <span>current balance</span>
                 <strong id="funding-balance">2,037,516,455 STRCH</strong>
                 <p>$STRCH reported by the public starch company account endpoint</p>
-              </div>
-              <div class="dashboard-card">
+                </div>
+                <div class="dashboard-card">
                 <span>market</span>
                 <strong>$STRCH</strong>
                 <p><a href="https://cardano.fetchswap.io/swap?sellcoin=lovelace&amp;buycoin=3d77d63dfa6033be98021417e08e3368cc80e67f8d7afa196aaa0b3953746172636820546f6b656e&amp;pro=true">open fetchswap pro chart</a></p>
-              </div>
-              <div class="dashboard-card">
+                </div>
+                <div class="dashboard-card">
                 <span>configuration</span>
                 <strong>signed</strong>
                 <p id="funding-config">signature id 1e28d486...9a80f91f</p>
+                </div>
               </div>
             </div>
 
