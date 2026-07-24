@@ -311,26 +311,6 @@
         border: 1px solid var(--line);
       }
 
-      .image-trigger {
-        display: inline-flex;
-        padding: 0;
-        border: 0;
-        background: transparent;
-        color: inherit;
-        cursor: pointer;
-      }
-
-      .image-trigger:hover .funding-logo,
-      .image-trigger:focus-visible .funding-logo {
-        border-color: rgba(40, 240, 167, 0.8);
-        box-shadow: 0 0 22px rgba(40, 240, 167, 0.26);
-      }
-
-      .image-trigger:focus-visible {
-        outline: 1px solid rgba(40, 240, 167, 0.8);
-        outline-offset: 4px;
-      }
-
       .funding-logo {
         width: 92px;
         height: 92px;
@@ -354,45 +334,6 @@
         max-width: 980px;
         color: var(--muted);
         font-size: 1.08rem;
-        line-height: 1.55;
-      }
-
-      .quiet-dashboard {
-        display: none;
-        width: 100%;
-        border: 1px solid var(--line);
-        background: rgba(8, 9, 8, 0.84);
-        box-shadow: 0 28px 100px rgba(0, 0, 0, 0.42);
-        backdrop-filter: blur(12px);
-      }
-
-      .quiet-dashboard.is-open {
-        display: block;
-      }
-
-      .dashboard-inner {
-        padding: 34px;
-      }
-
-      .dashboard-hero {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 24px;
-        text-align: center;
-      }
-
-      .dashboard-hero h2 {
-        margin: 0;
-        font-size: 3rem;
-        line-height: 0.95;
-      }
-
-      .dashboard-hero p {
-        margin: 16px 0 0;
-        max-width: 980px;
-        color: var(--muted);
-        font-size: 1.06rem;
         line-height: 1.55;
       }
 
@@ -557,10 +498,6 @@
           grid-template-columns: 1fr;
         }
 
-        .dashboard-hero {
-          grid-template-columns: 1fr;
-        }
-
         .dashboard-grid {
           grid-template-columns: 1fr;
         }
@@ -630,7 +567,6 @@
     <div class="wrap">
       <header>
         <div class="mark">smp360 labs</div>
-        <a href="mailto:contact@smp360.com">contact@smp360.com</a>
       </header>
 
       <main>
@@ -669,50 +605,25 @@
           <div class="funding-inner">
             <div class="panel-label">lab funding</div>
             <div class="funding-copy">
-              <div>
-                <div class="funding-head">
-                  <button
-                    class="image-trigger"
-                    type="button"
-                    data-open-funding
-                    aria-controls="quiet-root-dashboard"
-                    aria-expanded="false"
-                  >
-                    <img
-                      class="funding-logo"
-                      src="assets/starch/team-F7931A.png"
-                      data-company-icon
-                      alt="quiet root co. company icon"
-                    >
-                  </button>
-                  <div>
-                    <h2 id="lab-funding-title">funded by <span id="funding-company-name">quiet root co.</span></h2>
-                    <p>
-                      all smp360 labs research is funded by our beneficiary,
-                      the mysterious company profile <span id="funding-company-id">F7931A</span>.
-                    </p>
-                  </div>
+              <div class="funding-head">
+                <img
+                  class="funding-logo"
+                  src="assets/starch/team-F7931A.png"
+                  data-company-icon
+                  alt="quiet root co. company icon"
+                >
+                <div>
+                  <h2 id="lab-funding-title">funded by <span id="funding-company-name">quiet root co.</span></h2>
+                  <p>
+                    all smp360 labs research is funded by our beneficiary,
+                    the mysterious company profile <span id="funding-company-id">F7931A</span>.
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="quiet-dashboard" id="quiet-root-dashboard" aria-labelledby="quiet-root-title">
-          <div class="dashboard-inner">
-            <div class="dashboard-hero">
-              <div>
-                <p class="label">/ quiet root dashboard /</p>
-                <h2 id="quiet-root-title">quiet root co.</h2>
-                <p id="quiet-root-summary">
-                  a mysterious starch mining concern underwriting smp360 labs
-                  research. company profile F7931A.
-                </p>
-                <div class="dashboard-actions">
-                  <a class="dashboard-link" href="https://starch.one/company/F7931A">view on starch</a>
-                  <a class="dashboard-link secondary" href="https://starch.one/mint">get your miner</a>
-                  <a class="dashboard-link secondary" href="https://cardano.fetchswap.io/swap?sellcoin=lovelace&amp;buycoin=3d77d63dfa6033be98021417e08e3368cc80e67f8d7afa196aaa0b3953746172636820546f6b656e&amp;pro=true">STRCH chart</a>
-                </div>
+              <div class="dashboard-actions">
+                <a class="dashboard-link" href="https://starch.one/company/F7931A">view on starch</a>
+                <a class="dashboard-link secondary" href="https://starch.one/mint">get your miner</a>
+                <a class="dashboard-link secondary" href="https://cardano.fetchswap.io/swap?sellcoin=lovelace&amp;buycoin=3d77d63dfa6033be98021417e08e3368cc80e67f8d7afa196aaa0b3953746172636820546f6b656e&amp;pro=true">STRCH chart</a>
               </div>
             </div>
 
@@ -720,11 +631,11 @@
               <div class="dashboard-card">
                 <span>company</span>
                 <strong>F7931A</strong>
-                <p id="quiet-root-company-name">quiet root co. / active starch mining company</p>
+                <p>company profile identifier for the funding account</p>
               </div>
               <div class="dashboard-card">
                 <span>current balance</span>
-                <strong id="quiet-root-balance">2,037,516,455 STRCH</strong>
+                <strong id="funding-balance">2,037,516,455 STRCH</strong>
                 <p>$STRCH reported by the public starch company account endpoint</p>
               </div>
               <div class="dashboard-card">
@@ -735,7 +646,7 @@
               <div class="dashboard-card">
                 <span>configuration</span>
                 <strong>signed</strong>
-                <p id="quiet-root-config">signature id 1e28d486...9a80f91f</p>
+                <p id="funding-config">signature id 1e28d486...9a80f91f</p>
               </div>
             </div>
 
@@ -769,12 +680,8 @@
       const canvas = document.getElementById("signal-field");
       const ctx = canvas.getContext("2d");
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-      const fundingDashboard = document.getElementById("quiet-root-dashboard");
-      const fundingTriggers = document.querySelectorAll("[data-open-funding]");
-      const quietRootSummary = document.getElementById("quiet-root-summary");
-      const quietRootCompanyName = document.getElementById("quiet-root-company-name");
-      const quietRootBalance = document.getElementById("quiet-root-balance");
-      const quietRootConfig = document.getElementById("quiet-root-config");
+      const fundingBalance = document.getElementById("funding-balance");
+      const fundingConfig = document.getElementById("funding-config");
       const fundingCompanyName = document.getElementById("funding-company-name");
       const fundingCompanyId = document.getElementById("funding-company-id");
       const currentAgentJson = document.getElementById("current-agent-json");
@@ -792,19 +699,6 @@
       let width = 0;
       let height = 0;
       let frame = 0;
-
-      fundingTriggers.forEach((trigger) => {
-        trigger.addEventListener("click", () => {
-          fundingDashboard.classList.add("is-open");
-          fundingTriggers.forEach((item) => {
-            item.setAttribute("aria-expanded", "true");
-          });
-          fundingDashboard.scrollIntoView({
-            behavior: reduceMotion.matches ? "auto" : "smooth",
-            block: "start"
-          });
-        });
-      });
 
       function formatNumber(value) {
         return Number(value || 0).toLocaleString("en-US");
@@ -838,7 +732,7 @@
       function applyExternalLinkTargets() {
         document.querySelectorAll("a[href]").forEach((link) => {
           const href = link.getAttribute("href") || "";
-          if (!href || href.startsWith("mailto:") || href.startsWith("#")) return;
+          if (!href || href.startsWith("#")) return;
 
           try {
             const url = new URL(href, window.location.href);
@@ -878,7 +772,7 @@
         }
       }
 
-      async function loadQuietRootData() {
+      async function loadFundingData() {
         try {
           const [assetManifest, profile, account, config] = await Promise.all([
             assetManifestPromise,
@@ -887,19 +781,13 @@
             getJson(`/teams/${companyId}/config`)
           ]);
           const companyName = (assetManifest?.company?.name || profile.name || "company").toLowerCase();
-          const companyDescription = assetManifest?.company?.description || profile.description || "";
 
           fundingCompanyName.textContent = companyName;
           fundingCompanyId.textContent = companyId;
-          quietRootCompanyName.textContent = `${companyName} / active starch mining company`;
-          quietRootSummary.textContent = companyDescription
-            ? `${companyDescription} company profile ${companyId}.`
-            : `a mysterious starch mining concern underwriting smp360 labs research. company profile ${companyId}.`;
-
-          quietRootBalance.textContent = `${formatNumber(account.balance)} STRCH`;
-          quietRootConfig.textContent = `signature id ${shortHash(config.signature_id)}`;
+          fundingBalance.textContent = `${formatNumber(account.balance)} STRCH`;
+          fundingConfig.textContent = `signature id ${shortHash(config.signature_id)}`;
         } catch (error) {
-          console.warn("quiet root live data unavailable", error);
+          console.warn("funding live data unavailable", error);
         }
       }
 
@@ -968,7 +856,7 @@
       applyCachedAssets();
       applyExternalLinkTargets();
       loadAgentFeed();
-      loadQuietRootData();
+      loadFundingData();
       window.addEventListener("resize", resize);
     </script>
   </body>
