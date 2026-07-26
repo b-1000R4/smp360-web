@@ -615,7 +615,10 @@
             <div class="panel-label">lab feed</div>
             <div class="feed-content">
               <h2 id="lab-feed-title">lab registry</h2>
+              <p class="panel-label">current ready capacity</p>
               <pre class="agent-json" id="current-agent-json" aria-live="polite">loading agent feed...</pre>
+              <p class="panel-label">latest active activity</p>
+              <pre class="agent-json" id="latest-active-agent-json" aria-live="polite">loading agent feed...</pre>
               <details class="recent-agents" id="recent-agents">
                 <summary>last 25 spawned agents</summary>
                 <pre class="recent-agent-json" id="recent-agents-json"></pre>
@@ -711,6 +714,7 @@
       const fundingCompanyName = document.getElementById("funding-company-name");
       const fundingCompanyId = document.getElementById("funding-company-id");
       const currentAgentJson = document.getElementById("current-agent-json");
+      const latestActiveAgentJson = document.getElementById("latest-active-agent-json");
       const recentAgentsJson = document.getElementById("recent-agents-json");
       const agentFeedStatus = document.getElementById("agent-feed-status");
       const starchApi = "https://api.starch.one";
@@ -788,11 +792,13 @@
 
           const feed = await response.json();
           renderJson(currentAgentJson, feed.currentReadyAgent);
+          renderJson(latestActiveAgentJson, feed.latestActiveAgent ?? null);
           renderJson(recentAgentsJson, feed.recentSpawnedAgents);
           agentFeedStatus.textContent = "live";
         } catch (error) {
           console.warn("agent feed unavailable", error);
           renderJson(currentAgentJson, null);
+          renderJson(latestActiveAgentJson, null);
           renderJson(recentAgentsJson, []);
           agentFeedStatus.textContent = "offline";
         }
