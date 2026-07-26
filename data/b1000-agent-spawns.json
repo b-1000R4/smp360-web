@@ -1,16 +1,64 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-25T22:51:51Z",
+  "generatedAt": "2026-07-26T00:20:40Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-slate-agent-1538",
-    "createdAt": "2026-07-25T22:30:00Z",
+    "agentName": "b1000-cinder-agent-6843",
+    "createdAt": "2026-07-26T00:18:49.651Z",
     "project": "agent-lab",
-    "role": "project-manager-agent",
+    "role": "building-agent",
     "status": "ready",
-    "statusAt": "2026-07-25T22:30:00Z"
+    "statusAt": "2026-07-26T00:18:49.690Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cinder-agent-6843",
+      "createdAt": "2026-07-26T00:18:49.651Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-26T00:18:49.690Z"
+    },
+    {
+      "agentName": "b1000-tulip-agent-7314",
+      "createdAt": "2026-07-25T23:40:05.067Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-25T23:40:05.117Z"
+    },
+    {
+      "agentName": "b1000-spruce-agent-5938",
+      "createdAt": "2026-07-25T23:35:40.386Z",
+      "project": "agent-lab",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-07-25T23:35:40.427Z"
+    },
+    {
+      "agentName": "b1000-sage-agent-4927",
+      "createdAt": "2026-07-25T23:28:29.792Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-25T23:28:29.833Z"
+    },
+    {
+      "agentName": "b1000-raven-agent-7395",
+      "createdAt": "2026-07-25T23:24:21.577Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-07-25T23:24:21.626Z"
+    },
+    {
+      "agentName": "b1000-zebra-agent-7394",
+      "createdAt": "2026-07-25T22:53:16.817Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-07-25T22:53:16.852Z"
+    },
     {
       "agentName": "b1000-echo-agent-6842",
       "createdAt": "2026-07-25T22:42:00Z",
@@ -162,54 +210,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-07-24T08:35:44Z"
-    },
-    {
-      "agentName": "b1000-lumen-agent-4178",
-      "createdAt": "2026-07-24T08:31:30Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-24T08:33:10Z"
-    },
-    {
-      "agentName": "b1000-cabin-agent-5843",
-      "createdAt": "2026-07-24T08:26:42.087Z",
-      "project": "smp360-web",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-24T08:26:42.107Z"
-    },
-    {
-      "agentName": "b1000-birch-agent-7642",
-      "createdAt": "2026-07-24T08:19:00.498Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-07-24T08:19:49.805Z"
-    },
-    {
-      "agentName": "b1000-orchid-agent-6384",
-      "createdAt": "2026-07-24T08:09:02Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-24T08:10:00Z"
-    },
-    {
-      "agentName": "b1000-plume-agent-1842",
-      "createdAt": "2026-07-24T08:03:05Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-07-24T08:04:00Z"
-    },
-    {
-      "agentName": "b1000-spruce-agent-5826",
-      "createdAt": "2026-07-24T08:00:00Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-07-24T08:01:00Z"
     }
   ]
 }
