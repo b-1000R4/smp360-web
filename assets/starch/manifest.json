@@ -3,7 +3,7 @@
     "id": "F7931A",
     "name": "Quiet Root Co.",
     "description": "Dig potato. Find block. Touch grass. | Pi + Docker + Ubuntu + one good dog. | Mining, learning, tinkering, looking for colors. | If it survives a reboot, it is infrastructure. | Still rooting.",
-    "balance": 2047450750,
+    "balance": 2047917911,
     "signatureId": "02e96235920be720405c4e595a2697143a19434a6b146a3d99a0df21940b9420",
     "icon": "assets/starch/team-F7931A.png",
     "contentType": "image/png",
@@ -27,5 +27,5 @@
       "bytes": 11499
     }
   },
-  "updatedAt": "2026-07-29T17:38:18.254Z"
+  "updatedAt": "2026-07-29T19:42:24.621Z"
 }
