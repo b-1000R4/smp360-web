@@ -1,24 +1,72 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-11T23:55:16Z",
+  "generatedAt": "2026-08-12T02:03:25Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-harvest-agent-6415",
-    "createdAt": "2026-08-11T23:41:35Z",
+    "agentName": "b1000-cobalt-agent-2846",
+    "createdAt": "2026-08-12T01:38:09Z",
     "project": "helix-alpha",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-08-11T23:41:35Z"
+    "statusAt": "2026-08-12T01:38:09Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-harvest-agent-6415",
-    "createdAt": "2026-08-11T23:41:35Z",
+    "agentName": "b1000-cobalt-agent-2846",
+    "createdAt": "2026-08-12T01:38:09Z",
     "project": "helix-alpha",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-08-11T23:41:35Z"
+    "statusAt": "2026-08-12T01:38:09Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cobalt-agent-2846",
+      "createdAt": "2026-08-12T01:38:09Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-12T01:38:09Z"
+    },
+    {
+      "agentName": "b1000-forge-agent-3184",
+      "createdAt": "2026-08-12T00:57:04Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-12T00:57:04Z"
+    },
+    {
+      "agentName": "b1000-summit-agent-3147",
+      "createdAt": "2026-08-12T00:48:58Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-12T00:48:58Z"
+    },
+    {
+      "agentName": "b1000-canyon-agent-7384",
+      "createdAt": "2026-08-12T00:02:10Z",
+      "project": "helix-alpha",
+      "role": "building-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-12T00:06:35Z"
+    },
+    {
+      "agentName": "b1000-mango-agent-4512",
+      "createdAt": "2026-08-11T23:58:40Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-11T23:58:40Z"
+    },
+    {
+      "agentName": "b1000-orbit-agent-5538",
+      "createdAt": "2026-08-11T23:55:00Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-11T23:55:01Z"
+    },
     {
       "agentName": "b1000-harvest-agent-6415",
       "createdAt": "2026-08-11T23:41:35Z",
@@ -170,54 +218,6 @@
       "role": "project-manager-agent",
       "status": "ready",
       "statusAt": "2026-08-10T16:07:12Z"
-    },
-    {
-      "agentName": "b1000-amber-agent-6827",
-      "createdAt": "2026-08-10T15:57:41.709Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-08-10T15:57:41.709Z"
-    },
-    {
-      "agentName": "b1000-tiger-agent-7462",
-      "createdAt": "2026-08-10T15:46:09.431Z",
-      "project": "helix-alpha",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-08-10T15:46:09.431Z"
-    },
-    {
-      "agentName": "b1000-sun-agent-3148",
-      "createdAt": "2026-08-10T03:15:41.316Z",
-      "project": "helix-alpha",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-08-10T03:18:41.995Z"
-    },
-    {
-      "agentName": "b1000-saffron-agent-6384",
-      "createdAt": "2026-08-10T03:05:46.458Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-08-10T03:05:46.458Z"
-    },
-    {
-      "agentName": "b1000-lotus-agent-5178",
-      "createdAt": "2026-08-10T03:00:30Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-08-10T03:00:30Z"
-    },
-    {
-      "agentName": "b1000-cobalt-agent-5379",
-      "createdAt": "2026-08-10T02:40:05Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-08-10T02:40:05Z"
     }
   ]
 }
