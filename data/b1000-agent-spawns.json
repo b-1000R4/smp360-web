@@ -1,24 +1,72 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-14T02:38:41Z",
+  "generatedAt": "2026-08-14T03:23:34Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-voyage-agent-5176",
-    "createdAt": "2026-08-14T02:34:44Z",
+    "agentName": "b1000-satoshi-agent-7396",
+    "createdAt": "2026-08-14T03:18:04.539Z",
     "project": "helix-alpha",
-    "role": "project-manager-agent",
+    "role": "operator-agent",
     "status": "ready",
-    "statusAt": "2026-08-14T02:34:44Z"
+    "statusAt": "2026-08-14T03:18:04.539Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-voyage-agent-5176",
-    "createdAt": "2026-08-14T02:34:44Z",
+    "agentName": "b1000-satoshi-agent-7396",
+    "createdAt": "2026-08-14T03:18:04.539Z",
     "project": "helix-alpha",
-    "role": "project-manager-agent",
+    "role": "operator-agent",
     "status": "ready",
-    "statusAt": "2026-08-14T02:34:44Z"
+    "statusAt": "2026-08-14T03:18:04.539Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-satoshi-agent-7396",
+      "createdAt": "2026-08-14T03:18:04.539Z",
+      "project": "helix-alpha",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-08-14T03:18:04.539Z"
+    },
+    {
+      "agentName": "b1000-anchor-agent-6928",
+      "createdAt": "2026-08-14T03:11:06.000Z",
+      "project": "helix-alpha",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-08-14T03:11:06.000Z"
+    },
+    {
+      "agentName": "b1000-cinder-agent-7134",
+      "createdAt": "2026-08-14T03:10:00Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-14T03:10:00Z"
+    },
+    {
+      "agentName": "b1000-lattice-agent-7415",
+      "createdAt": "2026-08-14T03:03:13.000Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-14T03:03:31.000Z"
+    },
+    {
+      "agentName": "b1000-apricot-agent-5842",
+      "createdAt": "2026-08-14T02:46:49Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-14T02:46:49Z"
+    },
+    {
+      "agentName": "b1000-quill-agent-4821",
+      "createdAt": "2026-08-14T02:42:34.240Z",
+      "project": "helix-alpha",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-08-14T02:42:34.240Z"
+    },
     {
       "agentName": "b1000-voyage-agent-5176",
       "createdAt": "2026-08-14T02:34:44Z",
@@ -170,54 +218,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-08-12T01:38:09Z"
-    },
-    {
-      "agentName": "b1000-forge-agent-3184",
-      "createdAt": "2026-08-12T00:57:04Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-12T00:57:04Z"
-    },
-    {
-      "agentName": "b1000-summit-agent-3147",
-      "createdAt": "2026-08-12T00:48:58Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-12T00:48:58Z"
-    },
-    {
-      "agentName": "b1000-canyon-agent-7384",
-      "createdAt": "2026-08-12T00:02:10Z",
-      "project": "helix-alpha",
-      "role": "building-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-12T00:06:35Z"
-    },
-    {
-      "agentName": "b1000-mango-agent-4512",
-      "createdAt": "2026-08-11T23:58:40Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-08-11T23:58:40Z"
-    },
-    {
-      "agentName": "b1000-orbit-agent-5538",
-      "createdAt": "2026-08-11T23:55:00Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-11T23:55:01Z"
-    },
-    {
-      "agentName": "b1000-harvest-agent-6415",
-      "createdAt": "2026-08-11T23:41:35Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-08-11T23:41:35Z"
     }
   ]
 }
