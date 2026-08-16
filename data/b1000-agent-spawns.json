@@ -1,31 +1,55 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-14T03:23:34Z",
+  "generatedAt": "2026-08-16T00:15:12Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-satoshi-agent-7396",
-    "createdAt": "2026-08-14T03:18:04.539Z",
-    "project": "helix-alpha",
-    "role": "operator-agent",
+    "agentName": "b1000-audit-agent-6204",
+    "createdAt": "2026-08-16T00:02:21.139Z",
+    "project": "infrastructure",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-08-14T03:18:04.539Z"
+    "statusAt": "2026-08-16T00:02:21.139Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-satoshi-agent-7396",
-    "createdAt": "2026-08-14T03:18:04.539Z",
-    "project": "helix-alpha",
-    "role": "operator-agent",
+    "agentName": "b1000-audit-agent-6204",
+    "createdAt": "2026-08-16T00:02:21.139Z",
+    "project": "infrastructure",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-08-14T03:18:04.539Z"
+    "statusAt": "2026-08-16T00:02:21.139Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-audit-agent-6204",
+      "createdAt": "2026-08-16T00:02:21.139Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T00:02:21.139Z"
+    },
+    {
+      "agentName": "quantumed-copper-agent-6195",
+      "createdAt": "2026-08-15T23:38:14.336Z",
+      "project": "infrastructure",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-08-15T23:38:14.336Z"
+    },
+    {
+      "agentName": "b1000-cobalt-agent-6148",
+      "createdAt": "2026-08-14T03:38:40.016Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-14T03:41:24.588Z"
+    },
     {
       "agentName": "b1000-satoshi-agent-7396",
       "createdAt": "2026-08-14T03:18:04.539Z",
       "project": "helix-alpha",
       "role": "operator-agent",
       "status": "ready",
-      "statusAt": "2026-08-14T03:18:04.539Z"
+      "statusAt": "2026-08-14T03:31:28.007Z"
     },
     {
       "agentName": "b1000-anchor-agent-6928",
@@ -194,30 +218,6 @@
       "role": "project-manager-agent",
       "status": "ready",
       "statusAt": "2026-08-12T02:58:20Z"
-    },
-    {
-      "agentName": "b1000-vessel-agent-6190",
-      "createdAt": "2026-08-12T02:14:44Z",
-      "project": "helix-alpha",
-      "role": "building-agent",
-      "status": "blocked",
-      "statusAt": "2026-08-12T02:20:52Z"
-    },
-    {
-      "agentName": "b1000-ridge-agent-4821",
-      "createdAt": "2026-08-12T02:09:57Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-12T02:09:57Z"
-    },
-    {
-      "agentName": "b1000-cobalt-agent-2846",
-      "createdAt": "2026-08-12T01:38:09Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-08-12T01:38:09Z"
     }
   ]
 }
