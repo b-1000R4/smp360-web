@@ -1,24 +1,128 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-16T00:15:12Z",
+  "generatedAt": "2026-08-16T04:13:15Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-audit-agent-6204",
-    "createdAt": "2026-08-16T00:02:21.139Z",
-    "project": "infrastructure",
+    "agentName": "b1000-saffron-agent-5732",
+    "createdAt": "2026-08-16T04:11:40.060Z",
+    "project": "helix-alpha",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-08-16T00:02:21.139Z"
+    "statusAt": "2026-08-16T04:11:40.060Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-audit-agent-6204",
-    "createdAt": "2026-08-16T00:02:21.139Z",
-    "project": "infrastructure",
+    "agentName": "b1000-saffron-agent-5732",
+    "createdAt": "2026-08-16T04:11:40.060Z",
+    "project": "helix-alpha",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-08-16T00:02:21.139Z"
+    "statusAt": "2026-08-16T04:11:40.060Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-saffron-agent-5732",
+      "createdAt": "2026-08-16T04:11:40.060Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T04:11:40.060Z"
+    },
+    {
+      "agentName": "quantumed-harbor-agent-5172",
+      "createdAt": "2026-08-16T04:10:36.184Z",
+      "project": "infrastructure",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T04:10:36.184Z"
+    },
+    {
+      "agentName": "b1000-keystone-agent-8246",
+      "createdAt": "2026-08-16T03:08:37.520Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T03:08:37.520Z"
+    },
+    {
+      "agentName": "b1000-slate-agent-7042",
+      "createdAt": "2026-08-16T02:46:15Z",
+      "project": "helix-alpha",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T02:46:15Z"
+    },
+    {
+      "agentName": "b1000-keystone-agent-4628",
+      "createdAt": "2026-08-16T02:37:35Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T02:37:35Z"
+    },
+    {
+      "agentName": "b1000-orbit-agent-4217",
+      "createdAt": "2026-08-16T02:26:44.586Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T02:26:44.586Z"
+    },
+    {
+      "agentName": "b1000-hickory-agent-5836",
+      "createdAt": "2026-08-16T02:01:52Z",
+      "project": "helix-alpha",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T02:01:52Z"
+    },
+    {
+      "agentName": "b1000-summit-agent-4812",
+      "createdAt": "2026-08-16T01:55:34.612Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T01:55:34.612Z"
+    },
+    {
+      "agentName": "b1000-raven-agent-6314",
+      "createdAt": "2026-08-16T01:50:11.364Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T01:50:11.364Z"
+    },
+    {
+      "agentName": "b1000-forge-agent-4821",
+      "createdAt": "2026-08-16T01:49:09Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T01:49:09Z"
+    },
+    {
+      "agentName": "b1000-pencil-agent-6137",
+      "createdAt": "2026-08-16T01:41:21.332Z",
+      "project": "infrastructure",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T01:41:22.332Z"
+    },
+    {
+      "agentName": "b1000-pioneer-agent-5738",
+      "createdAt": "2026-08-16T00:42:58.931Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-16T00:42:58.931Z"
+    },
+    {
+      "agentName": "quantumed-cedar-agent-2847",
+      "createdAt": "2026-08-16T00:26:28.158Z",
+      "project": "infrastructure",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-08-16T00:26:28.158Z"
+    },
     {
       "agentName": "b1000-audit-agent-6204",
       "createdAt": "2026-08-16T00:02:21.139Z",
@@ -114,110 +218,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-08-14T02:05:57Z"
-    },
-    {
-      "agentName": "b1000-ridge-agent-8142",
-      "createdAt": "2026-08-14T02:00:01Z",
-      "project": "helix-alpha",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-08-14T02:00:01Z"
-    },
-    {
-      "agentName": "b1000-cinder-agent-2147",
-      "createdAt": "2026-08-14T01:53:35Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-14T01:53:35Z"
-    },
-    {
-      "agentName": "b1000-summit-agent-6418",
-      "createdAt": "2026-08-14T01:39:58Z",
-      "project": "helix-alpha",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-08-14T01:39:58Z"
-    },
-    {
-      "agentName": "b1000-spruce-agent-1482",
-      "createdAt": "2026-08-14T01:36:32Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-14T01:36:32Z"
-    },
-    {
-      "agentName": "b1000-acoustic-agent-3842",
-      "createdAt": "2026-08-12T12:53:32Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-12T12:53:32Z"
-    },
-    {
-      "agentName": "b1000-breeze-agent-4682",
-      "createdAt": "2026-08-12T12:28:09Z",
-      "project": "helix-alpha",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-08-12T12:28:09Z"
-    },
-    {
-      "agentName": "b1000-thrive-agent-6408",
-      "createdAt": "2026-08-12T10:11:44Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-12T10:11:44Z"
-    },
-    {
-      "agentName": "b1000-iron-agent-5279",
-      "createdAt": "2026-08-12T05:15:33Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-12T05:18:56Z"
-    },
-    {
-      "agentName": "b1000-slate-agent-6427",
-      "createdAt": "2026-08-12T05:09:14Z",
-      "project": "helix-alpha",
-      "role": "building-agent",
-      "status": "ready",
-      "statusAt": "2026-08-12T05:09:14Z"
-    },
-    {
-      "agentName": "b1000-amber-agent-4127",
-      "createdAt": "2026-08-12T05:02:08Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-12T05:02:08Z"
-    },
-    {
-      "agentName": "b1000-ember-agent-7352",
-      "createdAt": "2026-08-12T04:48:29Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "needs_revision",
-      "statusAt": "2026-08-12T04:52:29Z"
-    },
-    {
-      "agentName": "b1000-zebra-agent-3948",
-      "createdAt": "2026-08-12T04:28:14Z",
-      "project": "helix-alpha",
-      "role": "building-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-12T04:31:43Z"
-    },
-    {
-      "agentName": "b1000-atlas-agent-4821",
-      "createdAt": "2026-08-12T02:58:20Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-12T02:58:20Z"
     }
   ]
 }
