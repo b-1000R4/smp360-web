@@ -19,13 +19,13 @@
       "id": "FNX1ADSU",
       "icon": "assets/starch/miner-FNX1ADSU.gif",
       "contentType": "image/gif",
-      "bytes": 12958
+      "bytes": 13098
     },
     "ELONSPUD": {
       "id": "ELONSPUD",
       "icon": "assets/starch/miner-ELONSPUD.gif",
       "contentType": "image/gif",
-      "bytes": 11499
+      "bytes": 8973
     },
     "SW6JI8GW": {
       "id": "SW6JI8GW",
@@ -34,5 +34,5 @@
       "bytes": 14566
     }
   },
-  "updatedAt": "2026-08-19T16:45:57.440Z"
+  "updatedAt": "2026-08-19T19:39:14.550Z"
 }
