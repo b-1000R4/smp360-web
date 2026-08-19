@@ -1,0 +1,13 @@
+[Unit]
+Description=Fallback timer for SMP360 Web B-1000 feed publishing
+Documentation=file:/home/testman001/smp360/smp360-web/planning/phase-one-b1000-feed-automation/operator-note.md
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=10min
+AccuracySec=1min
+Persistent=true
+Unit=smp360-web-b1000-feed.service
+
+[Install]
+WantedBy=timers.target

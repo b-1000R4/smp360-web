@@ -1,0 +1,10 @@
+[Unit]
+Description=Watch B-1000 registry changes for SMP360 Web feed publishing
+Documentation=file:/home/testman001/smp360/smp360-web/planning/phase-one-b1000-feed-automation/operator-note.md
+
+[Path]
+PathChanged=/home/testman001/smp360-labs/_shared/agents/registry.json
+Unit=smp360-web-b1000-feed.service
+
+[Install]
+WantedBy=default.target

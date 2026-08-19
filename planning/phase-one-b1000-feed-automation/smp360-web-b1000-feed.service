@@ -1,0 +1,8 @@
+[Unit]
+Description=Publish sanitized B-1000 agent feed for SMP360 Web
+Documentation=file:/home/testman001/smp360/smp360-web/planning/phase-one-b1000-feed-automation/operator-note.md
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/testman001/smp360-labs/agent-lab
+ExecStart=/usr/bin/env node /home/testman001/smp360-labs/_shared/tools/feeds/publish-smp360-web-agent-spawns.mjs --push
