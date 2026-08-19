@@ -661,7 +661,7 @@
                 <div class="dashboard-card">
                 <span>current balance</span>
                 <strong id="funding-balance">2,037,516,455 STRCH</strong>
-                <p>$STRCH reported by the public starch company account endpoint</p>
+                <p>$STRCH reported by the cached public starch manifest</p>
                 </div>
                 <div class="dashboard-card">
                 <span>market</span>
@@ -713,7 +713,6 @@
       const currentAgentJson = document.getElementById("current-agent-json");
       const recentAgentsJson = document.getElementById("recent-agents-json");
       const agentFeedStatus = document.getElementById("agent-feed-status");
-      const starchApi = "https://api.starch.one";
       const companyId = "F7931A";
       const assetManifestPromise = fetch("assets/starch/manifest.json", { cache: "no-store" })
         .then((response) => {
@@ -733,15 +732,6 @@
       function shortHash(value) {
         if (!value || value.length < 18) return value || "pending";
         return `${value.slice(0, 8)}...${value.slice(-8)}`;
-      }
-
-      function getJson(path) {
-        return fetch(`${starchApi}${path}`, { cache: "no-store" }).then((response) => {
-          if (!response.ok) {
-            throw new Error(`starch api ${response.status}`);
-          }
-          return response.json();
-        });
       }
 
       async function applyCachedAssets() {
@@ -800,20 +790,17 @@
 
       async function loadFundingData() {
         try {
-          const [assetManifest, profile, account, config] = await Promise.all([
-            assetManifestPromise,
-            getJson(`/teams/${companyId}/profile`),
-            getJson(`/teams/${companyId}/account`),
-            getJson(`/teams/${companyId}/config`)
-          ]);
-          const companyName = (assetManifest?.company?.name || profile.name || "company").toLowerCase();
+          const assetManifest = await assetManifestPromise;
+          const company = assetManifest?.company;
+          if (!company) return;
+          const companyName = (company.name || "company").toLowerCase();
 
           fundingCompanyName.textContent = companyName;
-          fundingCompanyId.textContent = companyId;
-          fundingBalance.textContent = `${formatNumber(account.balance)} STRCH`;
-          fundingConfig.textContent = `signature id ${shortHash(config.signature_id)}`;
+          fundingCompanyId.textContent = company.id || companyId;
+          fundingBalance.textContent = `${formatNumber(company.balance)} STRCH`;
+          fundingConfig.textContent = `signature id ${shortHash(company.signatureId)}`;
         } catch (error) {
-          console.warn("funding live data unavailable", error);
+          console.warn("funding manifest unavailable", error);
         }
       }
 
