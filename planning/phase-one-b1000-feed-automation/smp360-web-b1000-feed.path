@@ -1,10 +1,8 @@
 [Unit]
-Description=Watch B-1000 registry changes for SMP360 Web feed publishing
+Description=Retired staging artifact for former SMP360 Web B-1000 registry watcher
 Documentation=file:/home/testman001/smp360/smp360-web/planning/phase-one-b1000-feed-automation/operator-note.md
 
 [Path]
-PathChanged=/home/testman001/smp360-labs/_shared/agents/registry.json
+# Retired in promptq-20260819-0013. Keep only as reviewable history; do not install.
+PathChanged=/__retired__/do-not-install
 Unit=smp360-web-b1000-feed.service
-
-[Install]
-WantedBy=default.target
