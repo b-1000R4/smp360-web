@@ -1,223 +1,223 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-19T03:14:58Z",
+  "generatedAt": "2026-08-22T02:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-ember-agent-6418",
-    "createdAt": "2026-08-19T03:09:03Z",
-    "project": "helix-alpha",
+    "agentName": "b1000-cobalt-agent-5812",
+    "createdAt": "2026-08-22T02:41:04Z",
+    "project": "agent-lab",
     "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-19T03:09:03Z"
+    "statusAt": "2026-08-22T02:41:04Z"
   },
   "latestActiveAgent": {
-    "agentName": "quantumed-maple-agent-2846",
-    "createdAt": "2026-08-19T03:20:00Z",
-    "project": "infrastructure",
-    "role": "planning-agent",
-    "status": "review_ready",
-    "statusAt": "2026-08-19T03:20:00Z"
+    "agentName": "b1000-cobalt-agent-5812",
+    "createdAt": "2026-08-22T02:41:04Z",
+    "project": "agent-lab",
+    "role": "project-manager-agent",
+    "status": "ready",
+    "statusAt": "2026-08-22T02:41:04Z"
   },
   "recentSpawnedAgents": [
     {
-      "agentName": "quantumed-maple-agent-2846",
-      "createdAt": "2026-08-19T03:20:00Z",
-      "project": "infrastructure",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-19T03:20:00Z"
-    },
-    {
-      "agentName": "b1000-ember-agent-6418",
-      "createdAt": "2026-08-19T03:09:03Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-19T03:09:03Z"
-    },
-    {
-      "agentName": "b1000-slate-agent-4721",
-      "createdAt": "2026-08-19T03:07:21Z",
-      "project": "infrastructure",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-08-19T03:07:21Z"
-    },
-    {
-      "agentName": "b1000-signal-agent-2746",
-      "createdAt": "2026-08-19T02:56:43Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-19T03:05:13Z"
-    },
-    {
-      "agentName": "b1000-lantern-agent-5936",
-      "createdAt": "2026-08-19T02:51:13Z",
-      "project": "helix-alpha",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-19T02:51:13Z"
-    },
-    {
-      "agentName": "b1000-marlin-agent-5821",
-      "createdAt": "2026-08-19T02:39:42Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-19T02:47:20Z"
-    },
-    {
-      "agentName": "b1000-orbit-agent-6157",
-      "createdAt": "2026-08-19T02:35:23Z",
-      "project": "infrastructure",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-08-19T02:35:23Z"
-    },
-    {
-      "agentName": "b1000-summit-agent-3185",
-      "createdAt": "2026-08-19T02:32:53Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-19T02:32:53Z"
-    },
-    {
-      "agentName": "b1000-forest-agent-3916",
-      "createdAt": "2026-08-19T01:06:35Z",
+      "agentName": "b1000-cobalt-agent-5812",
+      "createdAt": "2026-08-22T02:41:04Z",
       "project": "agent-lab",
       "role": "project-manager-agent",
       "status": "ready",
-      "statusAt": "2026-08-19T01:06:35Z"
+      "statusAt": "2026-08-22T02:41:04Z"
     },
     {
-      "agentName": "b1000-walnut-agent-4826",
-      "createdAt": "2026-08-19T00:53:54Z",
-      "project": "agent-lab",
+      "agentName": "b1000-nova-agent-0273",
+      "createdAt": "2026-08-22T02:27:22Z",
+      "project": "smp360-web",
       "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-19T00:58:53Z"
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-22T02:27:22Z"
     },
     {
-      "agentName": "b1000-cobalt-agent-4176",
-      "createdAt": "2026-08-19T00:53:53Z",
-      "project": "helix-alpha",
+      "agentName": "b1000-silver-agent-7348",
+      "createdAt": "2026-08-22T02:17:01Z",
+      "project": "smp360-web",
+      "role": "operator-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-22T02:19:50Z"
+    },
+    {
+      "agentName": "b1000-tundra-agent-6185",
+      "createdAt": "2026-08-22T01:59:32Z",
+      "project": "smp360-web",
       "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-19T02:21:26Z"
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-22T01:59:32Z"
     },
     {
-      "agentName": "b1000-marble-agent-8462",
-      "createdAt": "2026-08-19T00:38:51Z",
-      "project": "agent-lab",
+      "agentName": "b1000-aurora-agent-6184",
+      "createdAt": "2026-08-22T01:24:26Z",
+      "project": "smp360-web",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-22T01:24:26Z"
+    },
+    {
+      "agentName": "b1000-garnet-agent-4721",
+      "createdAt": "2026-08-22T01:00:06Z",
+      "project": "smp360-web",
+      "role": "review-agent",
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-22T01:00:06Z"
+    },
+    {
+      "agentName": "b1000-monarch-agent-4827",
+      "createdAt": "2026-08-22T00:56:42Z",
+      "project": "infrastructure",
+      "role": "project-manager-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-22T00:56:42Z"
+    },
+    {
+      "agentName": "b1000-amber-agent-1000",
+      "createdAt": "2026-08-22T00:50:37Z",
+      "project": "smp360-web",
       "role": "planning-agent",
       "status": "review_ready",
-      "statusAt": "2026-08-19T00:38:51Z"
+      "statusAt": "2026-08-22T00:50:37Z"
     },
     {
-      "agentName": "b1000-ridge-agent-6259",
-      "createdAt": "2026-08-19T00:30:28Z",
-      "project": "helix-alpha",
+      "agentName": "b1000-lantern-agent-3482",
+      "createdAt": "2026-08-22T00:44:36Z",
+      "project": "smp360-web",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-22T00:44:36Z"
+    },
+    {
+      "agentName": "b1000-cedar-agent-6297",
+      "createdAt": "2026-08-22T00:20:06Z",
+      "project": "smp360-web",
+      "role": "building-agent",
+      "status": "ready",
+      "statusAt": "2026-08-22T00:20:06Z"
+    },
+    {
+      "agentName": "b1000-cascade-agent-9154",
+      "createdAt": "2026-08-21T05:29:22Z",
+      "project": "smp360-web",
+      "role": "review-agent",
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-21T05:29:22Z"
+    },
+    {
+      "agentName": "b1000-forge-agent-2746",
+      "createdAt": "2026-08-21T05:19:34Z",
+      "project": "smp360-web",
       "role": "building-agent",
       "status": "review_ready",
-      "statusAt": "2026-08-19T00:39:21Z"
+      "statusAt": "2026-08-21T05:23:55Z"
     },
     {
-      "agentName": "b1000-ivory-agent-2714",
-      "createdAt": "2026-08-19T00:08:31Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-19T00:24:20Z"
-    },
-    {
-      "agentName": "b1000-river-agent-6842",
-      "createdAt": "2026-08-18T23:53:40Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-19T00:22:25Z"
-    },
-    {
-      "agentName": "b1000-anchor-agent-3614",
-      "createdAt": "2026-08-18T23:36:29Z",
-      "project": "helix-alpha",
+      "agentName": "b1000-quartz-agent-5831",
+      "createdAt": "2026-08-21T03:56:44Z",
+      "project": "smp360-web",
       "role": "project-manager-agent",
       "status": "ready",
-      "statusAt": "2026-08-18T23:36:29Z"
+      "statusAt": "2026-08-21T03:56:44Z"
     },
     {
-      "agentName": "b1000-ember-agent-7316",
-      "createdAt": "2026-08-18T22:14:16Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-18T22:14:16Z"
-    },
-    {
-      "agentName": "b1000-cedar-agent-4812",
-      "createdAt": "2026-08-18T12:00:55Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-18T12:09:14Z"
-    },
-    {
-      "agentName": "b1000-harbor-agent-4728",
-      "createdAt": "2026-08-18T11:53:09Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-18T11:53:09Z"
-    },
-    {
-      "agentName": "b1000-delta-agent-6417",
-      "createdAt": "2026-08-18T11:38:06Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-18T11:43:10Z"
-    },
-    {
-      "agentName": "b1000-horizon-agent-7426",
-      "createdAt": "2026-08-18T02:17:37Z",
-      "project": "agent-lab",
+      "agentName": "b1000-raven-agent-6412",
+      "createdAt": "2026-08-21T03:42:31Z",
+      "project": "smp360-web",
       "role": "review-agent",
       "status": "needs_revision",
-      "statusAt": "2026-08-18T02:17:37Z"
+      "statusAt": "2026-08-21T03:42:31Z"
     },
     {
-      "agentName": "b1000-canyon-agent-7284",
-      "createdAt": "2026-08-18T02:17:00Z",
-      "project": "helix-alpha",
-      "role": "building-agent",
+      "agentName": "b1000-ridge-agent-1847",
+      "createdAt": "2026-08-21T03:28:00Z",
+      "project": "smp360-web",
+      "role": "review-agent",
+      "status": "needs_revision",
+      "statusAt": "2026-08-21T03:28:00Z"
+    },
+    {
+      "agentName": "b1000-anchor-agent-7395",
+      "createdAt": "2026-08-21T03:13:49Z",
+      "project": "smp360-web",
+      "role": "operator-agent",
       "status": "review_ready",
-      "statusAt": "2026-08-18T02:18:00Z"
+      "statusAt": "2026-08-21T03:18:21Z"
     },
     {
-      "agentName": "b1000-lantern-agent-6024",
-      "createdAt": "2026-08-18T02:15:29Z",
-      "project": "agent-lab",
+      "agentName": "b1000-cinder-agent-4128",
+      "createdAt": "2026-08-21T02:55:24Z",
+      "project": "smp360-web",
+      "role": "review-agent",
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-21T02:55:24Z"
+    },
+    {
+      "agentName": "b1000-maple-agent-4826",
+      "createdAt": "2026-08-21T02:41:17Z",
+      "project": "smp360-web",
       "role": "project-manager-agent",
       "status": "ready",
-      "statusAt": "2026-08-18T02:15:29Z"
+      "statusAt": "2026-08-21T02:41:17Z"
     },
     {
-      "agentName": "b1000-forge-agent-5831",
-      "createdAt": "2026-08-18T02:14:51Z",
-      "project": "helix-alpha",
+      "agentName": "b1000-harbor-agent-7062",
+      "createdAt": "2026-08-21T02:23:08Z",
+      "project": "smp360-web",
       "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-18T02:19:01Z"
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-21T02:23:08Z"
     },
     {
-      "agentName": "b1000-meridian-agent-4182",
-      "createdAt": "2026-08-18T02:10:00Z",
-      "project": "agent-lab",
+      "agentName": "b1000-ember-agent-5129",
+      "createdAt": "2026-08-21T02:01:47Z",
+      "project": "smp360-web",
+      "role": "building-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-21T02:13:44Z"
+    },
+    {
+      "agentName": "b1000-trident-agent-6314",
+      "createdAt": "2026-08-21T01:30:10Z",
+      "project": "smp360-web",
       "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-18T02:16:00Z"
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-21T01:30:10Z"
+    },
+    {
+      "agentName": "b1000-sable-agent-2741",
+      "createdAt": "2026-08-21T01:20:12Z",
+      "project": "smp360-web",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-21T01:20:12Z"
+    },
+    {
+      "agentName": "b1000-onyx-agent-9136",
+      "createdAt": "2026-08-20T10:32:30Z",
+      "project": "smp360-web",
+      "role": "operator-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-20T10:38:22Z"
+    },
+    {
+      "agentName": "b1000-vector-agent-6402",
+      "createdAt": "2026-08-20T10:23:20Z",
+      "project": "smp360-web",
+      "role": "review-agent",
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-20T10:23:20Z"
+    },
+    {
+      "agentName": "b1000-cedar-agent-4817",
+      "createdAt": "2026-08-20T10:15:50Z",
+      "project": "smp360-web",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-20T10:15:50Z"
     }
   ]
 }
