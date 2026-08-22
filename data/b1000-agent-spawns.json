@@ -1,24 +1,40 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-22T03:47:27Z",
+  "generatedAt": "2026-08-22T04:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "quantumed-lilac-agent-5824",
-    "createdAt": "2026-08-22T03:21:39Z",
-    "project": "infrastructure",
-    "role": "operator-agent",
+    "agentName": "b1000-harbor-agent-6084",
+    "createdAt": "2026-08-22T04:32:42Z",
+    "project": "helix-alpha",
+    "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-22T03:21:39Z"
+    "statusAt": "2026-08-22T04:32:42Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-summit-agent-3612",
-    "createdAt": "2026-08-22T03:28:35Z",
+    "agentName": "b1000-vector-agent-7426",
+    "createdAt": "2026-08-22T04:40:43Z",
     "project": "helix-alpha",
     "role": "review-agent",
     "status": "accepted_pending_human",
-    "statusAt": "2026-08-22T03:28:35Z"
+    "statusAt": "2026-08-22T04:40:43Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-vector-agent-7426",
+      "createdAt": "2026-08-22T04:40:43Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-22T04:40:43Z"
+    },
+    {
+      "agentName": "b1000-harbor-agent-6084",
+      "createdAt": "2026-08-22T04:32:42Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-22T04:32:42Z"
+    },
     {
       "agentName": "b1000-summit-agent-3612",
       "createdAt": "2026-08-22T03:28:35Z",
@@ -202,22 +218,6 @@
       "role": "review-agent",
       "status": "needs_revision",
       "statusAt": "2026-08-21T03:42:31Z"
-    },
-    {
-      "agentName": "b1000-ridge-agent-1847",
-      "createdAt": "2026-08-21T03:28:00Z",
-      "project": "smp360-web",
-      "role": "review-agent",
-      "status": "needs_revision",
-      "statusAt": "2026-08-21T03:28:00Z"
-    },
-    {
-      "agentName": "b1000-anchor-agent-7395",
-      "createdAt": "2026-08-21T03:13:49Z",
-      "project": "smp360-web",
-      "role": "operator-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-21T03:18:21Z"
     }
   ]
 }
