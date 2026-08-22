@@ -1,24 +1,48 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-22T22:47:27Z",
+  "generatedAt": "2026-08-22T23:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-nimbus-agent-4824",
-    "createdAt": "2026-08-22T22:43:00Z",
+    "agentName": "b1000-garnet-agent-8421",
+    "createdAt": "2026-08-22T23:27:02Z",
     "project": "helix-alpha",
-    "role": "operator-agent",
+    "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-22T22:43:00Z"
+    "statusAt": "2026-08-22T23:27:02Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-nimbus-agent-4824",
-    "createdAt": "2026-08-22T22:43:00Z",
+    "agentName": "b1000-garnet-agent-8421",
+    "createdAt": "2026-08-22T23:27:02Z",
     "project": "helix-alpha",
-    "role": "operator-agent",
+    "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-22T22:43:00Z"
+    "statusAt": "2026-08-22T23:27:02Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-quartz-agent-5318",
+      "createdAt": "2026-08-22T23:33:50Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-22T23:40:10Z"
+    },
+    {
+      "agentName": "b1000-garnet-agent-8421",
+      "createdAt": "2026-08-22T23:27:02Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-22T23:27:02Z"
+    },
+    {
+      "agentName": "b1000-cobalt-agent-7422",
+      "createdAt": "2026-08-22T22:53:49Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-22T23:07:04Z"
+    },
     {
       "agentName": "b1000-nimbus-agent-4824",
       "createdAt": "2026-08-22T22:43:00Z",
@@ -194,30 +218,6 @@
       "role": "review-agent",
       "status": "accepted_pending_human",
       "statusAt": "2026-08-22T01:00:06Z"
-    },
-    {
-      "agentName": "b1000-monarch-agent-4827",
-      "createdAt": "2026-08-22T00:56:42Z",
-      "project": "infrastructure",
-      "role": "project-manager-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-22T00:56:42Z"
-    },
-    {
-      "agentName": "b1000-amber-agent-1000",
-      "createdAt": "2026-08-22T00:50:37Z",
-      "project": "smp360-web",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-22T00:50:37Z"
-    },
-    {
-      "agentName": "b1000-lantern-agent-3482",
-      "createdAt": "2026-08-22T00:44:36Z",
-      "project": "smp360-web",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-22T00:44:36Z"
     }
   ]
 }
