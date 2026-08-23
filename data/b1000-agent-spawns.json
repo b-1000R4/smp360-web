@@ -1,24 +1,56 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-23T00:47:27Z",
+  "generatedAt": "2026-08-23T01:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-window-agent-2046",
-    "createdAt": "2026-08-23T00:30:02Z",
-    "project": "infrastructure",
+    "agentName": "b1000-lattice-agent-5174",
+    "createdAt": "2026-08-23T02:05:00Z",
+    "project": "helix-alpha",
     "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-23T00:30:02Z"
+    "statusAt": "2026-08-23T02:05:00Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-umbra-agent-2754",
-    "createdAt": "2026-08-23T00:32:00Z",
+    "agentName": "b1000-cedar-agent-4821",
+    "createdAt": "2026-08-23T03:05:00Z",
     "project": "helix-alpha",
-    "role": "operator-agent",
-    "status": "review_ready",
-    "statusAt": "2026-08-23T00:32:00Z"
+    "role": "review-agent",
+    "status": "accepted_pending_human",
+    "statusAt": "2026-08-23T03:05:00Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-cedar-agent-4821",
+      "createdAt": "2026-08-23T03:05:00Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-23T03:05:00Z"
+    },
+    {
+      "agentName": "b1000-lattice-agent-5174",
+      "createdAt": "2026-08-23T02:05:00Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-23T02:05:00Z"
+    },
+    {
+      "agentName": "b1000-flint-agent-3146",
+      "createdAt": "2026-08-23T01:27:29Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-23T01:27:29Z"
+    },
+    {
+      "agentName": "b1000-sable-agent-1834",
+      "createdAt": "2026-08-23T01:21:19Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "needs_revision",
+      "statusAt": "2026-08-23T01:21:19Z"
+    },
     {
       "agentName": "b1000-umbra-agent-2754",
       "createdAt": "2026-08-23T00:32:00Z",
@@ -186,38 +218,6 @@
       "role": "project-manager-agent",
       "status": "ready",
       "statusAt": "2026-08-22T03:04:29Z"
-    },
-    {
-      "agentName": "b1000-rivet-agent-3142",
-      "createdAt": "2026-08-22T03:04:22Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-22T03:04:22Z"
-    },
-    {
-      "agentName": "b1000-merit-agent-4386",
-      "createdAt": "2026-08-22T02:56:02Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-22T03:00:21Z"
-    },
-    {
-      "agentName": "b1000-apex-agent-1000",
-      "createdAt": "2026-08-22T02:52:30Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "ready",
-      "statusAt": "2026-08-22T02:52:30Z"
-    },
-    {
-      "agentName": "b1000-topaz-agent-2604",
-      "createdAt": "2026-08-22T02:48:53Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-22T02:48:53Z"
     }
   ]
 }
