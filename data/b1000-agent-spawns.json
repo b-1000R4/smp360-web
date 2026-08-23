@@ -1,24 +1,72 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-22T23:47:27Z",
+  "generatedAt": "2026-08-23T00:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-garnet-agent-8421",
-    "createdAt": "2026-08-22T23:27:02Z",
-    "project": "helix-alpha",
+    "agentName": "b1000-window-agent-2046",
+    "createdAt": "2026-08-23T00:30:02Z",
+    "project": "infrastructure",
     "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-22T23:27:02Z"
+    "statusAt": "2026-08-23T00:30:02Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-garnet-agent-8421",
-    "createdAt": "2026-08-22T23:27:02Z",
+    "agentName": "b1000-umbra-agent-2754",
+    "createdAt": "2026-08-23T00:32:00Z",
     "project": "helix-alpha",
-    "role": "project-manager-agent",
-    "status": "ready",
-    "statusAt": "2026-08-22T23:27:02Z"
+    "role": "operator-agent",
+    "status": "review_ready",
+    "statusAt": "2026-08-23T00:32:00Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-umbra-agent-2754",
+      "createdAt": "2026-08-23T00:32:00Z",
+      "project": "helix-alpha",
+      "role": "operator-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-23T00:32:00Z"
+    },
+    {
+      "agentName": "b1000-window-agent-2046",
+      "createdAt": "2026-08-23T00:30:02Z",
+      "project": "infrastructure",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-23T00:30:02Z"
+    },
+    {
+      "agentName": "b1000-atlas-agent-6408",
+      "createdAt": "2026-08-23T00:14:23Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-23T00:16:10Z"
+    },
+    {
+      "agentName": "b1000-harbor-agent-4831",
+      "createdAt": "2026-08-22T23:59:59Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-22T23:59:59Z"
+    },
+    {
+      "agentName": "b1000-onyx-agent-6142",
+      "createdAt": "2026-08-22T23:59:59Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "needs_revision",
+      "statusAt": "2026-08-22T23:59:59Z"
+    },
+    {
+      "agentName": "b1000-velvet-agent-7196",
+      "createdAt": "2026-08-22T23:47:22Z",
+      "project": "helix-alpha",
+      "role": "operator-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-22T23:54:20Z"
+    },
     {
       "agentName": "b1000-quartz-agent-5318",
       "createdAt": "2026-08-22T23:33:50Z",
@@ -170,54 +218,6 @@
       "role": "review-agent",
       "status": "accepted_pending_human",
       "statusAt": "2026-08-22T02:48:53Z"
-    },
-    {
-      "agentName": "b1000-cobalt-agent-5812",
-      "createdAt": "2026-08-22T02:41:04Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-22T02:41:04Z"
-    },
-    {
-      "agentName": "b1000-nova-agent-0273",
-      "createdAt": "2026-08-22T02:27:22Z",
-      "project": "smp360-web",
-      "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-22T02:27:22Z"
-    },
-    {
-      "agentName": "b1000-silver-agent-7348",
-      "createdAt": "2026-08-22T02:17:01Z",
-      "project": "smp360-web",
-      "role": "operator-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-22T02:19:50Z"
-    },
-    {
-      "agentName": "b1000-tundra-agent-6185",
-      "createdAt": "2026-08-22T01:59:32Z",
-      "project": "smp360-web",
-      "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-22T01:59:32Z"
-    },
-    {
-      "agentName": "b1000-aurora-agent-6184",
-      "createdAt": "2026-08-22T01:24:26Z",
-      "project": "smp360-web",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-22T01:24:26Z"
-    },
-    {
-      "agentName": "b1000-garnet-agent-4721",
-      "createdAt": "2026-08-22T01:00:06Z",
-      "project": "smp360-web",
-      "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-22T01:00:06Z"
     }
   ]
 }
