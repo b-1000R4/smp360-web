@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-23T03:47:27Z",
+  "generatedAt": "2026-08-23T04:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
     "agentName": "b1000-tundra-agent-4607",
@@ -11,14 +11,22 @@
     "statusAt": "2026-08-23T02:57:32Z"
   },
   "latestActiveAgent": {
-    "agentName": "quantumed-canyon-agent-9142",
-    "createdAt": "2026-08-23T03:14:24Z",
-    "project": "infrastructure",
+    "agentName": "b1000-mariner-agent-3614",
+    "createdAt": "2026-08-23T04:26:42Z",
+    "project": "helix-alpha",
     "role": "operator-agent",
     "status": "review_ready",
-    "statusAt": "2026-08-23T03:18:42Z"
+    "statusAt": "2026-08-23T04:35:20Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-mariner-agent-3614",
+      "createdAt": "2026-08-23T04:26:42Z",
+      "project": "helix-alpha",
+      "role": "operator-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-23T04:35:20Z"
+    },
     {
       "agentName": "quantumed-canyon-agent-9142",
       "createdAt": "2026-08-23T03:14:24Z",
@@ -210,14 +218,6 @@
       "role": "operator-agent",
       "status": "review_ready",
       "statusAt": "2026-08-22T05:23:18Z"
-    },
-    {
-      "agentName": "b1000-orbit-agent-4821",
-      "createdAt": "2026-08-22T05:05:07Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-22T05:05:07Z"
     }
   ]
 }
