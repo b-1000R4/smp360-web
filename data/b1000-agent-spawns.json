@@ -1,24 +1,40 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-23T04:47:27Z",
+  "generatedAt": "2026-08-23T05:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-tundra-agent-4607",
-    "createdAt": "2026-08-23T02:57:32Z",
+    "agentName": "b1000-cirrus-agent-5820",
+    "createdAt": "2026-08-23T04:55:36Z",
     "project": "helix-alpha",
     "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-23T02:57:32Z"
+    "statusAt": "2026-08-23T04:55:36Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-mariner-agent-3614",
-    "createdAt": "2026-08-23T04:26:42Z",
-    "project": "helix-alpha",
-    "role": "operator-agent",
-    "status": "review_ready",
-    "statusAt": "2026-08-23T04:35:20Z"
+    "agentName": "b1000-summit-agent-4721",
+    "createdAt": "2026-08-23T05:01:17Z",
+    "project": "infrastructure",
+    "role": "review-agent",
+    "status": "accepted_pending_human",
+    "statusAt": "2026-08-23T05:01:17Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-summit-agent-4721",
+      "createdAt": "2026-08-23T05:01:17Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-23T05:01:17Z"
+    },
+    {
+      "agentName": "b1000-cirrus-agent-5820",
+      "createdAt": "2026-08-23T04:55:36Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-23T04:55:36Z"
+    },
     {
       "agentName": "b1000-mariner-agent-3614",
       "createdAt": "2026-08-23T04:26:42Z",
@@ -202,22 +218,6 @@
       "role": "review-agent",
       "status": "accepted",
       "statusAt": "2026-08-22T23:07:04Z"
-    },
-    {
-      "agentName": "b1000-nimbus-agent-4824",
-      "createdAt": "2026-08-22T22:43:00Z",
-      "project": "helix-alpha",
-      "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-08-22T22:43:00Z"
-    },
-    {
-      "agentName": "b1000-maple-agent-6283",
-      "createdAt": "2026-08-22T05:16:06Z",
-      "project": "helix-alpha",
-      "role": "operator-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-22T05:23:18Z"
     }
   ]
 }
