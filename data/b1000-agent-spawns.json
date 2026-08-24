@@ -1,24 +1,48 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-24T19:47:27Z",
+  "generatedAt": "2026-08-24T20:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-juniper-agent-1079",
-    "createdAt": "2026-08-24T19:06:18Z",
-    "project": "agent-lab",
+    "agentName": "b1000-atlas-agent-9050",
+    "createdAt": "2026-08-24T19:50:13Z",
+    "project": "helix-alpha",
     "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-24T19:06:18Z"
+    "statusAt": "2026-08-24T19:50:13Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-juniper-agent-1079",
-    "createdAt": "2026-08-24T19:06:18Z",
+    "agentName": "b1000-orchard-agent-8164",
+    "createdAt": "2026-08-24T19:58:36Z",
     "project": "agent-lab",
-    "role": "project-manager-agent",
-    "status": "ready",
-    "statusAt": "2026-08-24T19:06:18Z"
+    "role": "review-agent",
+    "status": "accepted_pending_human",
+    "statusAt": "2026-08-24T19:58:36Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-orchard-agent-8164",
+      "createdAt": "2026-08-24T19:58:36Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "accepted_pending_human",
+      "statusAt": "2026-08-24T19:58:36Z"
+    },
+    {
+      "agentName": "b1000-atlas-agent-7255",
+      "createdAt": "2026-08-24T19:54:32Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-24T20:10:23Z"
+    },
+    {
+      "agentName": "b1000-atlas-agent-9050",
+      "createdAt": "2026-08-24T19:50:13Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-24T19:50:13Z"
+    },
     {
       "agentName": "b1000-juniper-agent-1079",
       "createdAt": "2026-08-24T19:06:18Z",
@@ -194,30 +218,6 @@
       "role": "planning-agent",
       "status": "review_ready",
       "statusAt": "2026-08-24T04:55:53Z"
-    },
-    {
-      "agentName": "b1000-amber-agent-1003",
-      "createdAt": "2026-08-24T04:34:39Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-24T04:41:00Z"
-    },
-    {
-      "agentName": "b1000-cinder-agent-1000",
-      "createdAt": "2026-08-24T04:16:20Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-24T04:24:15Z"
-    },
-    {
-      "agentName": "b1000-prairie-agent-6428",
-      "createdAt": "2026-08-24T04:05:00Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-24T04:11:39Z"
     }
   ]
 }
