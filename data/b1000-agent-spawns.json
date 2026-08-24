@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-24T03:47:27Z",
+  "generatedAt": "2026-08-24T04:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
     "agentName": "b1000-liberty-agent-8424",
@@ -11,14 +11,38 @@
     "statusAt": "2026-08-24T03:08:01Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-liberty-agent-8424",
-    "createdAt": "2026-08-24T03:08:01Z",
+    "agentName": "b1000-cinder-agent-1000",
+    "createdAt": "2026-08-24T04:16:20Z",
     "project": "agent-lab",
-    "role": "project-manager-agent",
-    "status": "ready",
-    "statusAt": "2026-08-24T03:08:01Z"
+    "role": "building-agent",
+    "status": "review_ready",
+    "statusAt": "2026-08-24T04:24:15Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-amber-agent-1003",
+      "createdAt": "2026-08-24T04:34:39Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-24T04:41:00Z"
+    },
+    {
+      "agentName": "b1000-cinder-agent-1000",
+      "createdAt": "2026-08-24T04:16:20Z",
+      "project": "agent-lab",
+      "role": "building-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-24T04:24:15Z"
+    },
+    {
+      "agentName": "b1000-prairie-agent-6428",
+      "createdAt": "2026-08-24T04:05:00Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-24T04:11:39Z"
+    },
     {
       "agentName": "b1000-liberty-agent-8424",
       "createdAt": "2026-08-24T03:08:01Z",
@@ -194,30 +218,6 @@
       "role": "review-agent",
       "status": "needs_revision",
       "statusAt": "2026-08-22T23:59:59Z"
-    },
-    {
-      "agentName": "b1000-velvet-agent-7196",
-      "createdAt": "2026-08-22T23:47:22Z",
-      "project": "helix-alpha",
-      "role": "operator-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-22T23:54:20Z"
-    },
-    {
-      "agentName": "b1000-quartz-agent-5318",
-      "createdAt": "2026-08-22T23:33:50Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-22T23:40:10Z"
-    },
-    {
-      "agentName": "b1000-garnet-agent-8421",
-      "createdAt": "2026-08-22T23:27:02Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-22T23:27:02Z"
     }
   ]
 }
