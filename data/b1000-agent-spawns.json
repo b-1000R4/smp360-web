@@ -1,24 +1,32 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-24T02:47:27Z",
+  "generatedAt": "2026-08-24T03:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-cirrus-agent-5820",
-    "createdAt": "2026-08-23T04:55:36Z",
-    "project": "helix-alpha",
+    "agentName": "b1000-liberty-agent-8424",
+    "createdAt": "2026-08-24T03:08:01Z",
+    "project": "agent-lab",
     "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-23T04:55:36Z"
+    "statusAt": "2026-08-24T03:08:01Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-summit-agent-4721",
-    "createdAt": "2026-08-23T05:01:17Z",
-    "project": "infrastructure",
-    "role": "review-agent",
-    "status": "accepted_pending_human",
-    "statusAt": "2026-08-23T05:01:17Z"
+    "agentName": "b1000-liberty-agent-8424",
+    "createdAt": "2026-08-24T03:08:01Z",
+    "project": "agent-lab",
+    "role": "project-manager-agent",
+    "status": "ready",
+    "statusAt": "2026-08-24T03:08:01Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-liberty-agent-8424",
+      "createdAt": "2026-08-24T03:08:01Z",
+      "project": "agent-lab",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-24T03:08:01Z"
+    },
     {
       "agentName": "b1000-summit-agent-4721",
       "createdAt": "2026-08-23T05:01:17Z",
@@ -210,14 +218,6 @@
       "role": "project-manager-agent",
       "status": "ready",
       "statusAt": "2026-08-22T23:27:02Z"
-    },
-    {
-      "agentName": "b1000-cobalt-agent-7422",
-      "createdAt": "2026-08-22T22:53:49Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-22T23:07:04Z"
     }
   ]
 }
