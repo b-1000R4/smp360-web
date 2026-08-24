@@ -1,24 +1,40 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-24T17:47:27Z",
+  "generatedAt": "2026-08-24T18:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-lagoon-agent-3755",
-    "createdAt": "2026-08-24T17:42:00Z",
-    "project": "helix-alpha",
-    "role": "project-manager-agent",
+    "agentName": "b1000-field-agent-5972",
+    "createdAt": "2026-08-24T18:22:18Z",
+    "project": "agent-lab",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-08-24T17:42:00Z"
+    "statusAt": "2026-08-24T18:22:18Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-lagoon-agent-3755",
-    "createdAt": "2026-08-24T17:42:00Z",
-    "project": "helix-alpha",
-    "role": "project-manager-agent",
+    "agentName": "b1000-field-agent-5972",
+    "createdAt": "2026-08-24T18:22:18Z",
+    "project": "agent-lab",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-08-24T17:42:00Z"
+    "statusAt": "2026-08-24T18:22:18Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-barley-agent-6183",
+      "createdAt": "2026-08-24T18:30:59Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-24T18:39:41Z"
+    },
+    {
+      "agentName": "b1000-field-agent-5972",
+      "createdAt": "2026-08-24T18:22:18Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-08-24T18:22:18Z"
+    },
     {
       "agentName": "b1000-lagoon-agent-3755",
       "createdAt": "2026-08-24T17:42:00Z",
@@ -32,8 +48,8 @@
       "createdAt": "2026-08-24T17:38:29Z",
       "project": "agent-lab",
       "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-24T17:38:29Z"
+      "status": "accepted",
+      "statusAt": "2026-08-24T17:39:43Z"
     },
     {
       "agentName": "b1000-vale-agent-7531",
@@ -202,22 +218,6 @@
       "role": "project-manager-agent",
       "status": "ready",
       "statusAt": "2026-08-23T04:55:36Z"
-    },
-    {
-      "agentName": "b1000-mariner-agent-3614",
-      "createdAt": "2026-08-23T04:26:42Z",
-      "project": "helix-alpha",
-      "role": "operator-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-23T04:35:20Z"
-    },
-    {
-      "agentName": "quantumed-canyon-agent-9142",
-      "createdAt": "2026-08-23T03:14:24Z",
-      "project": "infrastructure",
-      "role": "operator-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-23T03:18:42Z"
     }
   ]
 }
