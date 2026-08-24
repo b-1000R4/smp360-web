@@ -1,39 +1,55 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-24T22:47:27Z",
+  "generatedAt": "2026-08-24T23:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-crest-agent-5187",
-    "createdAt": "2026-08-24T22:06:18Z",
+    "agentName": "b1000-cobalt-agent-2259",
+    "createdAt": "2026-08-24T23:10:29Z",
     "project": "helix-alpha",
     "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-24T22:06:18Z"
+    "statusAt": "2026-08-24T23:10:29Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-linen-agent-8213",
-    "createdAt": "2026-08-24T22:44:40Z",
+    "agentName": "b1000-maple-agent-3228",
+    "createdAt": "2026-08-24T23:26:29Z",
     "project": "helix-alpha",
-    "role": "review-agent",
-    "status": "accepted_pending_human",
-    "statusAt": "2026-08-24T22:44:40Z"
+    "role": "planning-agent",
+    "status": "review_ready",
+    "statusAt": "2026-08-24T23:30:05Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-maple-agent-3228",
+      "createdAt": "2026-08-24T23:26:29Z",
+      "project": "helix-alpha",
+      "role": "planning-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-24T23:30:05Z"
+    },
+    {
+      "agentName": "b1000-cobalt-agent-2259",
+      "createdAt": "2026-08-24T23:10:29Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-24T23:10:29Z"
+    },
     {
       "agentName": "b1000-linen-agent-8213",
       "createdAt": "2026-08-24T22:44:40Z",
       "project": "helix-alpha",
       "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-24T22:44:40Z"
+      "status": "accepted",
+      "statusAt": "2026-08-24T23:02:56Z"
     },
     {
       "agentName": "b1000-talon-agent-6609",
       "createdAt": "2026-08-24T22:44:17Z",
       "project": "helix-alpha",
       "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-24T22:44:17Z"
+      "status": "accepted",
+      "statusAt": "2026-08-24T23:02:30Z"
     },
     {
       "agentName": "b1000-dawn-agent-9678",
@@ -202,22 +218,6 @@
       "role": "planning-agent",
       "status": "review_ready",
       "statusAt": "2026-08-24T17:09:40Z"
-    },
-    {
-      "agentName": "b1000-copper-agent-3640",
-      "createdAt": "2026-08-24T17:05:13Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-24T17:07:30Z"
-    },
-    {
-      "agentName": "b1000-vector-agent-6506",
-      "createdAt": "2026-08-24T16:56:24.242Z",
-      "project": "helix-alpha",
-      "role": "building-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-24T16:56:24.433Z"
     }
   ]
 }
