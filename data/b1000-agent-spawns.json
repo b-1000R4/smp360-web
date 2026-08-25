@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-25T02:47:27Z",
+  "generatedAt": "2026-08-25T03:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
     "agentName": "b1000-linen-agent-8620",
@@ -11,12 +11,12 @@
     "statusAt": "2026-08-25T02:10:04Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-maple-agent-3039",
-    "createdAt": "2026-08-25T02:38:34Z",
+    "agentName": "b1000-lattice-agent-5322",
+    "createdAt": "2026-08-25T02:26:10Z",
     "project": "agent-lab",
-    "role": "review-agent",
-    "status": "accepted_pending_human",
-    "statusAt": "2026-08-25T02:38:34Z"
+    "role": "planning-agent",
+    "status": "review_ready",
+    "statusAt": "2026-08-25T02:26:23Z"
   },
   "recentSpawnedAgents": [
     {
@@ -24,8 +24,8 @@
       "createdAt": "2026-08-25T02:38:34Z",
       "project": "agent-lab",
       "role": "review-agent",
-      "status": "accepted_pending_human",
-      "statusAt": "2026-08-25T02:38:34Z"
+      "status": "accepted",
+      "statusAt": "2026-08-25T03:03:07Z"
     },
     {
       "agentName": "b1000-spruce-agent-8774",
