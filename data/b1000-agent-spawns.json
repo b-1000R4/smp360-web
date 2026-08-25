@@ -1,31 +1,79 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-25T11:47:27Z",
+  "generatedAt": "2026-08-25T12:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-forge-agent-9298",
-    "createdAt": "2026-08-25T11:44:03Z",
+    "agentName": "b1000-lagoon-agent-6298",
+    "createdAt": "2026-08-25T12:26:45Z",
     "project": "helix-alpha",
-    "role": "operator-agent",
+    "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-25T11:44:03Z"
+    "statusAt": "2026-08-25T12:26:45Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-forge-agent-9298",
-    "createdAt": "2026-08-25T11:44:03Z",
+    "agentName": "b1000-vale-agent-9598",
+    "createdAt": "2026-08-25T12:36:42Z",
     "project": "helix-alpha",
-    "role": "operator-agent",
-    "status": "ready",
-    "statusAt": "2026-08-25T11:44:03Z"
+    "role": "planning-agent",
+    "status": "review_ready",
+    "statusAt": "2026-08-25T12:36:58Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-vale-agent-9598",
+      "createdAt": "2026-08-25T12:36:42Z",
+      "project": "helix-alpha",
+      "role": "planning-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-25T12:36:58Z"
+    },
+    {
+      "agentName": "b1000-lagoon-agent-6298",
+      "createdAt": "2026-08-25T12:26:45Z",
+      "project": "helix-alpha",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-25T12:26:45Z"
+    },
+    {
+      "agentName": "b1000-summit-agent-7931",
+      "createdAt": "2026-08-25T11:56:29Z",
+      "project": "helix-alpha",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-25T12:10:00Z"
+    },
+    {
+      "agentName": "b1000-tide-agent-6783",
+      "createdAt": "2026-08-25T11:53:03Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-25T12:17:16Z"
+    },
     {
       "agentName": "b1000-forge-agent-9298",
       "createdAt": "2026-08-25T11:44:03Z",
       "project": "helix-alpha",
       "role": "operator-agent",
-      "status": "ready",
-      "statusAt": "2026-08-25T11:44:03Z"
+      "status": "review_ready",
+      "statusAt": "2026-08-25T11:48:40Z"
+    },
+    {
+      "agentName": "b1000-canyon-agent-7603",
+      "createdAt": "2026-08-25T11:42:44Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-25T11:42:44Z"
+    },
+    {
+      "agentName": "b1000-linen-agent-2440",
+      "createdAt": "2026-08-25T11:42:44Z",
+      "project": "agent-lab",
+      "role": "planning-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-25T11:42:44Z"
     },
     {
       "agentName": "b1000-willow-agent-7083",
@@ -170,54 +218,6 @@
       "role": "planning-agent",
       "status": "review_ready",
       "statusAt": "2026-08-25T00:46:44Z"
-    },
-    {
-      "agentName": "b1000-lagoon-agent-1522",
-      "createdAt": "2026-08-25T00:22:02Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-25T00:22:02Z"
-    },
-    {
-      "agentName": "b1000-reef-agent-8409",
-      "createdAt": "2026-08-24T23:54:57Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-24T23:59:58Z"
-    },
-    {
-      "agentName": "b1000-maple-agent-3228",
-      "createdAt": "2026-08-24T23:26:29Z",
-      "project": "helix-alpha",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-24T23:30:05Z"
-    },
-    {
-      "agentName": "b1000-cobalt-agent-2259",
-      "createdAt": "2026-08-24T23:10:29Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-24T23:10:29Z"
-    },
-    {
-      "agentName": "b1000-linen-agent-8213",
-      "createdAt": "2026-08-24T22:44:40Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-24T23:02:56Z"
-    },
-    {
-      "agentName": "b1000-talon-agent-6609",
-      "createdAt": "2026-08-24T22:44:17Z",
-      "project": "helix-alpha",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-24T23:02:30Z"
     }
   ]
 }
