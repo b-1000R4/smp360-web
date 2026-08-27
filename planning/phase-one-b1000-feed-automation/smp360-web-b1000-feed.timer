@@ -1,9 +1,9 @@
 [Unit]
-Description=Hourly timer for SMP360 Web B-1000 feed publishing at minute :47 UTC
+Description=Two-hour timer for SMP360 Web B-1000 feed publishing at minute :47 UTC
 Documentation=file:/home/testman001/smp360/smp360-web/planning/phase-one-b1000-feed-automation/operator-note.md
 
 [Timer]
-OnCalendar=*-*-* *:47:00
+OnCalendar=*-*-* 0/2:47:00
 AccuracySec=1min
 Persistent=true
 Unit=smp360-web-b1000-feed.service
