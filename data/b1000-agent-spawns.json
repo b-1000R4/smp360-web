@@ -1,24 +1,32 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-27T02:47:27Z",
+  "generatedAt": "2026-08-27T03:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-lagoon-agent-6298",
-    "createdAt": "2026-08-25T12:26:45Z",
-    "project": "helix-alpha",
+    "agentName": "b1000-juniper-agent-9226",
+    "createdAt": "2026-08-27T03:44:17Z",
+    "project": "smp360-web",
     "role": "project-manager-agent",
     "status": "ready",
-    "statusAt": "2026-08-25T12:26:45Z"
+    "statusAt": "2026-08-27T03:44:17Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-vale-agent-9598",
-    "createdAt": "2026-08-25T12:36:42Z",
-    "project": "helix-alpha",
-    "role": "planning-agent",
-    "status": "review_ready",
-    "statusAt": "2026-08-25T12:36:58Z"
+    "agentName": "b1000-juniper-agent-9226",
+    "createdAt": "2026-08-27T03:44:17Z",
+    "project": "smp360-web",
+    "role": "project-manager-agent",
+    "status": "ready",
+    "statusAt": "2026-08-27T03:44:17Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-juniper-agent-9226",
+      "createdAt": "2026-08-27T03:44:17Z",
+      "project": "smp360-web",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-08-27T03:44:17Z"
+    },
     {
       "agentName": "b1000-lagoon-agent-3527",
       "createdAt": "2026-08-25T12:45:32Z",
@@ -210,14 +218,6 @@
       "role": "review-agent",
       "status": "accepted",
       "statusAt": "2026-08-25T01:39:54Z"
-    },
-    {
-      "agentName": "b1000-talon-agent-8737",
-      "createdAt": "2026-08-25T00:59:00Z",
-      "project": "helix-alpha",
-      "role": "operator-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-25T01:02:39Z"
     }
   ]
 }
