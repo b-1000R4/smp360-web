@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-27T04:47:27Z",
+  "generatedAt": "2026-08-28T08:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
     "agentName": "b1000-basalt-agent-5697",
@@ -11,14 +11,22 @@
     "statusAt": "2026-08-27T03:53:01Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-timber-agent-8954",
-    "createdAt": "2026-08-27T04:05:25Z",
-    "project": "smp360-web",
-    "role": "building-agent",
+    "agentName": "b1000-juniper-agent-2220",
+    "createdAt": "2026-08-28T08:40:38Z",
+    "project": "infrastructure",
+    "role": "project-manager-agent",
     "status": "review_ready",
-    "statusAt": "2026-08-27T04:16:37Z"
+    "statusAt": "2026-08-28T08:40:38Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-juniper-agent-2220",
+      "createdAt": "2026-08-28T08:40:38Z",
+      "project": "infrastructure",
+      "role": "project-manager-agent",
+      "status": "review_ready",
+      "statusAt": "2026-08-28T08:40:38Z"
+    },
     {
       "agentName": "b1000-dawn-agent-8333",
       "createdAt": "2026-08-27T04:31:45Z",
@@ -210,14 +218,6 @@
       "role": "planning-agent",
       "status": "review_ready",
       "statusAt": "2026-08-25T02:22:50Z"
-    },
-    {
-      "agentName": "b1000-linen-agent-8620",
-      "createdAt": "2026-08-25T02:10:04Z",
-      "project": "helix-alpha",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-25T02:10:04Z"
     }
   ]
 }
