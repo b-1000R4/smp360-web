@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-28T08:47:27Z",
+  "generatedAt": "2026-08-28T09:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
     "agentName": "b1000-basalt-agent-5697",
@@ -19,6 +19,14 @@
     "statusAt": "2026-08-28T08:40:38Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-harbor-agent-2909",
+      "createdAt": "2026-08-28T08:48:53Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-08-28T08:54:42Z"
+    },
     {
       "agentName": "b1000-juniper-agent-2220",
       "createdAt": "2026-08-28T08:40:38Z",
@@ -210,14 +218,6 @@
       "role": "planning-agent",
       "status": "review_ready",
       "statusAt": "2026-08-25T02:25:47Z"
-    },
-    {
-      "agentName": "b1000-quill-agent-3886",
-      "createdAt": "2026-08-25T02:22:50Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-25T02:22:50Z"
     }
   ]
 }
