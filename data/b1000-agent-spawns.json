@@ -1,24 +1,48 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-09-03T00:47:27Z",
+  "generatedAt": "2026-09-03T01:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "quantumed-glacier-agent-5132",
-    "createdAt": "2026-09-03T00:45:23Z",
+    "agentName": "b1000-summit-agent-7623",
+    "createdAt": "2026-09-03T00:59:46Z",
     "project": "infrastructure",
-    "role": "operator-agent",
+    "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-09-03T00:45:23Z"
+    "statusAt": "2026-09-03T00:59:46Z"
   },
   "latestActiveAgent": {
-    "agentName": "quantumed-glacier-agent-5132",
-    "createdAt": "2026-09-03T00:45:23Z",
+    "agentName": "quantumed-glacier-agent-8887",
+    "createdAt": "2026-09-03T01:30:06Z",
     "project": "infrastructure",
     "role": "operator-agent",
-    "status": "ready",
-    "statusAt": "2026-09-03T00:45:23Z"
+    "status": "review_ready",
+    "statusAt": "2026-09-03T01:30:06Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-raven-agent-7112",
+      "createdAt": "2026-09-03T01:35:42Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-09-03T01:40:14Z"
+    },
+    {
+      "agentName": "quantumed-glacier-agent-8887",
+      "createdAt": "2026-09-03T01:30:06Z",
+      "project": "infrastructure",
+      "role": "operator-agent",
+      "status": "review_ready",
+      "statusAt": "2026-09-03T01:30:06Z"
+    },
+    {
+      "agentName": "b1000-summit-agent-7623",
+      "createdAt": "2026-09-03T00:59:46Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-09-03T00:59:46Z"
+    },
     {
       "agentName": "quantumed-glacier-agent-5132",
       "createdAt": "2026-09-03T00:45:23Z",
@@ -194,30 +218,6 @@
       "role": "planning-agent",
       "status": "review_ready",
       "statusAt": "2026-08-24T20:59:32.596Z"
-    },
-    {
-      "agentName": "b1000-orchard-agent-8164",
-      "createdAt": "2026-08-24T19:58:36Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-24T20:51:48Z"
-    },
-    {
-      "agentName": "b1000-juniper-agent-1079",
-      "createdAt": "2026-08-24T19:06:18Z",
-      "project": "agent-lab",
-      "role": "project-manager-agent",
-      "status": "ready",
-      "statusAt": "2026-08-24T19:06:18Z"
-    },
-    {
-      "agentName": "b1000-field-agent-5972",
-      "createdAt": "2026-08-24T18:22:18Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "ready",
-      "statusAt": "2026-08-24T18:22:18Z"
     }
   ]
 }
