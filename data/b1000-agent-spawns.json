@@ -1,24 +1,40 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-08-29T09:47:27Z",
+  "generatedAt": "2026-09-03T00:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-spruce-agent-3456",
-    "createdAt": "2026-08-28T23:30:47Z",
+    "agentName": "quantumed-glacier-agent-5132",
+    "createdAt": "2026-09-03T00:45:23Z",
     "project": "infrastructure",
-    "role": "review-agent",
+    "role": "operator-agent",
     "status": "ready",
-    "statusAt": "2026-08-28T23:30:47Z"
+    "statusAt": "2026-09-03T00:45:23Z"
   },
   "latestActiveAgent": {
-    "agentName": "b1000-spruce-agent-3456",
-    "createdAt": "2026-08-28T23:30:47Z",
+    "agentName": "quantumed-glacier-agent-5132",
+    "createdAt": "2026-09-03T00:45:23Z",
     "project": "infrastructure",
-    "role": "review-agent",
+    "role": "operator-agent",
     "status": "ready",
-    "statusAt": "2026-08-28T23:30:47Z"
+    "statusAt": "2026-09-03T00:45:23Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "quantumed-glacier-agent-5132",
+      "createdAt": "2026-09-03T00:45:23Z",
+      "project": "infrastructure",
+      "role": "operator-agent",
+      "status": "ready",
+      "statusAt": "2026-09-03T00:45:23Z"
+    },
+    {
+      "agentName": "b1000-prairie-agent-2023",
+      "createdAt": "2026-09-03T00:28:10Z",
+      "project": "infrastructure",
+      "role": "project-manager-agent",
+      "status": "ready",
+      "statusAt": "2026-09-03T00:28:10Z"
+    },
     {
       "agentName": "b1000-spruce-agent-3456",
       "createdAt": "2026-08-28T23:30:47Z",
@@ -202,22 +218,6 @@
       "role": "review-agent",
       "status": "ready",
       "statusAt": "2026-08-24T18:22:18Z"
-    },
-    {
-      "agentName": "b1000-moss-agent-4693",
-      "createdAt": "2026-08-24T17:38:29Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-24T17:39:43Z"
-    },
-    {
-      "agentName": "b1000-vale-agent-7531",
-      "createdAt": "2026-08-24T17:32:47.371Z",
-      "project": "agent-lab",
-      "role": "building-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-24T17:32:47.730Z"
     }
   ]
 }
