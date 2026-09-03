@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-09-03T02:47:27Z",
+  "generatedAt": "2026-09-03T03:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
     "agentName": "b1000-glacier-agent-7790",
@@ -19,6 +19,14 @@
     "statusAt": "2026-09-03T02:42:08.229Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-harvest-agent-7662",
+      "createdAt": "2026-09-03T02:52:45Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-09-03T02:56:45Z"
+    },
     {
       "agentName": "quantumed-canyon-agent-1959",
       "createdAt": "2026-09-03T02:42:08.016Z",
@@ -210,14 +218,6 @@
       "role": "review-agent",
       "status": "accepted",
       "statusAt": "2026-08-25T02:01:01Z"
-    },
-    {
-      "agentName": "b1000-quill-agent-2745",
-      "createdAt": "2026-08-25T01:50:41Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-25T01:50:55Z"
     }
   ]
 }
