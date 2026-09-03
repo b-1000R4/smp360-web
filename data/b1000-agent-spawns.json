@@ -1,24 +1,48 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-09-03T01:47:27Z",
+  "generatedAt": "2026-09-03T02:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-summit-agent-7623",
-    "createdAt": "2026-09-03T00:59:46Z",
+    "agentName": "b1000-glacier-agent-7790",
+    "createdAt": "2026-09-03T02:20:34.239Z",
     "project": "infrastructure",
     "role": "review-agent",
     "status": "ready",
-    "statusAt": "2026-09-03T00:59:46Z"
+    "statusAt": "2026-09-03T02:20:34.239Z"
   },
   "latestActiveAgent": {
-    "agentName": "quantumed-glacier-agent-8887",
-    "createdAt": "2026-09-03T01:30:06Z",
+    "agentName": "quantumed-canyon-agent-1959",
+    "createdAt": "2026-09-03T02:42:08.016Z",
     "project": "infrastructure",
     "role": "operator-agent",
     "status": "review_ready",
-    "statusAt": "2026-09-03T01:30:06Z"
+    "statusAt": "2026-09-03T02:42:08.229Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "quantumed-canyon-agent-1959",
+      "createdAt": "2026-09-03T02:42:08.016Z",
+      "project": "infrastructure",
+      "role": "operator-agent",
+      "status": "review_ready",
+      "statusAt": "2026-09-03T02:42:08.229Z"
+    },
+    {
+      "agentName": "b1000-glacier-agent-7790",
+      "createdAt": "2026-09-03T02:20:34.239Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-09-03T02:20:34.239Z"
+    },
+    {
+      "agentName": "b1000-timber-agent-2026",
+      "createdAt": "2026-09-03T01:58:38Z",
+      "project": "infrastructure",
+      "role": "review-agent",
+      "status": "ready",
+      "statusAt": "2026-09-03T01:58:38Z"
+    },
     {
       "agentName": "b1000-raven-agent-7112",
       "createdAt": "2026-09-03T01:35:42Z",
@@ -194,30 +218,6 @@
       "role": "planning-agent",
       "status": "review_ready",
       "statusAt": "2026-08-25T01:50:55Z"
-    },
-    {
-      "agentName": "b1000-talon-agent-6708",
-      "createdAt": "2026-08-25T00:43:28Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-25T00:46:44Z"
-    },
-    {
-      "agentName": "b1000-flint-agent-1822",
-      "createdAt": "2026-08-24T21:03:28Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-24T21:09:14Z"
-    },
-    {
-      "agentName": "b1000-forest-agent-1155",
-      "createdAt": "2026-08-24T20:56:47.582Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-24T20:59:32.596Z"
     }
   ]
 }
