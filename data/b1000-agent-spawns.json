@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-09-06T03:47:27Z",
+  "generatedAt": "2026-09-06T04:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
     "agentName": "b1000-falcon-agent-5133",
@@ -19,6 +19,14 @@
     "statusAt": "2026-09-06T03:42:05.490Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-flint-agent-3698",
+      "createdAt": "2026-09-06T03:56:02Z",
+      "project": "agent-lab",
+      "role": "review-agent",
+      "status": "accepted",
+      "statusAt": "2026-09-06T04:23:06Z"
+    },
     {
       "agentName": "b1000-falcon-agent-5133",
       "createdAt": "2026-09-06T03:42:05.490Z",
@@ -210,14 +218,6 @@
       "role": "planning-agent",
       "status": "review_ready",
       "statusAt": "2026-08-25T02:26:23Z"
-    },
-    {
-      "agentName": "b1000-quill-agent-3886",
-      "createdAt": "2026-08-25T02:22:50Z",
-      "project": "agent-lab",
-      "role": "planning-agent",
-      "status": "review_ready",
-      "statusAt": "2026-08-25T02:22:50Z"
     }
   ]
 }
