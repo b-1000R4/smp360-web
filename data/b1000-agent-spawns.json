@@ -1,24 +1,32 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-09-03T03:47:27Z",
+  "generatedAt": "2026-09-06T03:47:27Z",
   "source": "b-1000-registry",
   "currentReadyAgent": {
-    "agentName": "b1000-glacier-agent-7790",
-    "createdAt": "2026-09-03T02:20:34.239Z",
-    "project": "infrastructure",
-    "role": "review-agent",
+    "agentName": "b1000-falcon-agent-5133",
+    "createdAt": "2026-09-06T03:42:05.490Z",
+    "project": "agent-lab",
+    "role": "planning-agent",
     "status": "ready",
-    "statusAt": "2026-09-03T02:20:34.239Z"
+    "statusAt": "2026-09-06T03:42:05.490Z"
   },
   "latestActiveAgent": {
-    "agentName": "quantumed-canyon-agent-1959",
-    "createdAt": "2026-09-03T02:42:08.016Z",
-    "project": "infrastructure",
-    "role": "operator-agent",
-    "status": "review_ready",
-    "statusAt": "2026-09-03T02:42:08.229Z"
+    "agentName": "b1000-falcon-agent-5133",
+    "createdAt": "2026-09-06T03:42:05.490Z",
+    "project": "agent-lab",
+    "role": "planning-agent",
+    "status": "ready",
+    "statusAt": "2026-09-06T03:42:05.490Z"
   },
   "recentSpawnedAgents": [
+    {
+      "agentName": "b1000-falcon-agent-5133",
+      "createdAt": "2026-09-06T03:42:05.490Z",
+      "project": "agent-lab",
+      "role": "planning-agent",
+      "status": "ready",
+      "statusAt": "2026-09-06T03:42:05.490Z"
+    },
     {
       "agentName": "b1000-harvest-agent-7662",
       "createdAt": "2026-09-03T02:52:45Z",
@@ -210,14 +218,6 @@
       "role": "planning-agent",
       "status": "review_ready",
       "statusAt": "2026-08-25T02:22:50Z"
-    },
-    {
-      "agentName": "b1000-crest-agent-3911",
-      "createdAt": "2026-08-25T01:56:03Z",
-      "project": "agent-lab",
-      "role": "review-agent",
-      "status": "accepted",
-      "statusAt": "2026-08-25T02:01:01Z"
     }
   ]
 }
